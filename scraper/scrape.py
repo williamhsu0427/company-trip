@@ -60,11 +60,15 @@ def ymd(s):
     return f'{m.group(1)}-{m.group(2)}-{m.group(3)}' if m else None
 
 
+FIT = re.compile(r'自由行|旅行票|旅遊票|機加酒|機\+酒|半自助|自由配|\d天\d夜|酒店\d晚|含每日早|未稅|機票')
+
+
 def tour(agency, title, url, price=None, days=None, deps=(), image=None, place=''):
     title = re.sub(r'\s+', ' ', title or '').strip()
     return {
         'agency': agency, 'title': title, 'url': url,
         'country': guess_country(place, title),
+        'type': 'fit' if FIT.search(title) else 'group',
         'days': days or days_from(title), 'price': price,
         'departures': sorted({d for d in deps if d}), 'image': image,
     }
@@ -343,7 +347,8 @@ async def startravel(ctx):
     return list(out.values())
 
 
-NOT_GROUP = re.compile(r'自由行|機加酒|機\+酒|機票|訂房|票券')
+# Plain air tickets / hotel rooms / attraction tickets are not trips: drop them unless they have a day count.
+NOT_GROUP = re.compile(r'^(?!.*\d\s*[日天]).*(機票|訂房|票券|門票)')
 
 
 def dedupe(tours):

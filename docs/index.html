@@ -22,7 +22,13 @@ section{display:none}section.on{display:block}
 .filters label{font-size:12px;color:var(--sub);display:flex;flex-direction:column;gap:4px}
 .filters select,.filters input{font-size:15px;padding:8px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);width:100%}
 .filters .full{grid-column:1/-1}
-@media(min-width:640px){.filters{grid-template-columns:repeat(4,1fr)}}
+.seg{display:flex;gap:6px;grid-column:1/-1}
+.seg button{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px;padding:8px 4px;font-size:14px}
+.seg button.on{background:var(--main);border-color:var(--main);color:#fff;font-weight:600}
+.range{display:flex;gap:6px;align-items:center}.range span{color:var(--sub);font-size:13px}
+.agh{display:flex;align-items:baseline;gap:8px;margin:18px 2px 0}.agh h3{margin:0;font-size:17px}.agh .n{color:var(--sub);font-size:13px}.agh a{margin-left:auto;font-size:13px;color:var(--main);text-decoration:none}
+.item .tag{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;margin-left:6px;background:var(--main2);color:var(--main);font-weight:600}
+@media(min-width:640px){.filters{grid-template-columns:repeat(4,1fr)}.filters .wide{grid-column:span 2}}
 .bar{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--sub);margin:10px 2px 0;flex-wrap:wrap}
 .bar select{margin-left:auto;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:5px 8px;font-size:13px}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
@@ -51,23 +57,26 @@ section{display:none}section.on{display:block}
 <body>
 <header>
   <h1>✈️ 員工旅遊行程比一比</h1>
-  <p>彙整台灣各大旅行社的國外團體行程（不含「找到了」）</p>
+  <p>彙整台灣各大旅行社的國外行程（不含國內旅遊、不含「找到了」）</p>
 </header>
 <div class="tabs">
-  <button class="tab on" data-s="tours">行程清單</button>
-  <button class="tab" data-s="search">一鍵搜尋</button>
+  <button class="tab on" data-s="list">行程清單</button>
+  <button class="tab" data-s="byag">一鍵搜尋</button>
   <button class="tab" data-s="corp">企業包團</button>
 </div>
 <main>
-  <section id="tours" class="on">
+  <div id="filterbox">
     <div class="filters">
+      <div class="seg" id="f-type">
+        <button data-v="" class="on">全部</button><button data-v="group">團體旅遊</button><button data-v="fit">自由行</button>
+      </div>
       <label class="full">關鍵字<input id="f-q" type="search" placeholder="例如：北海道、溫泉、迪士尼"></label>
       <label>國家／地區<select id="f-country"><option value="">全部</option></select></label>
-      <label>出發月份<select id="f-month"><option value="">不限</option></select></label>
       <label>天數<select id="f-days">
         <option value="">不限</option><option value="1-4">4 天以內</option><option value="5-6">5–6 天</option><option value="7-9">7–9 天</option><option value="10-99">10 天以上</option>
       </select></label>
-      <label>每人預算上限<select id="f-budget">
+      <label class="full wide">出發月份<div class="range"><select id="f-m1"><option value="">不限</option></select><span>到</span><select id="f-m2"><option value="">不限</option></select></div></label>
+      <label class="full wide">每人預算上限<select id="f-budget">
         <option value="">不限</option><option>20000</option><option>30000</option><option>40000</option><option>50000</option><option>70000</option><option>100000</option><option>150000</option>
       </select></label>
     </div>
@@ -75,100 +84,123 @@ section{display:none}section.on{display:block}
     <div class="bar"><span id="count">載入中…</span>
       <select id="sort"><option value="price">價格低到高</option><option value="price-d">價格高到低</option><option value="date">出發日近到遠</option><option value="days">天數少到多</option></select>
     </div>
-    <div id="list"></div>
+  </div>
+
+  <section id="list" class="on">
+    <div id="list-out"></div>
     <button class="more" id="more" hidden>顯示更多</button>
-    <p class="note" id="updated"></p>
   </section>
 
-  <section id="search">
-    <div class="filters">
-      <label class="full">要去哪裡<input id="s-q" type="search" placeholder="例如：日本、北海道、峇里島"></label>
-    </div>
-    <button class="big" id="s-all">在所有旅行社搜尋</button>
-    <p class="note">手機瀏覽器可能會擋住一次開很多分頁，如果只開了一個，請用下面的按鈕逐家開啟。</p>
-    <div id="s-list"></div>
+  <section id="byag">
+    <div id="byag-out"></div>
   </section>
 
   <section id="corp">
     <p class="note">員工旅遊人數多時，直接請旅行社客製報價通常比較划算。以下是各家的企業旅遊／包團洽詢窗口。</p>
     <div id="c-list"></div>
   </section>
+  <p class="note" id="updated"></p>
 </main>
 <script src="agencies.js"></script>
 <script>
 const $=s=>document.querySelector(s);
 const fmt=n=>n?'$'+n.toLocaleString('zh-TW'):'洽詢';
-let TOURS=[],shown=40,offAg=new Set();
-
-document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
-  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===t.dataset.s));
-});
+const PER_AG=5;
+let TOURS=[],shown=40,offAg=new Set(),type='',tab='list',openAg=new Set();
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  tab=t.dataset.s;
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===tab));
+  $('#filterbox').hidden=tab==='corp';
+  render();
+});
+document.querySelectorAll('#f-type button').forEach(b=>b.onclick=()=>{
+  type=b.dataset.v;document.querySelectorAll('#f-type button').forEach(x=>x.classList.toggle('on',x===b));shown=40;render();
+});
 
 async function load(){
   try{
     const r=await fetch('data/tours.json?'+Date.now());
     const d=await r.json();
-    TOURS=(d.tours||[]).filter(t=>!/找到了/.test(t.agency+t.title));
+    TOURS=(d.tours||[]).filter(t=>t.country!=='台灣'&&!/找到了/.test(t.agency+t.title));
     const today=new Date().toISOString().slice(0,10);
-    TOURS.forEach(t=>t.deps=(t.departures||[]).filter(x=>x>=today).sort());
+    TOURS.forEach(t=>{t.deps=(t.departures||[]).filter(x=>x>=today).sort();t.type=t.type||'group'});
     $('#updated').textContent=d.updated?`資料更新：${new Date(d.updated).toLocaleString('zh-TW')}。價格與團位以旅行社網站為準。`:'';
-    if(d.failed&&d.failed.length)$('#updated').textContent+=` 這次沒抓到：${d.failed.join('、')}，可以用「一鍵搜尋」查。`;
   }catch(e){TOURS=[]}
   const countries=[...new Set(TOURS.map(t=>t.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
   $('#f-country').innerHTML+=countries.map(c=>`<option>${esc(c)}</option>`).join('');
   const months=[...new Set(TOURS.flatMap(t=>t.deps.map(d=>d.slice(0,7))))].sort();
-  $('#f-month').innerHTML+=months.map(m=>`<option value="${m}">${+m.slice(0,4)} 年 ${+m.slice(5)} 月</option>`).join('');
+  const mo=months.map(m=>`<option value="${m}">${+m.slice(0,4)} 年 ${+m.slice(5)} 月</option>`).join('');
+  $('#f-m1').innerHTML+=mo;$('#f-m2').innerHTML+=mo;
   const ags=[...new Set(TOURS.map(t=>t.agency))];
   $('#agency-chips').innerHTML=ags.map(a=>`<button class="chip" data-a="${esc(a)}">${esc(a)}</button>`).join('');
   document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{const a=c.dataset.a;offAg.has(a)?offAg.delete(a):offAg.add(a);c.classList.toggle('off');shown=40;render()});
   render();
 }
 
-function render(){
-  const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,m=$('#f-month').value,dd=$('#f-days').value,b=+$('#f-budget').value||0;
+function filtered(){
+  const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,dd=$('#f-days').value,b=+$('#f-budget').value||0;
+  let m1=$('#f-m1').value,m2=$('#f-m2').value;
+  if(m1&&m2&&m1>m2)[m1,m2]=[m2,m1];
+  const inM=d=>(!m1||d.slice(0,7)>=m1)&&(!m2||d.slice(0,7)<=m2);
   const [dmin,dmax]=dd?dd.split('-').map(Number):[0,999];
-  let L=TOURS.filter(t=>!offAg.has(t.agency)
-    &&(!q||(t.title+t.country+(t.region||'')).toLowerCase().includes(q))
+  const L=TOURS.filter(t=>!offAg.has(t.agency)
+    &&(!type||t.type===type)
+    &&(!q||(t.title+t.country).toLowerCase().includes(q))
     &&(!c||t.country===c)
-    &&(!m||t.deps.some(d=>d.startsWith(m)))
+    &&(!(m1||m2)||t.deps.some(inM))
     &&(!dd||(t.days>=dmin&&t.days<=dmax))
     &&(!b||(t.price&&t.price<=b)));
-  const s=$('#sort').value,first=t=>(m?t.deps.find(d=>d.startsWith(m)):t.deps[0])||'9999';
+  const s=$('#sort').value,first=t=>t.deps.find(inM)||'9999';
   L.sort(s==='price'?(a,b)=>(a.price||1e9)-(b.price||1e9):s==='price-d'?(a,b)=>(b.price||0)-(a.price||0):s==='date'?(a,b)=>first(a).localeCompare(first(b)):(a,b)=>(a.days||99)-(b.days||99));
-  $('#count').textContent=TOURS.length?`找到 ${L.length} 個行程`:'';
-  if(!TOURS.length){$('#list').innerHTML='<div class="empty">還沒有行程資料。<br>可以先用「一鍵搜尋」直接到各旅行社查詢。</div>';$('#more').hidden=true;return}
-  if(!L.length){$('#list').innerHTML='<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';$('#more').hidden=true;return}
-  $('#list').innerHTML=L.slice(0,shown).map(t=>{
-    const deps=(m?t.deps.filter(d=>d.startsWith(m)):t.deps).slice(0,4).map(d=>d.slice(5).replace('-','/')).join('、');
-    return `<div class="item">${t.image?`<img loading="lazy" referrerpolicy="no-referrer" src="${esc(t.image)}" alt="" onerror="this.remove()">`:''}<div class="body">
-      <div class="ag">${esc(t.agency)}${t.country?' · '+esc(t.country):''}</div>
-      <b>${esc(t.title)}</b>
-      <div class="meta">${t.days?t.days+' 天':''}${deps?' · 出發 '+deps+(t.deps.length>4?' 等':''):''}</div>
-      <div class="price">${fmt(t.price)}<span class="meta"> 起／人</span></div>
-      <a class="go" href="${esc(t.url)}" target="_blank" rel="noopener">看行程 →</a></div></div>`}).join('');
-  $('#more').hidden=L.length<=shown;
+  return {L,inM,q};
 }
-['#f-q','#f-country','#f-month','#f-days','#f-budget','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;render()}));
-$('#more').onclick=()=>{shown+=40;render()};
 
-function renderSearch(){
-  const q=$('#s-q').value.trim();
-  $('#s-list').innerHTML=AGENCIES.map((a,i)=>`<div class="card"><h3>${esc(a.name)}</h3>
-    <div class="row"><a class="btn main" target="_blank" rel="noopener" href="${esc(a.search(q))}">搜尋${q?'「'+esc(q)+'」':'國外團體行程'}</a></div></div>`).join('');
+function card(t,inM){
+  const ds=t.deps.filter(inM),deps=ds.slice(0,4).map(d=>d.slice(5).replace('-','/')).join('、');
+  return `<div class="item">${t.image?`<img loading="lazy" referrerpolicy="no-referrer" src="${esc(t.image)}" alt="" onerror="this.remove()">`:''}<div class="body">
+    <div class="ag">${esc(t.agency)}${t.country?' · '+esc(t.country):''}<span class="tag">${t.type==='fit'?'自由行':'團體'}</span></div>
+    <b>${esc(t.title)}</b>
+    <div class="meta">${t.days?t.days+' 天':''}${deps?' · 出發 '+deps+(ds.length>4?' 等':''):''}</div>
+    <div class="price">${fmt(t.price)}<span class="meta"> 起／人</span></div>
+    <a class="go" href="${esc(t.url)}" target="_blank" rel="noopener">看行程細節 →</a></div></div>`;
 }
-$('#s-q').addEventListener('input',renderSearch);
-$('#s-all').onclick=()=>{const q=$('#s-q').value.trim();AGENCIES.forEach(a=>window.open(a.search(q),'_blank'))};
+
+function render(){
+  if(tab==='corp')return;
+  const {L,inM,q}=filtered();
+  $('#count').textContent=TOURS.length?`找到 ${L.length} 個行程`:'';
+  if(!TOURS.length){$('#list-out').innerHTML=$('#byag-out').innerHTML='<div class="empty">還沒有行程資料，請稍後再來看看。</div>';$('#more').hidden=true;return}
+  if(tab==='list'){
+    $('#list-out').innerHTML=L.length?L.slice(0,shown).map(t=>card(t,inM)).join(''):'<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';
+    $('#more').hidden=L.length<=shown;
+  }else{
+    const by={};L.forEach(t=>(by[t.agency]=by[t.agency]||[]).push(t));
+    const names=AGENCIES.map(a=>a.name).filter(n=>!offAg.has(n));
+    $('#byag-out').innerHTML=names.map(n=>{
+      const a=AGENCIES.find(x=>x.name===n),list=by[n]||[],all=openAg.has(n);
+      return `<div class="agh"><h3>${esc(n)}</h3><span class="n">${list.length} 個</span><a target="_blank" rel="noopener" href="${esc(a.search(q))}">到官網搜尋 ↗</a></div>`+
+        (list.length?list.slice(0,all?list.length:PER_AG).map(t=>card(t,inM)).join('')+
+          (list.length>PER_AG&&!all?`<button class="more" data-ag="${esc(n)}">顯示 ${esc(n)} 全部 ${list.length} 個</button>`:'')
+        :`<div class="empty" style="padding:14px">${by[n]===undefined&&!TOURS.some(t=>t.agency===n)?'這家目前沒抓到資料，可以點「到官網搜尋」':'沒有符合條件的行程'}</div>`);
+    }).join('');
+    document.querySelectorAll('#byag-out .more').forEach(b=>b.onclick=()=>{openAg.add(b.dataset.ag);render()});
+    $('#more').hidden=true;
+  }
+}
+['#f-q','#f-country','#f-m1','#f-m2','#f-days','#f-budget','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
+$('#more').onclick=()=>{shown+=40;render()};
 
 $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
   ${a.corp.note?`<p>${esc(a.corp.note)}</p>`:''}
   <div class="row">${a.corp.url?`<a class="btn main" target="_blank" rel="noopener" href="${esc(a.corp.url)}">企業旅遊頁面</a>`:''}
   ${a.corp.tel?`<a class="btn" href="tel:${esc(a.corp.tel.replace(/[^\d+#,]/g,''))}">📞 ${esc(a.corp.tel)}</a>`:''}
-  ${a.corp.email?`<a class="btn" href="mailto:${esc(a.corp.email)}">✉️ ${esc(a.corp.email)}</a>`:''}</div></div>`).join('')||'<div class="empty">整理中</div>';
+  ${a.corp.email?`<a class="btn" href="mailto:${esc(a.corp.email)}">✉️ ${esc(a.corp.email)}</a>`:''}</div></div>`).join('');
 
-renderSearch();load();
+load();
 </script>
 </body>
 </html>
