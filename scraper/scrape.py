@@ -167,11 +167,15 @@ SETTOUR_PAGES = ['japan', 'korea', 'southeast_asia', 'china', 'europe', 'america
 
 
 async def settour(ctx):
-    page = await ctx.new_page()
     out = {}
-    for p in SETTOUR_PAGES:
-        await goto(page, f'https://tour.settour.com.tw/{p}.html', 5000, idle=False)
-        s = BeautifulSoup(await html_of(page), 'lxml')
+
+    async def one(p):
+        page = await ctx.new_page()
+        try:
+            await goto(page, f'https://tour.settour.com.tw/{p}.html', 5000, idle=False)
+            s = BeautifulSoup(await html_of(page), 'lxml')
+        finally:
+            await page.close()
         for a in s.select('a[href*="/product/GFG"]'):
             m = re.search(r'GFG\d{10}', a['href'])
             h = a.find('h3')
@@ -185,7 +189,13 @@ async def settour(ctx):
             out[m.group(0)] = tour('東南旅遊', h.get_text(strip=True), f'https://tour.settour.com.tw/product/{m.group(0)}',
                                    num(pr.group(1)) if pr else None, int(dd.group(1)) if dd else None, [],
                                    im.group(1) if im else None)
-    await page.close()
+
+    for p in SETTOUR_PAGES:
+        try:
+            await asyncio.wait_for(one(p), timeout=120)
+            print(f'  settour {p}: {len(out)} so far', flush=True)
+        except Exception as e:
+            print(f'  settour {p} failed: {type(e).__name__} {str(e)[:80]}', flush=True)
     return [t for t in out.values() if t['country'] != '台灣']
 
 
@@ -314,7 +324,7 @@ async def newamazing(ctx):
 
 # ---------------- 燦星 ----------------
 async def startravel(ctx):
-    page = await ctx.new_page()
+    # Cloudflare lets the list request through only some of the time, so try a few fresh sessions.
     got = []
 
     async def on_resp(r):
@@ -323,14 +333,20 @@ async def startravel(ctx):
                 got.append(await r.json())
             except Exception:
                 pass
-    page.on('response', on_resp)
-    await goto(page, 'https://tour.startravel.com.tw/list/ALL/0?avl=1', 3000)
-    await wait_for(page, lambda h: '請稍候' not in h and 'Just a moment' not in h, 30)
-    for _ in range(20):
+    for attempt in range(4):
+        c = await ctx.browser.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
+        page = await c.new_page()
+        page.on('response', on_resp)
+        await goto(page, 'https://tour.startravel.com.tw/list/ALL/0?avl=1', 3000)
+        await wait_for(page, lambda h: '請稍候' not in h and 'Just a moment' not in h, 30)
+        for _ in range(20):
+            if got:
+                break
+            await page.wait_for_timeout(1000)
+        await c.close()
+        print('  startravel attempt', attempt + 1, 'lists:', len(got), flush=True)
         if got:
             break
-        await page.wait_for_timeout(1000)
-    await page.close()
     out = {}
     for d in got:
         for it in d.get('ProductList') or []:
@@ -389,9 +405,24 @@ async def main(only=None):
                 traceback.print_exc()
                 failed.append(name)
         await b.close()
+    # If an agency broke today (site change, bot check), keep yesterday's tours for it instead of dropping them.
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'tours.json')
+    try:
+        prev = json.load(open(path, encoding='utf-8')).get('tours') or []
+    except Exception:
+        prev = []
+    for name in SCRAPERS:
+        old = [t for t in prev if t['agency'] == name]
+        for t in old:
+            c = guess_country('', t['title'])
+            t['country'] = t['country'] if c == '其他' else c
+            t['type'] = 'fit' if FIT.search(t['title']) else 'group'
+        old = [t for t in old if t['country'] != '台灣' and not NOT_GROUP.search(t['title'])]
+        if len(old) > stats.get(name, 0) * 3 and len(old) > 20:
+            print(f'{name}: keeping {len(old)} tours from the previous run', flush=True)
+            tours = [t for t in tours if t['agency'] != name] + old
     data = {'updated': dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
             'stats': stats, 'failed': failed, 'tours': tours}
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'tours.json')
     with open(path, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
     print('total', len(tours), 'failed', failed)
