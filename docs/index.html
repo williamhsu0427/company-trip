@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#00695c">
+<title>員工旅遊行程比一比</title>
+<style>
+:root{--bg:#f4f6f5;--card:#fff;--text:#1d2321;--sub:#5f6b67;--line:#dfe5e3;--main:#00695c;--main2:#e0f2ef;--warn:#b26a00}
+@media (prefers-color-scheme:dark){:root{--bg:#111614;--card:#1a211f;--text:#e8eeec;--sub:#9aa7a3;--line:#2c3532;--main:#4db6a6;--main2:#1e3330;--warn:#f0b04a}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;-webkit-tap-highlight-color:transparent}
+header{background:#00695c;color:#fff;padding:14px 16px;padding-top:calc(14px + env(safe-area-inset-top))}
+header h1{margin:0;font-size:19px}
+header p{margin:4px 0 0;font-size:13px;opacity:.85}
+.tabs{display:flex;gap:6px;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+.tab{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:12px;padding:9px 4px;font-size:15px;font-weight:600}
+.tab.on{background:var(--main);border-color:var(--main);color:#fff}
+main{max-width:860px;margin:0 auto;padding:0 16px 32px}
+section{display:none}section.on{display:block}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:12px}
+.filters label{font-size:12px;color:var(--sub);display:flex;flex-direction:column;gap:4px}
+.filters select,.filters input{font-size:15px;padding:8px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--text);width:100%}
+.filters .full{grid-column:1/-1}
+@media(min-width:640px){.filters{grid-template-columns:repeat(4,1fr)}}
+.bar{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--sub);margin:10px 2px 0;flex-wrap:wrap}
+.bar select{margin-left:auto;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:5px 8px;font-size:13px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:5px 10px;font-size:13px}
+.chip.off{opacity:.45;text-decoration:line-through}
+.item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:8px;display:flex;gap:12px}
+.item img{width:96px;height:96px;object-fit:cover;border-radius:10px;flex:none;background:var(--line)}
+.item .body{min-width:0;flex:1}
+.item .ag{font-size:12px;color:var(--main);font-weight:700}
+.item b{display:block;font-size:15px;line-height:1.4;margin:2px 0}
+.item .meta{font-size:13px;color:var(--sub);line-height:1.5}
+.item .price{font-size:17px;font-weight:700;color:var(--warn)}
+.item a.go{display:inline-block;margin-top:6px;font-size:13px;color:var(--main);font-weight:600;text-decoration:none}
+.empty{text-align:center;color:var(--sub);padding:36px 16px;line-height:1.7}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:10px}
+.card h3{margin:0 0 4px;font-size:16px}
+.card p{margin:4px 0;font-size:14px;color:var(--sub);line-height:1.55}
+.card .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-block;text-decoration:none;font-size:14px;border-radius:10px;padding:9px 12px;border:1px solid var(--line);color:var(--text);background:var(--bg)}
+.btn.main{background:var(--main);border-color:var(--main);color:#fff;font-weight:600}
+.big{width:100%;margin-top:12px;padding:13px;font-size:16px;border:0;border-radius:12px;background:var(--main);color:#fff;font-weight:700}
+.note{font-size:12px;color:var(--sub);margin-top:10px;line-height:1.6}
+.more{display:block;margin:12px auto 0;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:8px 18px;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <h1>✈️ 員工旅遊行程比一比</h1>
+  <p>彙整台灣各大旅行社的國外團體行程（不含「找到了」）</p>
+</header>
+<div class="tabs">
+  <button class="tab on" data-s="tours">行程清單</button>
+  <button class="tab" data-s="search">一鍵搜尋</button>
+  <button class="tab" data-s="corp">企業包團</button>
+</div>
+<main>
+  <section id="tours" class="on">
+    <div class="filters">
+      <label class="full">關鍵字<input id="f-q" type="search" placeholder="例如：北海道、溫泉、迪士尼"></label>
+      <label>國家／地區<select id="f-country"><option value="">全部</option></select></label>
+      <label>出發月份<select id="f-month"><option value="">不限</option></select></label>
+      <label>天數<select id="f-days">
+        <option value="">不限</option><option value="1-4">4 天以內</option><option value="5-6">5–6 天</option><option value="7-9">7–9 天</option><option value="10-99">10 天以上</option>
+      </select></label>
+      <label>每人預算上限<select id="f-budget">
+        <option value="">不限</option><option>20000</option><option>30000</option><option>40000</option><option>50000</option><option>70000</option><option>100000</option><option>150000</option>
+      </select></label>
+    </div>
+    <div class="chips" id="agency-chips"></div>
+    <div class="bar"><span id="count">載入中…</span>
+      <select id="sort"><option value="price">價格低到高</option><option value="price-d">價格高到低</option><option value="date">出發日近到遠</option><option value="days">天數少到多</option></select>
+    </div>
+    <div id="list"></div>
+    <button class="more" id="more" hidden>顯示更多</button>
+    <p class="note" id="updated"></p>
+  </section>
+
+  <section id="search">
+    <div class="filters">
+      <label class="full">要去哪裡<input id="s-q" type="search" placeholder="例如：日本、北海道、峇里島"></label>
+    </div>
+    <button class="big" id="s-all">在所有旅行社搜尋</button>
+    <p class="note">手機瀏覽器可能會擋住一次開很多分頁，如果只開了一個，請用下面的按鈕逐家開啟。</p>
+    <div id="s-list"></div>
+  </section>
+
+  <section id="corp">
+    <p class="note">員工旅遊人數多時，直接請旅行社客製報價通常比較划算。以下是各家的企業旅遊／包團洽詢窗口。</p>
+    <div id="c-list"></div>
+  </section>
+</main>
+<script src="agencies.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const fmt=n=>n?'$'+n.toLocaleString('zh-TW'):'洽詢';
+let TOURS=[],shown=40,offAg=new Set();
+
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
+  document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===t.dataset.s));
+});
+
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+async function load(){
+  try{
+    const r=await fetch('data/tours.json?'+Date.now());
+    const d=await r.json();
+    TOURS=(d.tours||[]).filter(t=>!/找到了/.test(t.agency+t.title));
+    const today=new Date().toISOString().slice(0,10);
+    TOURS.forEach(t=>t.deps=(t.departures||[]).filter(x=>x>=today).sort());
+    $('#updated').textContent=d.updated?`資料更新：${new Date(d.updated).toLocaleString('zh-TW')}。價格與團位以旅行社網站為準。`:'';
+    if(d.failed&&d.failed.length)$('#updated').textContent+=` 這次沒抓到：${d.failed.join('、')}，可以用「一鍵搜尋」查。`;
+  }catch(e){TOURS=[]}
+  const countries=[...new Set(TOURS.map(t=>t.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
+  $('#f-country').innerHTML+=countries.map(c=>`<option>${esc(c)}</option>`).join('');
+  const months=[...new Set(TOURS.flatMap(t=>t.deps.map(d=>d.slice(0,7))))].sort();
+  $('#f-month').innerHTML+=months.map(m=>`<option value="${m}">${+m.slice(0,4)} 年 ${+m.slice(5)} 月</option>`).join('');
+  const ags=[...new Set(TOURS.map(t=>t.agency))];
+  $('#agency-chips').innerHTML=ags.map(a=>`<button class="chip" data-a="${esc(a)}">${esc(a)}</button>`).join('');
+  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{const a=c.dataset.a;offAg.has(a)?offAg.delete(a):offAg.add(a);c.classList.toggle('off');shown=40;render()});
+  render();
+}
+
+function render(){
+  const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,m=$('#f-month').value,dd=$('#f-days').value,b=+$('#f-budget').value||0;
+  const [dmin,dmax]=dd?dd.split('-').map(Number):[0,999];
+  let L=TOURS.filter(t=>!offAg.has(t.agency)
+    &&(!q||(t.title+t.country+(t.region||'')).toLowerCase().includes(q))
+    &&(!c||t.country===c)
+    &&(!m||t.deps.some(d=>d.startsWith(m)))
+    &&(!dd||(t.days>=dmin&&t.days<=dmax))
+    &&(!b||(t.price&&t.price<=b)));
+  const s=$('#sort').value,first=t=>(m?t.deps.find(d=>d.startsWith(m)):t.deps[0])||'9999';
+  L.sort(s==='price'?(a,b)=>(a.price||1e9)-(b.price||1e9):s==='price-d'?(a,b)=>(b.price||0)-(a.price||0):s==='date'?(a,b)=>first(a).localeCompare(first(b)):(a,b)=>(a.days||99)-(b.days||99));
+  $('#count').textContent=TOURS.length?`找到 ${L.length} 個行程`:'';
+  if(!TOURS.length){$('#list').innerHTML='<div class="empty">還沒有行程資料。<br>可以先用「一鍵搜尋」直接到各旅行社查詢。</div>';$('#more').hidden=true;return}
+  if(!L.length){$('#list').innerHTML='<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';$('#more').hidden=true;return}
+  $('#list').innerHTML=L.slice(0,shown).map(t=>{
+    const deps=(m?t.deps.filter(d=>d.startsWith(m)):t.deps).slice(0,4).map(d=>d.slice(5).replace('-','/')).join('、');
+    return `<div class="item">${t.image?`<img loading="lazy" src="${esc(t.image)}" alt="">`:''}<div class="body">
+      <div class="ag">${esc(t.agency)}${t.country?' · '+esc(t.country):''}</div>
+      <b>${esc(t.title)}</b>
+      <div class="meta">${t.days?t.days+' 天':''}${deps?' · 出發 '+deps+(t.deps.length>4?' 等':''):''}</div>
+      <div class="price">${fmt(t.price)}<span class="meta"> 起／人</span></div>
+      <a class="go" href="${esc(t.url)}" target="_blank" rel="noopener">看行程 →</a></div></div>`}).join('');
+  $('#more').hidden=L.length<=shown;
+}
+['#f-q','#f-country','#f-month','#f-days','#f-budget','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;render()}));
+$('#more').onclick=()=>{shown+=40;render()};
+
+function renderSearch(){
+  const q=$('#s-q').value.trim();
+  $('#s-list').innerHTML=AGENCIES.map((a,i)=>`<div class="card"><h3>${esc(a.name)}</h3>
+    <div class="row"><a class="btn main" target="_blank" rel="noopener" href="${esc(a.search(q))}">搜尋${q?'「'+esc(q)+'」':'國外團體行程'}</a></div></div>`).join('');
+}
+$('#s-q').addEventListener('input',renderSearch);
+$('#s-all').onclick=()=>{const q=$('#s-q').value.trim();AGENCIES.forEach(a=>window.open(a.search(q),'_blank'))};
+
+$('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
+  ${a.corp.note?`<p>${esc(a.corp.note)}</p>`:''}
+  <div class="row">${a.corp.url?`<a class="btn main" target="_blank" rel="noopener" href="${esc(a.corp.url)}">企業旅遊頁面</a>`:''}
+  ${a.corp.tel?`<a class="btn" href="tel:${esc(a.corp.tel.replace(/[^\d+#,]/g,''))}">📞 ${esc(a.corp.tel)}</a>`:''}
+  ${a.corp.email?`<a class="btn" href="mailto:${esc(a.corp.email)}">✉️ ${esc(a.corp.email)}</a>`:''}</div></div>`).join('')||'<div class="empty">整理中</div>';
+
+renderSearch();load();
+</script>
+</body>
+</html>

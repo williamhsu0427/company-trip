@@ -1,8 +1,6 @@
 name: probe
 on:
   workflow_dispatch:
-  push:
-    paths: ['tools/probe*']
 permissions:
   contents: write
 jobs:

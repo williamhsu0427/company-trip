@@ -1,0 +1,28 @@
+name: 更新行程資料
+on:
+  schedule:
+    - cron: '0 21 * * *'   # 每天台灣時間早上 5 點
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scraper/**', '.github/workflows/scrape.yml']
+permissions:
+  contents: write
+concurrency: scrape
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install playwright beautifulsoup4 lxml && python -m playwright install --with-deps chromium
+      - run: cd scraper && python scrape.py
+        working-directory: .
+      - name: 存回資料
+        run: |
+          git config user.name github-actions; git config user.email github-actions@users.noreply.github.com
+          git add docs/data/tours.json
+          git diff --cached --quiet || git commit -m "更新行程資料 $(date -u +%F)"
+          git pull --rebase -q origin main && git push origin main
