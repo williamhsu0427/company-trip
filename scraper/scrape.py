@@ -387,23 +387,28 @@ async def main(only=None):
     tours, failed, stats = [], [], {}
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        ctx = await b.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
-        for name, fn in SCRAPERS.items():
-            if only and name not in only:
-                continue
+        async def run(name, fn):
+            # Each agency gets its own browser session so they can run side by side.
+            c = await b.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
             try:
-                got = await asyncio.wait_for(fn(ctx), timeout=1500)
+                got = await asyncio.wait_for(fn(c), timeout=1500)
                 got = dedupe(t for t in got if t['title'] and t['url'] and '找到了' not in t['title']
                              and t['country'] != '台灣' and not NOT_GROUP.search(t['title']))
                 print(f'{name}: {len(got)}', flush=True)
-                if not got:
-                    failed.append(name)
-                tours += got
-                stats[name] = len(got)
+                return name, got
             except Exception:
                 print(f'{name}: FAILED', flush=True)
                 traceback.print_exc()
+                return name, None
+            finally:
+                await c.close()
+
+        jobs = [run(n, f) for n, f in SCRAPERS.items() if not only or n in only]
+        for name, got in await asyncio.gather(*jobs):
+            if not got:
                 failed.append(name)
+            tours += got or []
+            stats[name] = len(got or [])
         await b.close()
     # If an agency broke today (site change, bot check), keep yesterday's tours for it instead of dropping them.
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'tours.json')
