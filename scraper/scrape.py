@@ -122,6 +122,8 @@ async def lion(ctx):
                                     headers={'content-type': 'application/json'})
         d = await r.json()
         items = d.get('NormGroupList') or []
+        if pg == 1:
+            print('lion page1:', {k: v for k, v in d.items() if not isinstance(v, (list, dict))}, len(items), flush=True)
         for it in items:
             if it.get('TravelType') not in (2, None):
                 continue
@@ -392,9 +394,10 @@ async def main(only=None):
             c = await b.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
             try:
                 got = await asyncio.wait_for(fn(c), timeout=1500)
+                raw = len(got)
                 got = dedupe(t for t in got if t['title'] and t['url'] and '找到了' not in t['title']
                              and t['country'] != '台灣' and not NOT_GROUP.search(t['title']))
-                print(f'{name}: {len(got)}', flush=True)
+                print(f'{name}: {len(got)} (raw {raw})', flush=True)
                 return name, got
             except Exception:
                 print(f'{name}: FAILED', flush=True)
