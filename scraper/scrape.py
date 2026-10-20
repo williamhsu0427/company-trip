@@ -331,6 +331,20 @@ async def startravel(ctx):
     return list(out.values())
 
 
+NOT_GROUP = re.compile(r'自由行|機加酒|機\+酒|機票|訂房|票券')
+
+
+def dedupe(tours):
+    seen = {}
+    for t in tours:
+        k = (t['title'], t['price'])
+        if k in seen:
+            seen[k]['departures'] = sorted(set(seen[k]['departures']) | set(t['departures']))
+        else:
+            seen[k] = t
+    return list(seen.values())
+
+
 SCRAPERS = {'雄獅旅遊': lion, '可樂旅遊': cola, '東南旅遊': settour, '易遊網': eztravel,
             '山富旅遊': travel4u, '喜鴻假期': besttour, '新魅力旅遊': newamazing,
             '燦星旅遊': startravel}
@@ -346,7 +360,8 @@ async def main(only=None):
                 continue
             try:
                 got = await asyncio.wait_for(fn(ctx), timeout=900)
-                got = [t for t in got if t['title'] and t['url'] and '找到了' not in t['title'] and t['country'] != '台灣']
+                got = dedupe(t for t in got if t['title'] and t['url'] and '找到了' not in t['title']
+                             and t['country'] != '台灣' and not NOT_GROUP.search(t['title']))
                 print(f'{name}: {len(got)}', flush=True)
                 if not got:
                     failed.append(name)

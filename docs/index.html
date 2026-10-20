@@ -143,7 +143,7 @@ function render(){
   if(!L.length){$('#list').innerHTML='<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';$('#more').hidden=true;return}
   $('#list').innerHTML=L.slice(0,shown).map(t=>{
     const deps=(m?t.deps.filter(d=>d.startsWith(m)):t.deps).slice(0,4).map(d=>d.slice(5).replace('-','/')).join('、');
-    return `<div class="item">${t.image?`<img loading="lazy" src="${esc(t.image)}" alt="">`:''}<div class="body">
+    return `<div class="item">${t.image?`<img loading="lazy" referrerpolicy="no-referrer" src="${esc(t.image)}" alt="" onerror="this.remove()">`:''}<div class="body">
       <div class="ag">${esc(t.agency)}${t.country?' · '+esc(t.country):''}</div>
       <b>${esc(t.title)}</b>
       <div class="meta">${t.days?t.days+' 天':''}${deps?' · 出發 '+deps+(t.deps.length>4?' 等':''):''}</div>
