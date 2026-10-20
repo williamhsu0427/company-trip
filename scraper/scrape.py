@@ -71,7 +71,10 @@ def tour(agency, title, url, price=None, days=None, deps=(), image=None, place='
 
 
 async def goto(page, url, wait=2500):
-    await page.goto(url, wait_until='domcontentloaded', timeout=70000)
+    try:
+        await page.goto(url, wait_until='domcontentloaded', timeout=60000)
+    except Exception as e:
+        print('  slow page:', url, str(e)[:80], flush=True)
     try:
         await page.wait_for_load_state('networkidle', timeout=15000)
     except Exception:
@@ -167,10 +170,11 @@ async def eztravel(ctx):
     page = await ctx.new_page()
     out = {}
     for kw in REGION_KEYWORDS:
-        for pg in range(1, 4):
-            await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1&page={pg}', 1500)
+        for pg in range(1, 3):
+            await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1&page={pg}', 4000)
             m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', await page.content(), re.S)
             if not m:
+                print('  ezTravel blocked at', kw, pg, flush=True)
                 break
             st = json.loads(m.group(1))['props']['pageProps']['initialState']['search']
             res = st.get('searchResults') or []
@@ -197,11 +201,11 @@ async def travel4u(ctx):
         for a in s.select('a.tourCard'):
             href = urljoin('https://www.travel4u.com.tw', a['href'])
             name = a.select_one('.name') or a.find(['h5', 'h6'])
-            if not name or href in out:
+            pr = a.select_one('.price')
+            if not name or href in out or not pr or not num(pr.get_text()):
                 continue
             txt = a.get_text(' ', strip=True)
             dd = re.search(r'(\d+)\s*天', txt)
-            pr = a.select_one('.price')
             dep = a.select_one('.tourDepartureDate')
             img = a.find('img')
             out[href] = tour('山富旅遊', name.get_text(strip=True), href, num(pr.get_text()) if pr else None,
@@ -246,17 +250,11 @@ async def besttour(ctx):
 # ---------------- 新魅力 ----------------
 async def newamazing(ctx):
     page = await ctx.new_page()
-    await goto(page, 'https://www.newamazing.com.tw/EW/GO/GroupList.asp')
-    for _ in range(25):
-        btn = page.locator("button:has-text('載入更多產品'):visible").first
-        if not await btn.count():
-            break
-        try:
-            await btn.click(timeout=5000)
-            await page.wait_for_timeout(2000)
-        except Exception:
-            break
-    s = BeautifulSoup(await page.content(), 'lxml')
+    html = []
+    for kw in REGION_KEYWORDS:
+        await goto(page, f'https://www.newamazing.com.tw/EW/GO/GroupList.asp?keyword={quote(kw)}', 1500)
+        html.append(await page.content())
+    s = BeautifulSoup(''.join(html), 'lxml')
     await page.close()
     groups = {}
     for th in s.select('div.thumbnail'):
@@ -283,8 +281,59 @@ async def newamazing(ctx):
     return [t for t in out if t['country'] != '台灣']
 
 
+# ---------------- 燦星 ----------------
+async def startravel(ctx):
+    page = await ctx.new_page()
+    got = []
+
+    async def on_resp(r):
+        if 'GetAllProductList?' in r.url and r.status == 200:
+            try:
+                got.append(await r.json())
+            except Exception:
+                pass
+    page.on('response', on_resp)
+    await goto(page, 'https://tour.startravel.com.tw/list/ALL/10?avl=1', 3000)
+    codes = []
+    try:
+        r = await page.request.get('https://tour.startravel.com.tw/Ajax/GetDestinationList?ProdType=0&RegionType=O')
+        for lv1 in await r.json():
+            for lv2 in lv1.get('TravelLv2') or []:
+                codes.append(lv2['TravelCodeLv2'])
+    except Exception as e:
+        print('  startravel codes failed', e, flush=True)
+        codes = ['10', '11', '12', '13', '14', '15', '16', '17', '18']
+    for c in codes:
+        await goto(page, f'https://tour.startravel.com.tw/list/ALL/{c}?avl=1', 3000)
+    await page.close()
+    out = {}
+    first = True
+    for d in got:
+        lst = next((v for v in d.values() if isinstance(v, list) and v and isinstance(v[0], dict)), [])
+        if first and lst:
+            print('  startravel item keys:', list(lst[0].keys())[:40], flush=True)
+            print('  sample:', json.dumps(lst[0], ensure_ascii=False)[:800], flush=True)
+            first = False
+        for it in lst:
+            name = it.get('MGroupName') or it.get('ProdName') or it.get('Name') or it.get('GroupName')
+            code = it.get('MGroupCode') or it.get('ProdCode') or name
+            if not name or code in out:
+                continue
+            deps = [ymd(str(x.get('DeptDate') or x.get('GoDate') or '')) for x in (it.get('Products') or it.get('Groups') or []) if isinstance(x, dict)]
+            if it.get('DeptDate'):
+                deps.append(ymd(str(it['DeptDate'])))
+            out[code] = tour('燦星旅遊', name, f'https://tour.startravel.com.tw/mgroup/{code}',
+                             num(it.get('MinPrice') or it.get('Price') or it.get('SalePrice')),
+                             num(it.get('TravelDays') or it.get('Days')), deps,
+                             it.get('ImageUrl') or it.get('ImgUrl') or it.get('Image'),
+                             d.get('TravelCodeNameLv2') or '')
+    print('  startravel lists captured:', len(got), flush=True)
+    return list(out.values())
+
+
 SCRAPERS = {'雄獅旅遊': lion, '可樂旅遊': cola, '東南旅遊': settour, '易遊網': eztravel,
-            '山富旅遊': travel4u, '喜鴻假期': besttour, '新魅力旅遊': newamazing}
+            '山富旅遊': travel4u, '喜鴻假期': besttour, '新魅力旅遊': newamazing,
+            '燦星旅遊': startravel}
 
 
 async def main(only=None):
@@ -297,7 +346,7 @@ async def main(only=None):
                 continue
             try:
                 got = await asyncio.wait_for(fn(ctx), timeout=900)
-                got = [t for t in got if t['title'] and t['url'] and '找到了' not in t['title']]
+                got = [t for t in got if t['title'] and t['url'] and '找到了' not in t['title'] and t['country'] != '台灣']
                 print(f'{name}: {len(got)}', flush=True)
                 if not got:
                     failed.append(name)

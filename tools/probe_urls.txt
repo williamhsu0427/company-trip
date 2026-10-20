@@ -1,6 +1,4 @@
-https://tour.settour.com.tw/search?keyWords=%E6%97%A5%E6%9C%AC
-https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1
-https://www.travel4u.com.tw/group/search/?keyword=%E6%97%A5%E6%9C%AC
-https://tour.startravel.com.tw/list/ALL/10?avl=1&q=%E5%8C%97%E6%B5%B7%E9%81%93
-https://www.besttour.com.tw/search?searchTxt=%E6%97%A5%E6%9C%AC
-https://www.newamazing.com.tw/EW/GO/GroupList.asp?keyword=%E6%97%A5%E6%9C%AC
+https://www.travel4u.com.tw/group/search/?q=%E6%97%A5%E6%9C%AC
+https://www.travel4u.com.tw/group/search/?keyword=%E5%8C%97%E6%B5%B7%E9%81%93&date_start=2026-10-21&date_end=2027-10-20
+https://tour.startravel.com.tw/list/ALL/0?avl=1&q=%E6%AD%90%E6%B4%B2
+https://tour.startravel.com.tw/list/ALL/10
