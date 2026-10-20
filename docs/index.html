@@ -25,7 +25,7 @@ section{display:none}section.on{display:block}
 .seg{display:flex;gap:6px;grid-column:1/-1}
 .seg button{flex:1;border:1px solid var(--line);background:var(--bg);color:var(--text);border-radius:10px;padding:8px 4px;font-size:14px}
 .seg button.on{background:var(--main);border-color:var(--main);color:#fff;font-weight:600}
-.range{display:flex;gap:6px;align-items:center}.range span{color:var(--sub);font-size:13px}
+.range{display:flex;gap:6px;align-items:center}.range select,.range input{flex:1;min-width:0}.range span{color:var(--sub);font-size:13px}
 .agh{display:flex;align-items:baseline;gap:8px;margin:18px 2px 0}.agh h3{margin:0;font-size:17px}.agh .n{color:var(--sub);font-size:13px}.agh a{margin-left:auto;font-size:13px;color:var(--main);text-decoration:none}
 .item .tag{display:inline-block;font-size:11px;border-radius:6px;padding:1px 6px;margin-left:6px;background:var(--main2);color:var(--main);font-weight:600}
 @media(min-width:640px){.filters{grid-template-columns:repeat(4,1fr)}.filters .wide{grid-column:span 2}}
@@ -75,7 +75,7 @@ section{display:none}section.on{display:block}
       <label>天數<select id="f-days">
         <option value="">不限</option><option value="1-4">4 天以內</option><option value="5-6">5–6 天</option><option value="7-9">7–9 天</option><option value="10-99">10 天以上</option>
       </select></label>
-      <label class="full wide">出發月份<div class="range"><select id="f-m1"><option value="">不限</option></select><span>到</span><select id="f-m2"><option value="">不限</option></select></div></label>
+      <label class="full wide">出發日期<div class="range"><input type="date" id="f-d1"><span>到</span><input type="date" id="f-d2"></div></label>
       <label class="full wide">每人預算<div class="range"><select id="f-p1"><option value="">不限</option></select><span>到</span><select id="f-p2"><option value="">不限</option></select></div></label>
     </div>
     <div class="chips" id="agency-chips"></div>
@@ -123,16 +123,16 @@ async function load(){
   try{
     const r=await fetch('data/tours.json?'+Date.now());
     const d=await r.json();
-    TOURS=(d.tours||[]).filter(t=>t.country!=='台灣'&&!/找到了/.test(t.agency+t.title));
+    const DOM=/花東|花蓮|台東|臺東|澎湖|金門(?!.*廈)|馬祖|小琉球|綠島|蘭嶼|墾丁|阿里山|日月潭|太魯閣|宜蘭|台南(?!出發)|臺南(?!出發)|嘉義|梅山|基隆|南投|清境|合歡山|環島/;
+    TOURS=(d.tours||[]).filter(t=>t.country!=='台灣'&&!DOM.test(t.title)&&!/找到了/.test(t.agency+t.title));
     const today=new Date().toISOString().slice(0,10);
     TOURS.forEach(t=>{t.deps=(t.departures||[]).filter(x=>x>=today).sort();t.type=t.type||'group'});
     $('#updated').textContent=d.updated?`資料更新：${new Date(d.updated).toLocaleString('zh-TW')}。價格與團位以旅行社網站為準。`:'';
   }catch(e){TOURS=[]}
   const countries=[...new Set(TOURS.map(t=>t.country).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'zh-Hant'));
   $('#f-country').innerHTML+=countries.map(c=>`<option>${esc(c)}</option>`).join('');
-  const months=[...new Set(TOURS.flatMap(t=>t.deps.map(d=>d.slice(0,7))))].sort();
-  const mo=months.map(m=>`<option value="${m}">${+m.slice(0,4)} 年 ${+m.slice(5)} 月</option>`).join('');
-  $('#f-m1').innerHTML+=mo;$('#f-m2').innerHTML+=mo;
+  const today=new Date().toISOString().slice(0,10);
+  $('#f-d1').min=$('#f-d2').min=today;
   const ags=[...new Set(TOURS.map(t=>t.agency))];
   $('#agency-chips').innerHTML=ags.map(a=>`<button class="chip" data-a="${esc(a)}">${esc(a)}</button>`).join('');
   document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{const a=c.dataset.a;offAg.has(a)?offAg.delete(a):offAg.add(a);c.classList.toggle('off');shown=40;render()});
@@ -143,9 +143,9 @@ function filtered(){
   const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,dd=$('#f-days').value;
   let p1=+$('#f-p1').value||0,p2=+$('#f-p2').value||0;
   if(p1&&p2&&p1>p2)[p1,p2]=[p2,p1];
-  let m1=$('#f-m1').value,m2=$('#f-m2').value;
+  let m1=$('#f-d1').value,m2=$('#f-d2').value;
   if(m1&&m2&&m1>m2)[m1,m2]=[m2,m1];
-  const inM=d=>(!m1||d.slice(0,7)>=m1)&&(!m2||d.slice(0,7)<=m2);
+  const inM=d=>(!m1||d>=m1)&&(!m2||d<=m2);
   const [dmin,dmax]=dd?dd.split('-').map(Number):[0,999];
   const L=TOURS.filter(t=>!offAg.has(t.agency)
     &&(!type||t.type===type)
@@ -191,7 +191,7 @@ function render(){
     $('#more').hidden=true;
   }
 }
-['#f-q','#f-country','#f-m1','#f-m2','#f-days','#f-p1','#f-p2','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
+['#f-q','#f-country','#f-d1','#f-d2','#f-days','#f-p1','#f-p2','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
 $('#more').onclick=()=>{shown+=40;render()};
 
 $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
