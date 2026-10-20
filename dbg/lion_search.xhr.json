@@ -1,0 +1,562 @@
+[
+ {
+  "url": "https://www.google.com/ccm/collect?rcb=11&frm=0&apvc=1&ae=g&auid=1895963198.1792482171&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=page_view&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&scrsrc=www.googletagmanager.com&rnd=107303958.1792482171&navt=n&npa=0&ep.ads_data_redaction=0&gtm=45He6ag1v811724420za200zd811724420xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120385422~120469145~120469153~121049589~121246026~121246034&tft=1792482171326&tfd=8895&fmt=8",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1895963198.1792482171&gtm=45He6ag1v811724420za200zd811724420xeaxf1&fmt=8",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LQVRMGC15L&gtm=45je6aj0h2v9115222301za20ozb830848531zd830848531xf1&_p=1792482170645&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGA&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=13&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=1&tag_exp=115938466~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=9021",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://gum.criteo.com/sid/json?origin=onetag&domain=liontravel.com&sn=ChromeSyncframe&so=undefined&topUrl=travel.liontravel.com&ceid=4318f7ec-d19e-484e-bb92-323ac157660b",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"sid\":null,\"removeSid\":false,\"bundle\":\"61E5MF8ybk82T2w1cUslMkJMWnpTUmUxRndDejFxVnRCZnhXa1ByeUxWcHJPOWxscm9ZdGxxcExXWDNUQWFKTzh0N29zeGRwaDZ5VXNERDB6QU50TSUyQiUyRldja0NIQ2huTkRTeGJaOWhJT056SiUyRm16MEhrN0xDWE9BN3UzUzZZaE91UW9QZDluaGVLdnVJbEJkTFVteU1JT2wzTmtmZyUzRCUzRA\",\"info\":\"ZPDgjF8ybk82T2w1cUslMkJMWnpTUmUxRndDejFxVnRCZnhXa1ByeUxWcHJPOWxscm9ZdGxxcExXWDNUQWFKTzh0N29zeGRLZ2hoNXhBY3NDS3JGZU1OellaVHV3JTNEJTNE\",\"optout\":false}"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-STJZ24MX3P&gtm=45je6ag1v883622605za20ozb811724420zd811724420xf1&_p=1792482170645&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGAC&_prs=ok&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=16&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=1&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=page_view&_fv=2&_ss=2&tfd=9298",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/measurement/conversion?random=1792482171681&cv=11&tid=G-STJZ24MX3P&fst=1792482171681&fmt=8&en=first_visit&gtm=45je6ag1v883622605za20ozb811724420zd811724420xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&gacid=1269394405.1792482171&hn=www.googleadservices.com&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&npa=0&pscdl=noapi&auid=882385974.1792482172&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=16",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-STJZ24MX3P&gtm=45je6ag1v883622605za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAGQC&_prs=ok&ae=a&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=16&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=2&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=scroll&_c=1&epn.percent_scrolled=90&_et=16&tfd=9323",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/measurement/conversion?random=1792482171743&cv=11&tid=G-STJZ24MX3P&fst=1792482171743&fmt=8&en=scroll&gtm=45je6ag1v883622605za20gzb811724420zd811724420xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&gacid=1269394405.1792482171&hn=www.googleadservices.com&ae=a&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&npa=0&pscdl=noapi&auid=882385974.1792482172&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=16",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/measurement/conversion?random=1792482171681&cv=11&tid=G-STJZ24MX3P&fst=1792482171681&fmt=8&en=session_start&gtm=45je6ag1v883622605za20ozb811724420zd811724420xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&gacid=1269394405.1792482171&hn=www.googleadservices.com&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&npa=0&pscdl=noapi&auid=882385974.1792482172&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=16",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9P3K9WQH8J&gtm=45je6ag1v9187593471za20ozb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1269394405.1792482171&frm=0&ngs=1&pscdl=noapi&rcb=18&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&_s=1&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=page_view&_fv=1&_ss=1&tfd=9482",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://sr-client-cfg.amplitude.com/config?api_key=f32f829d3547107268890cdee54e0e1a&config_keys=sessionReplay",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"configs\":{\"sessionReplay\":{\"sr_ios_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_android_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_android_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_ios_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_logging_config\":{\"console\":{\"enabled\":true,\"levels\":[\"info\",\"log\",\"warn\",\"error\"]},\"network\":{\"enabled\":false}}}}}"
+ },
+ {
+  "url": "https://sr-client-cfg.amplitude.com/config?api_key=f32f829d3547107268890cdee54e0e1a&config_keys=sessionReplay",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"configs\":{\"sessionReplay\":{\"sr_ios_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_android_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_android_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_ios_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_logging_config\":{\"console\":{\"enabled\":true,\"levels\":[\"info\",\"log\",\"warn\",\"error\"]},\"network\":{\"enabled\":false}}}}}"
+ },
+ {
+  "url": "https://www.google.com/rmkt/collect/1043568347/?random=1792482172174&cv=11&fst=1792482172174&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6ag1v870547393z8811724420za20gzb811724420zd811724420xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&rcb=3&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1895963198.1792482171&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://omnitag.omnisegment.com/route-config.json",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\r\n    \"enable\": true,\r\n    \"probability\": 0.05,\r\n    \"fileUrl\": \"https://omnitag.omniscientai.com/latest/omnitag.js\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+ },
+ {
+  "url": "https://www.google.com/ccm/collect?rcb=3&frm=0&apvc=0&ae=g&auid=1895963198.1792482171&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&tid=AW-1043568347&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&scrsrc=www.googletagmanager.com&rnd=107303958.1792482171&navt=n&npa=0&_tu=CA&gtm=45be6ag1v870547393z8811724420za20gzb811724420zd811724420xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&tft=1792482172204&tfd=9773&tids=AW-1043568347&fmt=8",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://sr-client-cfg.amplitude.com/config?api_key=f32f829d3547107268890cdee54e0e1a&config_keys=sessionReplay",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"configs\":{\"sessionReplay\":{\"sr_ios_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_android_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_android_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_ios_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_logging_config\":{\"console\":{\"enabled\":true,\"levels\":[\"info\",\"log\",\"warn\",\"error\"]},\"network\":{\"enabled\":false}}}}}"
+ },
+ {
+  "url": "https://www.google.com/rmkt/collect/1012985149/?random=1792482172316&cv=11&fst=1792482172316&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6ag1z8811724420za20gzb811724420zd811724420xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&rcb=5&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=1895963198.1792482171&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://sr-client-cfg.amplitude.com/config?api_key=f32f829d3547107268890cdee54e0e1a&config_keys=sessionReplay",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"configs\":{\"sessionReplay\":{\"sr_ios_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_android_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_android_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_ios_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_privacy_config\":{\"maskSelector\":[],\"blockSelector\":[],\"unmaskSelector\":[],\"defaultMaskLevel\":\"light\"},\"sr_sampling_config\":{\"sample_rate\":0.001770566593771882,\"capture_enabled\":true},\"sr_logging_config\":{\"console\":{\"enabled\":true,\"levels\":[\"info\",\"log\",\"warn\",\"error\"]},\"network\":{\"enabled\":false}}}}}"
+ },
+ {
+  "url": "https://www.google.com/ccm/collect?rcb=5&frm=0&apvc=0&ae=g&auid=1895963198.1792482171&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&tid=AW-1012985149&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&scrsrc=www.googletagmanager.com&rnd=107303958.1792482171&navt=n&npa=0&_tu=CA&gtm=45be6ag1z8811724420za20gzb811724420zd811724420xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938466~115938468~118897920~118897930~120213116~120385422~120469145~120469153~121246026~121246034&tft=1792482172351&tfd=9920&tids=AW-1012985149&fmt=8",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.googleadservices.com/pagead/conversion/1043568347/wcm?cc=ZZ&dn=0287939660&cl=8FsLCI7nqKcBENutzvED&dma=0&npa=0&ct_eid=2",
+  "m": "GET",
+  "s": 302,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/pagead/attribution/wcm?cc=ZZ&dn=0287939660&cl=8FsLCI7nqKcBENutzvED&dma=0",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"backoff\":3600,\"errorCode\":2,\"refreshDuration\":10800000,\"refreshPeriod\":260000}"
+ },
+ {
+  "url": "https://t.ssp.hinet.net/",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "50d8403f-8391-47e5-a941-35ff8c3d4fe4!"
+ },
+ {
+  "url": "https://mpc-prod-27-s6uit34pua-uk.a.run.app/events?cee=no",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"variant_presence\\\":[{\\\"rid\\\":\\\"2243004423213061\\\",\\\"v\\\":[\\\"no_variant\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1832793561500571\\\",\\\"v\\\":[\\\"旅遊景點行程推薦| 雄獅旅遊\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1113263337734675\\\",\\\"v\\\":[\\\"旅遊景點行程推薦| 雄獅旅遊\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1051110617981710\\\",\\\"v\\\":[\\\"提供旅遊景點行程推薦，走訪和體驗精彩的台灣、日本、韓國、泰國、大陸、歐洲、美國、加拿大、澳洲、紐西蘭，雄獅帶你輕鬆玩遍全球\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_1f6dc8eb5746656307230f95d608eb185d55e556d680f819661115c413aff7ff\",\"fb.pixel_id\":\"1520299174716925\",\"website_context\":{\"location\":\"https://travel.liontravel.com/search?TravelType=2&Platform=APP\",\"referrer\":\"\",\"isInIFrame\":false}}",
+  "body": ""
+ },
+ {
+  "url": "https://t.ssp.hinet.net/emome2?u=50d8403f-8391-47e5-a941-35ff8c3d4fe4",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"data\":null,\"cache-sec\":3600}"
+ },
+ {
+  "url": "https://analytics.omniscientai.com/omnitag/config?tid=OA-de0f728d",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"SUCCESS\":true,\"PAYLOAD\":{\"org_is_active\":true,\"channel_lang\":\"zh-hant\",\"template_lang\":\"zh-hant\",\"modules\":{\"web_push\":{\"enabled\":false,\"config\":null},\"ai_product_search\":{\"enabled\":false,\"config\":null},\"ai_product_embed\":{\"enabled\":false,\"config\":null},\"webbanner_embed\":{\"enabled\":false,\"config\":null},\"appbanner_embed\":{\"enabled\":false,\"config\":null}},\"error_tracking_config\":{\"enabled_platforms\":[],\"log_levels\":[],\"enabled_with_scope\":false,\"sample_rate\":10},\"enabled_guid_providers\":[],\"beacon_encrypt_config\":{\"enabled\":false,\"public_key\":null},\"timezone\":\"Asia/Taipei\",\"beacon_data_blocklist\":{},\"beacon_data_filterlist\":[],\"cdn_domain\":\"https://assets.omnisegment.com\"}}"
+ },
+ {
+  "url": "https://travel.liontravel.com/_webassets/customsearchpaneldata/trs1newlightspeed.js",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "var vCity ={\"\":\"不限\",\"KLU\":\"基隆\",\"TPE\":\"台北(松山/桃園機場)\",\"PAN\":\"新北市\",\"TAO\":\"桃園\",\"HCU\":\"新竹\",\"MLI\":\"苗栗\",\"TCH\":\"台中\",\"CHA\":\"彰化\",\"YLI\":\"雲林\",\"CYI\":\"嘉義\",\"TNN\":\"台南\",\"KHH\":\"高雄\",\"PIN\":\"屏東\",\"YLN\":\"宜蘭\",\"HLN\":\"花蓮\",\"TTT\":\"台東\"};\r\nvar vLine ={\"_1\":\"美洲\",\"_2\":\"大洋洲\",\"_3\":\"歐洲\",\"_4\":\"亞非\",\"_5\":\"大陸港澳\",\"_6\":\"東北亞\",\"_7\":\"東南亞\",\"_9\":\"台灣\"};\r\nvar vLinetravel ={\"_1\":{\"_\":\"不限\",\"_A_1\":\"美國\",\"_B_1\":\"加拿大\",\"_C_1\":\"美東\",\"_D_1\":\"美洲遊輪\",\"_E_1\":\"中南美洲\",\"_F_1\":\"太平洋小島\"},\"_2\":{\"_\":\"不限\",\"_A_2\":\"澳洲\",\"_B_2\":\"紐西蘭\",\"_C_2\":\"紐澳\",\"_D_2\":\"紐澳遊輪\"},\"_3\":{\"_\":\"不限\",\"_A_3\":\"中西歐\",\"_B_3\":\"東歐\",\"_C_3\":\"南歐\",\"_D_3\":\"北歐\",\"_E_3\":\"歐洲遊輪\"},\"_4\":{\"_\":\"不限\",\"_A_4\":\"非洲\",\"_B_4\":\"南亞\",\"_C_4\":\"中東\",\"_D_4\":\"中亞\",\"_E_4\":\"中東遊輪\"},\"_5\":{\"_\":\"不限\",\"_A_5\":\"大陸\",\"_B_5\":\"港澳珠圳\"},\"_6\":{\"_\":\"不限\",\"_A_6\":\"日本\",\"_C_6\":\"韓國\",\"_D_6\":\"東北亞遊輪\"},\"_7\":{\"_\":\"不限\",\"_A_7\":\"泰國\",\"_B_7\":\"馬新\",\"_C_7\":\"印尼\",\"_D_7\":\"越南\",\"_E_7\":\"菲柬緬甸\",\"_F_7\":\"東南亞遊輪\"},\"_9\":{\"_\":\"不限\",\"_51_9\":\"北基宜\",\"_52_9\":\"桃竹苗\",\"_53_9\":\"中彰投\",\"_54_9\":\"雲嘉南\",\"_55_9\":\"高屏\",\"_56_9\":\"花東\",\"_57_9\":\"離島\",\"_5Q_9\":\"環島\"}};\r\nvar vLinewebarea ={\"_A_1\":{\"_\":\"不限\",\"_01\":\"洛杉磯\",\"_05\":\"夏威夷\",\"_02\":\"舊金山\",\"_08\":\"阿拉斯加\",\"_07\":\"西雅圖\",\"_N1\":\"美國\"},\"_B_1\":{\"_\":\"不限\",\"_09\":\"溫哥華\",\"_10\":\"多倫多\",\"_N2\":\"加拿大\"},\"_C_1\":{\"_\":\"不限\",\"_04\":\"紐約\",\"_Z2\":\"華盛頓\",\"_Z1\":\"休士頓\"},\"_D_1\":{\"_\":\"不限\",\"_05\":\"夏威夷\",\"_C1\":\"阿拉斯加郵輪\",\"_MC\":\"墨西哥郵輪\",\"_C2\":\"加勒比海郵輪\",\"_CJ\":\"公主遊輪\"},\"_E_1\":{\"_\":\"不限\",\"_S1\":\"墨西哥\",\"_S3\":\"阿根廷\",\"_S5\":\"巴西\",\"_S6\":\"秘魯\",\"_S4\":\"南極\",\"_3O\":\"玻利維亞\",\"_3P\":\"智利\"},\"_F_1\":{\"_\":\"不限\",\"_91\":\"帛琉\",\"_92\":\"關島\",\"_70\":\"馬爾地夫\"},\"_A_2\":{\"_\":\"不限\",\"_11\":\"雪梨\",\"_15\":\"黃金海岸\",\"_12\":\"墨爾本\",\"_1D\":\"雪梨、黃金海岸\",\"_1C\":\"雪梨、墨爾本\",\"_1J\":\"塔斯馬尼亞\",\"_1K\":\"凱恩斯(大堡礁)\",\"_1P\":\"西澳\",\"_1A\":\"東澳全覽\",\"_1W\":\"南澳\",\"_1G\":\"澳洲\"},\"_B_2\":{\"_\":\"不限\",\"_1B\":\"紐西蘭南北島全覽\",\"_20\":\"紐西蘭南島\",\"_19\":\"紐西蘭北島\"},\"_C_2\":{\"_\":\"不限\",\"_1S\":\"紐澳雙國\"},\"_D_2\":{\"_\":\"不限\",\"_CG\":\"紐澳郵輪\"},\"_A_3\":{\"_\":\"不限\",\"_25\":\"法國\",\"_28\":\"德國\",\"_35\":\"瑞士\",\"_26\":\"英國\",\"_3C\":\"英國、法國\",\"_2X\":\"德國、瑞士\",\"_3F\":\"瑞士、法國\",\"_2Z\":\"荷蘭、比利時、法國\",\"_3D\":\"德國、捷克\",\"_3R\":\"德國、瑞士、法國\",\"_2Y\":\"荷德比法\",\"_3E\":\"英荷比法\",\"_21\":\"中西歐多國\",\"_3Y\":\"荷比盧\",\"_4M\":\"荷比盧德\",\"_3A\":\"法國、瑞士、義大利\"},\"_B_3\":{\"_\":\"不限\",\"_30\":\"捷克\",\"_2F\":\"克羅埃西亞\",\"_2E\":\"波蘭\",\"_2R\":\"奧地利、捷克\",\"_3T\":\"保加利亞、羅馬尼亞\",\"_2S\":\"奧捷斯匈\",\"_22\":\"東歐多國\",\"_3V\":\"巴爾幹半島\",\"_2V\":\"波蘭+波羅的海\",\"_3W\":\"奧地利、捷克、德國\",\"_E1\":\"奧斯匈\",\"_2U\":\"奧捷\",\"_2T\":\"匈牙利\"},\"_C_3\":{\"_\":\"不限\",\"_27\":\"義大利\",\"_32\":\"西班牙\",\"_2C\":\"葡萄牙\",\"_33\":\"希臘\",\"_3K\":\"西葡、摩洛哥\",\"_3X\":\"西葡\",\"_3U\":\"南歐多國(法瑞義)\"},\"_D_3\":{\"_\":\"不限\",\"_2N\":\"北歐冰島\",\"_2L\":\"北歐、波羅的海\",\"_23\":\"北歐多國\",\"_2Q\":\"俄羅斯、波羅的海\",\"_2M\":\"北歐四國\"},\"_E_3\":{\"_\":\"不限\",\"_34\":\"荷蘭\",\"_C3\":\"地中海郵輪\",\"_C4\":\"北歐郵輪\",\"_2S\":\"奧捷斯匈\",\"_CJ\":\"公主遊輪\"},\"_A_4\":{\"_\":\"不限\",\"_41\":\"埃及\",\"_44\":\"摩洛哥\",\"_43\":\"南非\",\"_4H\":\"肯亞\",\"_B9\":\"突尼西亞\",\"_4E\":\"納米比亞\",\"_39\":\"肯亞、坦尚尼亞\",\"_3I\":\"塞席爾\"},\"_B_4\":{\"_\":\"不限\",\"_86\":\"印度\",\"_87\":\"尼泊爾\",\"_88\":\"斯里蘭卡\",\"_90\":\"不丹\"},\"_C_4\":{\"_\":\"不限\",\"_42\":\"土耳其\",\"_40\":\"杜拜、阿布達比\",\"_47\":\"約旦、以色列\",\"_4I\":\"沙烏地阿拉伯\",\"_4O\":\"阿曼\"},\"_D_4\":{\"_\":\"不限\",\"_3L\":\"烏茲別克\",\"_37\":\"中亞五國\",\"_4J\":\"外蒙古\"},\"_E_4\":{\"_\":\"不限\",\"_4I\":\"沙烏地阿拉伯\"},\"_A_5\":{\"_\":\"不限\",\"_50\":\"北京、天津\",\"_52\":\"江南\",\"_51\":\"上海\",\"_54\":\"山東\",\"_64\":\"安徽、黃山\",\"_65\":\"陝西西安、鄭州河南\",\"_68\":\"湖南、湖北、張家界\",\"_62\":\"重慶、長江三峽\",\"_CY\":\"江西、南昌\",\"_53\":\"福建、武夷山\",\"_57\":\"雲南、昆大麗\",\"_56\":\"四川、九寨溝\",\"_58\":\"貴州、黃果樹\",\"_60\":\"內蒙\",\"_CX\":\"南疆、北疆\",\"_59\":\"絲路、甘肅\"},\"_B_5\":{\"_\":\"不限\",\"_48\":\"香港\",\"_49\":\"澳門、深圳珠海\",\"_FB\":\"澳門\",\"_FC\":\"香港、澳門\"},\"_A_6\":{\"_\":\"不限\",\"_A7\":\"北海道\",\"_A6\":\"東北\",\"_A1\":\"東京\",\"_A3\":\"北陸名古屋\",\"_A2\":\"大阪\",\"_A9\":\"四國、中國地區\",\"_A5\":\"九州\",\"_A4\":\"沖繩\"},\"_C_6\":{\"_\":\"不限\",\"_93\":\"首爾\",\"_94\":\"釜山慶州\",\"_95\":\"濟州島\"},\"_D_6\":{\"_\":\"不限\",\"_C8\":\"亞洲郵輪\",\"_CJ\":\"公主遊輪\",\"_CE\":\"麗星郵輪\"},\"_A_7\":{\"_\":\"不限\",\"_71\":\"曼谷、芭達雅、華欣、桂河\",\"_73\":\"清邁\",\"_72\":\"普吉島\",\"_7E\":\"蘇梅島\"},\"_B_7\":{\"_\":\"不限\",\"_74\":\"吉隆坡\",\"_75\":\"檳城\",\"_76\":\"沙巴\",\"_77\":\"新加坡\",\"_M5\":\"馬來西亞、新加坡\",\"_M6\":\"汶萊\",\"_7H\":\"新加坡+民丹島\",\"_M1\":\"珍拉汀灣\"},\"_C_7\":{\"_\":\"不限\",\"_79\":\"峇里島\",\"_7C\":\"雅加達、日惹\"},\"_D_7\":{\"_\":\"不限\",\"_8H\":\"河內\",\"_8I\":\"峴港\",\"_8J\":\"胡志明市\",\"_8K\":\"富國島\",\"_8N\":\"芽莊\",\"_83\":\"越南\"},\"_E_7\":{\"_\":\"不限\",\"_8B\":\"宿霧\",\"_81\":\"菲律賓\",\"_82\":\"柬埔寨\"},\"_F_7\":{\"_\":\"不限\",\"_77\":\"新加坡\",\"_C8\":\"亞洲郵輪\",\"_CD\":\"迪士尼郵輪\"},\"_51_9\":{\"_\":\"不限\",\"_AA\":\"台北\",\"_AB\":\"基隆\",\"_AC\":\"宜蘭\",\"_Z9\":\"新北\"},\"_52_9\":{\"_\":\"不限\",\"_AD\":\"桃園\",\"_AE\":\"新竹\",\"_AF\":\"苗栗\"},\"_53_9\":{\"_\":\"不限\",\"_AG\":\"台中\",\"_AH\":\"彰化\",\"_AI\":\"南投\"},\"_54_9\":{\"_\":\"不限\",\"_AJ\":\"雲林\",\"_AK\":\"嘉義\",\"_AL\":\"台南\"},\"_55_9\":{\"_\":\"不限\",\"_AM\":\"高雄"
+ },
+ {
+  "url": "https://travel.liontravel.com/category/_resource/sharedcase",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"LanguagesID\":\"zh-tw\",\"Domain\":\"www.liontravel.com\",\"LangTypeCode\":\"infoblockcontent\"}",
+  "body": "{\n    \"original\": \"防詐騙之後也要串共用文案的話可以放這邊\", \n    \"memberPromotion\": {\n        \"content\": \"雄獅幣1點=1元，回饋無上限！L.I.O.N會員等級，消費越多回饋越高，最高回饋2倍雄獅幣！\",\n        \"register\": \"立即加入\",\n        \"moreInfo\": \"更多會員禮遇\",\n        \"closeText\": \"關閉\",\n        \"dataText\": {\n              \"close\": \"關閉\"\n        }\n    }\n}"
+ },
+ {
+  "url": "https://analytics.omniscientai.com/ma_cms/get-all-routers/?tid=OA-de0f728d",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"SUCCESS\":true,\"PAYLOAD\":{\"data\":[{\"webpopup_id\":142256,\"template_uid\":\"26de039b-70cb-4524-b352-be0bcb15928d\",\"type\":\"advanced\",\"webpopup_audience_member_level\":[\"O\",\"N\"],\"webpopup_audience_tag_id\":[],\"webpopup_audience_tag_filter_type\":null,\"webpopup_audience_tag_operator\":\"or\",\"webpopup_gift_voucher\":[],\"router\":null,\"options\":{\"content\":{\"type\":\"imagePopup\",\"cardPopup\":{\"image\":{\"ratio\":1,\"enabled\":true,\"customRatio\":{\"width\":21,\"height\":9}},\"title\":{\"text\":\"標題\",\"color\":\"#333333\",\"enabled\":true,\"fontSize\":24,\"textAlign\":\"left\",\"marginBottom\":12},\"coupon\":{\"text\":\"折扣碼複製模組\",\"color\":\"#262626\",\"enabled\":false,\"fontSize\":14,\"marginBottom\":16,\"backgroundColor\":\"#F5F5F5\"},\"overlay\":{\"enabled\":false,\"closable\":false},\"position\":\"center\",\"ctaButton\":{\"text\":\"按鈕\",\"color\":\"#ffffff\",\"action\":\"redirect\",\"enabled\":true,\"fontSize\":14,\"redirectUrl\":\"\",\"backgroundColor\":\"#10a1b5\"},\"image_src\":null,\"closeButton\":{\"size\":20,\"color\":\"#8c8c8c\",\"sizeType\":\"icon\",\"buttonStyle\":\"iconOnly\",\"buttonMargin\":12,\"backgroundColor\":\"#000000\",\"backgroundOpacity\":100},\"description\":{\"text\":\"內容文字\",\"color\":\"#d9d9d9\",\"enabled\":true,\"fontSize\":20,\"textAlign\":\"left\",\"marginBottom\":16},\"deviceMargin\":{\"top\":{\"unit\":\"px\",\"value\":16},\"left\":{\"unit\":\"px\",\"value\":16},\"right\":{\"unit\":\"px\",\"value\":16},\"bottom\":{\"unit\":\"px\",\"value\":16}},\"responseMode\":\"fixed\",\"backgroundColor\":\"#ffffff\",\"contentBlockPadding\":{\"top\":24,\"left\":24,\"right\":24,\"bottom\":24}},\"textPopup\":{\"title\":{\"text\":\"標題\",\"color\":\"#262626\",\"fontSize\":24},\"overlay\":{\"enabled\":false,\"closable\":false},\"position\":\"bottom\",\"ctaButton\":{\"text\":\"按鈕\",\"color\":\"#ffffff\",\"action\":\"redirect\",\"enabled\":true,\"fontSize\":14,\"redirectUrl\":\"\",\"backgroundColor\":\"#10a1b5\"},\"closeButton\":{\"size\":20,\"color\":\"#8c8c8c\",\"sizeType\":\"icon\",\"buttonStyle\":\"iconOnly\",\"buttonMargin\":12,\"backgroundColor\":\"#000000\",\"backgroundOpacity\":100},\"description\":{\"text\":\"內容文字\",\"color\":\"#8c8c8c\",\"fontSize\":14},\"backgroundColor\":\"#ffffff\"},\"imagePopup\":{\"overlay\":{\"enabled\":false,\"closable\":false},\"position\":\"center\",\"countdown\":{\"type\":\"fixed\",\"color\":\"#111111\",\"enabled\":false,\"fontSize\":16,\"timeUnit\":\"minute\",\"background\":\"#eeeeee\",\"useTemplateEndTime\":true,\"relativeCountdownTime\":{\"days\":1,\"hours\":0,\"minutes\":0,\"seconds\":0}},\"image_src\":{\"id\":208812,\"uid\":\"f5339437-fa1a-4db9-8c54-d9e76116a97e\",\"url\":\"https://omni-img.cdn.omnisegment.com/media/LIONTRAVEL/f5339437-fa1a-4db9-8c54-d9e76116a97e.jpeg\",\"name\":\"O-N-早鳥折扣_Web-pop-up_510x680.jpg\",\"ratio\":0.75,\"status\":\"done\",\"maxWidth\":510,\"maxHeight\":680},\"image_link\":\"https://event.liontravel.com/zh-tw/member/lionmembers_railtourcny\",\"closeButton\":{\"size\":20,\"color\":\"#000000\",\"sizeType\":\"icon\",\"buttonStyle\":\"iconOnly\",\"buttonMargin\":12,\"backgroundColor\":\"#333333\",\"backgroundOpacity\":100},\"imageAction\":\"redirect\",\"backgroundColor\":\"transparent\",\"mobile_image_src\":{\"id\":208813,\"uid\":\"f823890b-89a2-4972-bedd-cbd9f9ebd8e4\",\"url\":\"https://omni-img.cdn.omnisegment.com/media/LIONTRAVEL/f823890b-89a2-4972-bedd-cbd9f9ebd8e4.jpeg\",\"name\":\"O-N-早鳥折扣_Web-pop-up_510x680.jpg\",\"ratio\":0.75,\"status\":\"done\",\"maxWidth\":510,\"maxHeight\":680},\"isBackgroundTransparent\":true},\"iframeCardPopup\":{\"title\":{\"text\":\"標題\",\"color\":\"#333333\",\"enabled\":true,\"fontSize\":24,\"textAlign\":\"left\"},\"width\":480,\"iframe\":{\"type\":\"videoYouTube\",\"ratio\":1.7777777777777777,\"searchParams\":{\"loop\":false,\"autoplay\":false,\"controls\":false}},\"overlay\":{\"enabled\":false,\"closable\":false},\"position\":\"center\",\"ctaButton\":{\"text\":\"按鈕\",\"color\":\"#ffffff\",\"action\":\"redirect\",\"enabled\":true,\"fontSize\":14,\"redirectUrl\":\"\",\"backgroundColor\":\"#10a1b5\"},\"closeButton\":{\"size\":20,\"color\":\"#8c8c8c\",\"sizeType\":\"icon\",\"buttonStyle\":\"iconOnly\",\"buttonMargin\":12,\"backgroundColor\":\"#000000\",\"backgroundOpacity\":100},\"description\":{\"text\":\"內容文字\",\"color\":\"#d9d9d9\",\"enabled\":true,\"fontSize\":20,\"textAlign\":\"left\"},\"backgroundColor\":\"#ffffff\"},\"surveyCakePopup\":{\"width\":800,\"height\":600,\"mobile\":{\"display\":\"popup\"},\"overlay\":{\"enabled\":false,\"closable\":false},\"position\":\"center\",\"c"
+ },
+ {
+  "url": "https://travel.liontravel.com/category/_publicize/getpagepublicize",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "[{\"ShowSetID\":5663,\"WebsiteKey\":\"b0842bd2-e808-4cdc-ba0c-f68229280f01\",\"CodeAdNo\":\"top\",\"ShowImg\":\"\",\"ShowImgM\":\"\",\"ShowTitle\":\"\",\"ShowLink\":\"\",\"IsOpenOther\":0,\"ShowURLType\":\"FixedURL\",\"IsCountDown\":0,\"CountDownDT\":\"\",\"ShowType\":\"\",\"ShowSort\":0,\"IsChkPC\":0,\"OpenImgPC\":\"\",\"OpenImgM\":\"https://static.liontech.com.tw/ConsoleAPData/PublicationStatic/_Adv/107/7e78a59b866e4291870b632f8e847a8c.png\",\"IsChkM\":1,\"CloseImgPC\":\"\",\"CloseImgM\":\"https://static.liontech.com.tw/ConsoleAPData/PublicationStatic/_Adv/107/b6317997838546d78d8b1da835c4fce5.png\",\"MainTitle\":\"\",\"SubTitle\":\"\",\"PicAlt\":\"0\",\"DeLink\":\"https://www.liontravel.com/info/app/appdownload.html\",\"BtName\":\"\",\"PicDateStart\":\"\",\"PicDateEnd\":\"\",\"IsOpen\":0}]"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/getlanguage",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"currentLanguage\":\"\",\"currentCurrency\":\"\",\"wmg2025lang\":\"\"}"
+ },
+ {
+  "url": "https://travel.liontravel.com/category/_resource/sharedcase",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"LanguagesID\":\"zh-tw\",\"Domain\":\"www.liontravel.com\",\"LangTypeCode\":\"headericonconfig\"}",
+  "body": "{\n  \"items\": [\n    {\n      \"label\": \"國外團體\",\n      \"icon\": \"oversea\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"1702\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"台灣團體\",\n      \"icon\": \"taiwan\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"967\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"主題旅遊\",\n      \"icon\": \"theme\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"10\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"自由行\",\n      \"icon\": \"freeEasy\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"4\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"機票\",\n      \"icon\": \"flight\",\n      \"isTargetBlank\": true,\n      \"action\": \"link\",\n      \"link\": \"https://flight.liontravel.com/category/zh-tw/index\",\n      \"openMainId\": \"\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"訂房\",\n      \"icon\": \"hotel\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"3\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"票券\",\n      \"icon\": \"ticket\",\n      \"isTargetBlank\": true,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"5\",\n      \"inViewDetailID\": \"\"\n    },\n    {\n      \"label\": \"發現更多\",\n      \"icon\": \"more\",\n      \"isTargetBlank\": false,\n      \"action\": \"drawer\",\n      \"link\": \"\",\n      \"openMainId\": \"\",\n      \"inViewDetailID\": \"\"\n    }\n  ]\n}"
+ },
+ {
+  "url": "https://travel.liontravel.com/category/_page/megamenu?languagesid=zh-tw",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "/consoleapdata/publication/lion_tw_b2c_travel/zh-tw/_megadata/megamenu.json"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/getlanguage",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"currentLanguage\":\"\",\"currentCurrency\":\"\",\"wmg2025lang\":\"\"}"
+ },
+ {
+  "url": "https://travel.liontravel.com/consoleapdata/publication/lion_tw_b2c_travel/zh-tw/_megadata/megamenu.json?1792482173",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "[{\"MainID\":1702,\"Heading\":\"國外團體\",\"HorizontalAlign\":\"self-left\",\"Href\":\"\",\"IconType\":\"travel\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":[[{\"DetailID\":36098,\"Heading\":\"國外旅遊\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":[[{\"DetailID\":36099,\"Heading\":\"日本\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/japan/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36100,\"Heading\":\"韓國\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/korea/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36101,\"Heading\":\"中國大陸\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/china/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36102,\"Heading\":\"香港/澳門\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/hongkong-macau/index\",\"IsTargetBlank\":true,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36103,\"Heading\":\"泰國\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/thailand/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36104,\"Heading\":\"馬來西亞/新加坡\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/malaysia/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36105,\"Heading\":\"越南\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/vietnam/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36106,\"Heading\":\"印尼\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/bali/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36107,\"Heading\":\"菲律賓\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/philippines/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null}],[{\"DetailID\":36108,\"Heading\":\"吳哥窟\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/cambodia/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36109,\"Heading\":\"澳洲\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/australia/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36110,\"Heading\":\"紐西蘭\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/newzealand/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36111,\"Heading\":\"中亞/南亞\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/southasia/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36112,\"Heading\":\"土耳其/中東\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/middleeast/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36113,\"Heading\":\"非洲\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/africa/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36114,\"Heading\":\"美國\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/us/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36115,\"Heading\":\"加拿大\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/ca/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null},{\"DetailID\":36116,\"Heading\":\"中南美/南極\",\"Contents\":\"\",\"Href\":\"https://travel.liontravel.com/category/zh-tw/centralsouthamerica/index\",\"IsTargetBlank\":false,\"IsNewsest\":false,\"MenuTag\":\"\",\"IsVisible\":true,\"Data\":null}],[{\"DetailID\":36117,\"Heading\":\"關島"
+ },
+ {
+  "url": "https://api2.amplitude.com/2/httpapi",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"api_key\":\"f32f829d3547107268890cdee54e0e1a\",\"events\":[{\"device_id\":\"053f2ad8-9108-41b3-9871-e1a7cf419c36\",\"session_id\":1792482172597,\"time\":1792482172603,\"platform\":\"Web\",\"language\":\"zh-TW\",\"ip\":\"$remote\",\"insert_id\":\"8bd0f0a0-0408-4934-9fdc-5eefa4df9195\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.15.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"event_properties\":{}},{\"device_id\":\"053f2ad8-9108-41b3-9871-e1a7cf419c36\",\"session_id\":1792482172597,\"time\":1792482172597,\"platform\":\"Web\",\"language\":\"zh-TW\",\"ip\":\"$remote\",\"insert_id\":\"1047748a-4aa1-43e6-9624-e100a9158c6e\",\"event_type\":\"session_start\",\"event_id\":1,\"library\":\"amplitude-ts-gtm/3.15.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"event_properties\":{}},{\"device_id\":\"053f2ad8-9108-41b3-9871-e1a7cf419c36\",\"session_id\":1792482172597,\"time\":1792482172606,\"platform\":\"Web\",\"language\":\"zh-TW\",\"ip\":\"$remote\",\"insert_id\":\"8628430f-fc3e-43fa-984b-deb70a394d63\",\"event_type\":\"[Amplitude] Page Viewed\",\"event_properties\":{\"[Amplitude] Page Domain\":\"travel.liontravel.com\",\"[Amplitude] Page Location\":\"https://travel.liontravel.com/search?TravelType=2&Platform=APP\",\"[Amplitude] Page Path\":\"/search\",\"[Amplitude] Page Title\":\"旅遊景點行程推薦| 雄獅旅遊\",\"[Amplitude] Page URL\":\"https://travel.liontravel.com/search\",\"[Amplitude] Page Counter\":1},\"event_id\":2,\"library\":\"amplitude-ts-gtm/3.15.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\"},{\"device_id\":\"053f2ad8-9108-41b3-9871-e1a7cf419c36\",\"session_id\":1792482172597,\"time\":1792482172606,\"platform\":\"Web\",\"language\":\"zh-TW\",\"ip\":\"$remote\",\"insert_id\":\"bf3ba23f-67df-4a0a-87a9-c405c382fd17\",\"event_type\":\"$identify\",\"user_properties\":{},\"event_id\":3,\"library\":\"amplitude-ts-gtm/3.15.0\",\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"event_properties\":{}}],\"options\":{},\"client_upload_time\":\"2026-10-20T07:42:53.632Z",
+  "body": "{\"code\":200,\"server_upload_time\":1792482173910,\"payload_size_bytes\":3026,\"events_ingested\":4}"
+ },
+ {
+  "url": "https://travel.liontravel.com/_webassets/customsearchpaneldata/TRS1NEWTRAVELFIT.js",
+  "m": "GET",
+  "s": 301,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://travel.liontravel.com/search/grouplistinfojson",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"ArriveID\":null,\"GoDatestart\":\"2026-10-20\",\"GroupID\":null,\"Keywords\":null,\"IsEnsureGroup\":null,\"IsSold\":null,\"ThemeID\":null,\"TravelPavilionGroupID\":null,\"KeywordsCity\":null,\"TravelType\":2,\"BuIDs\":\"\",\"PreferAirlines\":null,\"GoDateEnd\":\"2027-01-18\",\"DepartureID\":\"\",\"WeekDay\":\"\",\"PriceList\":null,\"AirlineIDs\":\"\",\"TripTypes\":\"\",\"Tags\":\"\",\"SortType\":3,\"Days\":\"\",\"MarketingProjects\":\"\",\"Page\":1,\"PageSize\":10}",
+  "body": "{\"DepartureID\":null,\"ArriveID\":null,\"GoDateStart\":null,\"GoDateEnd\":null,\"GroupID\":null,\"Keywords\":null,\"KeywordsCity\":null,\"IsEnsureGroup\":null,\"IsSold\":null,\"TravelType\":0,\"ThemeID\":null,\"WeekDay\":null,\"Days\":null,\"PriceList\":null,\"AirlineIDs\":null,\"Level\":null,\"TripTypes\":null,\"Tags\":null,\"MarketingProjects\":null,\"SortType\":null,\"PageSize\":0,\"Page\":0,\"TravelPavilionGroupID\":null,\"IsNewVersion\":false,\"BuIDs\":null,\"TotalCount\":551,\"TotalPage\":56,\"CurrentPage\":1,\"Count\":10,\"NormGroupList\":[{\"Index\":1,\"NormGroupID\":\"a15c5c18-a39f-4925-9ed7-a90d02da45ad\",\"TourName\":\"旅展一口價｜小琉球｜高鐵｜浮潛.珊湖環島.夜遊觀星.豐富2日｜兩人成行\",\"TourDays\":2,\"Img\":null,\"ImgM\":\"https://static.liontech.com.tw/cmspic/PIC1706-004069/M_PIC1706-004069.jpg\",\"TravelType\":2,\"TourSource\":\"Lion\",\"GroupStraightPrice\":\"6,038\",\"GroupIndustryPrice\":\"6,038\",\"GroupIsVip\":false,\"GroupVipOrigPrice\":\"0\",\"Status\":3,\"ThemeID\":[],\"GroupList\":[{\"GroupID\":\"26TSO20SL38-T\",\"GoDate\":\"2026/10/20\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"6,038\",\"IndustryLowestPrice\":\"6,038\",\"DisplayPrice\":{\"SourceGroupID\":\"26TSO20SL38-T\",\"Price\":\"6,038\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"},{\"GroupID\":\"26TSO21SL38-T\",\"GoDate\":\"2026/10/21\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"6,038\",\"IndustryLowestPrice\":\"6,038\",\"DisplayPrice\":{\"SourceGroupID\":\"26TSO21SL38-T\",\"Price\":\"6,038\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"},{\"GroupID\":\"26TSO22SL38-T\",\"GoDate\":\"2026/10/22\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"6,038\",\"IndustryLowestPrice\":\"6,038\",\"DisplayPrice\":{\"SourceGroupID\":\"26TSO22SL38-T\",\"Price\":\"6,038\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"},{\"GroupID\":\"26TSO23SL38-T\",\"GoDate\":\"2026/10/23\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"6,038\",\"IndustryLowestPrice\":\"6,038\",\"DisplayPrice\":{\"SourceGroupID\":\"26TSO23SL38-T\",\"Price\":\"6,038\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"}],\"IsCruise\":false,\"TourBu\":null,\"ImgNo\":\"PIC1706-004069\",\"TagList\":[{\"TagName\":\"自然生態\",\"TagSort\":1},{\"TagName\":\"親水\",\"TagSort\":2},{\"TagName\":\"天天出發\",\"TagSort\":3},{\"TagName\":\"限時優惠\",\"TagSort\":4},{\"TagName\":\"一口價優惠\",\"TagSort\":5},{\"TagName\":\"高鐵\",\"TagSort\":6}],\"TripTypeList\":[{\"TypeName\":\"鐵路\",\"TypeCode\":\"03\"}],\"StartFromCityList\":[{\"CityName\":\"新竹\",\"CityCode\":\"HCU\"},{\"CityName\":\"台北\",\"CityCode\":\"TPE\"},{\"CityName\":\"桃園\",\"CityCode\":\"TAO\"}],\"DisplayPrice\":{\"SourceGroupID\":\"26TSO20SL38-T\",\"Price\":\"6,038\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"MarketingProjectList\":[],\"StationAddress\":[]},{\"Index\":2,\"NormGroupID\":\"746f5095-04c3-48da-9dee-6fa5847ce35a\",\"TourName\":\"玩樂山東|五嶽泰山、曲阜孔廟、明水古城、青島自由行8日|2人成行、送eSIM上網\",\"TourDays\":8,\"Img\":null,\"ImgM\":\"https://static.liontech.com.tw/cmspic/PIC1701-004120/M_PIC1701-004120.JPG\",\"TravelType\":2,\"TourSource\":\"Lion\",\"GroupStraightPrice\":\"39,900\",\"GroupIndustryPrice\":\"36,900\",\"GroupIsVip\":false,\"GroupVipOrigPrice\":\"0\",\"Status\":1,\"ThemeID\":[],\"GroupList\":[{\"GroupID\":\"26CSO20SC2-T\",\"GoDate\":\"2026/10/20\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"46,900\",\"IndustryLowestPrice\":\"42,900\",\"DisplayPrice\":{\"SourceGroupID\":\"26CSO20SC2-T\",\"Price\":\"46,900\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"},{\"GroupID\":\"26CSO27SC2-T\",\"GoDate\":\"2026/10/27\",\"Status\":\"full\",\"StatusText\":\"暫時額滿\",\"StraightLowestPrice\":\"46,900\",\"IndustryLowestPrice\":\"42,900\",\"DisplayPrice\":{\"SourceGroupID\":\"26CSO27SC2-T\",\"Price\":\"46,900\",\"OrigPrice\":null,\"PriceType\":\"Normal\",\"MarketingProjectTag\":null,\"CurrencyCode\":null},\"IsVip\":false,\"VipOrigPrice\":\"0\"},{\"GroupID\":\"26CSN03SC2-T\",\"GoDate\":\"2026/11/03\",\"Status\":\"selling\",\"StatusText\":\"熱銷中\",\"StraightLowestPrice\":\"4"
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-STJZ24MX3P&gtm=45je6ag1v883622605z8811724420za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_prs=ok&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=16&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=3&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=view_item_list&_c=1&ep.item_category=B2CWebtwpd&epn.index=1&_et=2468&tfd=11801",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/measurement/conversion?random=1792482174220&cv=11&tid=G-STJZ24MX3P&fst=1792482174220&fmt=8&en=view_item_list&gtm=45je6ag1v883622605z8811724420za20gzb811724420zd811724420xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&gacid=1269394405.1792482171&hn=www.googleadservices.com&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&npa=0&pscdl=noapi&auid=882385974.1792482172&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=16",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9P3K9WQH8J&gtm=45je6ag1v9187593471za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1269394405.1792482171&frm=0&ngs=1&pscdl=noapi&rcb=18&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&_s=2&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=scroll&epn.percent_scrolled=90&_et=41&tfd=11812",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://travel.liontravel.com/detail/articleinfojson",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "[{\"Language\":null,\"Code\":null,\"Type\":\"SuccTrip\",\"Message\":\"本公司「成行」之旅遊產品，係指報名參加人數已達出發標準，但產品出發前若遇有以下情事，將依旅遊定型化契約書取消：\\r\\n一、不可抗力、不可歸責於雙方當事人之事由，如颱 風、海嘯、地震、洪災等不可抗力之天然災害；或罷工、戰亂抗爭、官方封閉旅遊地區、重大疫情等不可歸責之人為因素。\\r\\n二、「成行」之旅遊產品所遊覽地區或國家，經外交部領事事務局或交通部觀光局或其他官方單位列為橙色警示、或紅色警示。\",\"TraceId\":\"ff56ac5eb56b07ad\",\"TourBu\":null,\"TourSource\":null}]"
+ },
+ {
+  "url": "https://travel.liontravel.com/detail/articleinfojson",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "[{\"Language\":null,\"Code\":null,\"Type\":\"SuccTrip\",\"Message\":\"本公司「成行」之旅遊產品，係指報名參加人數已達出發標準，但產品出發前若遇有以下情事，將依旅遊定型化契約書取消：\\r\\n一、不可抗力、不可歸責於雙方當事人之事由，如颱 風、海嘯、地震、洪災等不可抗力之天然災害；或罷工、戰亂抗爭、官方封閉旅遊地區、重大疫情等不可歸責之人為因素。\\r\\n二、「成行」之旅遊產品所遊覽地區或國家，經外交部領事事務局或交通部觀光局或其他官方單位列為橙色警示、或紅色警示。\",\"TraceId\":\"f3f0e45f257b42bd\",\"TourBu\":null,\"TourSource\":null}]"
+ },
+ {
+  "url": "https://travel.liontravel.com/_webassets/customsearchpaneldata/TRS1NEWTRAVELFIT.js",
+  "m": "GET",
+  "s": 301,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=5&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=e56bc529-dc1f-4a03-a769-1ee8c6bbff70&productname=%E5%AE%BF%E9%9C%A7%E6%B0%B4%E4%B9%8B%E6%97%85%EF%BD%9E%E6%B5%B7%E6%B4%8B%E5%85%AC%E5%9C%92%2C%E9%AF%A8%E9%AF%8A%E5%85%B1%E8%88%9E%2CJPRAK%E6%B0%B4%E6%A8%82%E5%9C%92%E6%B8%A1%E5%81%87%E6%9D%915%E6%97%A5%28%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C%29&productid=26PHO20BRX-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=8&price=2026%2F11%2F03&departuredate=2026%2F11%2F03&normgroupid=746f5095-04c3-48da-9dee-6fa5847ce35a&productname=%E7%8E%A9%E6%A8%82%E5%B1%B1%E6%9D%B1%7C%E4%BA%94%E5%B6%BD%E6%B3%B0%E5%B1%B1%E3%80%81%E6%9B%B2%E9%98%9C%E5%AD%94%E5%BB%9F%E3%80%81%E6%98%8E%E6%B0%B4%E5%8F%A4%E5%9F%8E%E3%80%81%E9%9D%92%E5%B3%B6%E8%87%AA%E7%94%B1%E8%A1%8C8%E6%97%A5%7C2%E4%BA%BA%E6%88%90%E8%A1%8C%E3%80%81%E9%80%81eSIM%E4%B8%8A%E7%B6%B2&productid=26CSN03MU2-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=2&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=a15c5c18-a39f-4925-9ed7-a90d02da45ad&productname=%E6%97%85%E5%B1%95%E4%B8%80%E5%8F%A3%E5%83%B9%EF%BD%9C%E5%B0%8F%E7%90%89%E7%90%83%EF%BD%9C%E9%AB%98%E9%90%B5%EF%BD%9C%E6%B5%AE%E6%BD%9B.%E7%8F%8A%E6%B9%96%E7%92%B0%E5%B3%B6.%E5%A4%9C%E9%81%8A%E8%A7%80%E6%98%9F.%E8%B1%90%E5%AF%8C2%E6%97%A5%EF%BD%9C%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C&productid=26TSO20SL38-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=3&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=a9ff7cf2-5b73-4d15-a48d-48a6a2ab8997&productname=%E6%BE%8E%E6%B9%96%E6%97%85%E9%81%8A%E3%80%90%E9%99%90%E6%99%82%E7%98%8B%E6%90%B6%242%2C999%E8%B5%B7%E3%80%91%E5%B0%8F%E8%B3%87%E7%B2%BE%E9%81%B8%EF%BC%8E%E4%BD%B3%E6%9C%9F%E5%A4%A7%E9%A3%AF%E5%BA%97%E8%87%AA%E7%94%B1%E8%A1%8C%EF%BC%93%E6%97%A5%EF%BD%9C%E5%8F%B0%E5%8C%97%E5%87%BA%E7%99%BC&productid=26TIO20WED-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=3&price=2026%2F11%2F03&departuredate=2026%2F11%2F03&normgroupid=99994053-6b2b-402b-a272-23b0d3917b1f&productname=%E6%BE%8E%E6%B9%96%E6%97%85%E9%81%8A%EF%BD%9C99%E8%B3%BC%E7%89%A9%E7%AF%80%E8%B2%B7%E4%B8%80%E9%80%81%E4%B8%80%EF%BD%9C%E5%9C%8B%E9%9A%9B%E4%BA%94%E6%98%9F%E5%93%81%E7%89%8C%EF%BC%8E%E7%A6%8F%E6%9C%8B%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97%E8%87%AA%E7%94%B1%E8%A1%8C%E4%B8%89%E6%97%A5%EF%BD%9C%E9%AB%98%E9%9B%84%E5%87%BA%E7%99%BC&productid=26TIN03HF99-K&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=3&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=84e6c322-7539-4b8b-8705-066105625bfd&productname=%E5%B0%8F%E7%90%89%E7%90%83%EF%BD%9C%E9%AB%98%E9%90%B5%EF%BD%9C%E6%B5%AE%E6%BD%9B.%E7%8F%8A%E6%B9%96%E7%92%B0%E5%B3%B6.%E5%A4%9C%E9%81%8A%E8%A7%80%E6%98%9F.%E8%B1%90%E5%AF%8C3%E6%97%A5%EF%BD%9C%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C&productid=26TSO20SL1-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=8&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=3745f44d-be6d-4072-9dc1-bb2667473ae8&productname=%E8%B4%88%E9%80%81%E6%97%85%E8%A1%8C%E5%85%85%E9%9B%BB%E7%B5%84%EF%BD%9C%E7%B4%90%E7%B4%84%E6%9B%BC%E5%93%88%E9%A0%93%E6%89%93%E5%8D%A1%E6%99%AF%E9%BB%9E%E5%8D%8A%E6%97%A5%E9%81%8A%E3%80%81%E9%A2%A8%E5%91%B3%E9%A4%90%E3%80%81%E6%99%82%E5%B0%9A%E8%87%AA%E7%94%B1%E8%A1%8C8%E6%97%A5%EF%BD%9C%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C&productid=26ARO20BR1-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=6&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=55c75d80-459c-434f-91e3-33da06a12f15&productname=%E5%B3%87%E9%87%8C%E5%B3%B6%EF%BD%9C%E4%BB%99%E5%A5%B3%E5%B3%87%E9%87%8C%E3%80%81%E8%B2%9D%E5%B0%BC%E9%81%94%E5%B3%B6%E5%87%BA%E6%B5%B7%E9%81%8A%E3%80%81%E7%81%AB%E5%B1%B1%E7%B5%95%E6%99%AF%E7%B6%B2%E7%B4%85%E9%A4%90%E5%BB%B3%E3%80%81%E5%A5%B3%E7%A5%9E%E6%B3%B3%E6%B1%A0%E4%BF%B1%E6%A8%82%E9%83%A8%E3%80%81%E5%A4%A9%E7%A9%BA%E6%AD%A5%E9%81%93%E3%80%81%E8%B7%9F%E8%91%97IG%E8%B5%B0%EF%BC%96%E6%97%A5%28%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C%29&productid=26SIO20CIG-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=3&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=bbb390db-fa1e-4d37-ab6a-1fac24aba49b&productname=%E6%97%85%E5%B1%95%E5%84%AA%E6%83%A0%EF%BD%9C%E5%B0%8F%E7%90%89%E7%90%83%EF%BD%9C%E9%AB%98%E9%90%B5%EF%BD%9C%E5%A5%87%E5%B9%BB%E7%8F%8A%E7%91%9A%E5%B3%B6%E7%92%B0%E5%B3%B6.%E6%B5%AA%E6%BC%AB%E8%A7%80%E6%98%9F.%E8%B6%85%E5%80%BC3%E6%97%A5%EF%BD%9C%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C&productid=26TSO20SLB-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/common/isincompare?days=2&price=2026%2F10%2F20&departuredate=2026%2F10%2F20&normgroupid=111c73a7-fa34-45e2-afb8-5ee558df6758&productname=%E5%B0%8F%E7%90%89%E7%90%83%EF%BD%9C%E9%AB%98%E9%90%B5%EF%BD%9C%E5%A5%87%E5%B9%BB%E7%8F%8A%E7%91%9A%E5%B3%B6%E7%92%B0%E5%B3%B6.%E6%B5%AA%E6%BC%AB%E8%A7%80%E6%98%9F.%E8%B6%85%E5%80%BC2%E6%97%A5%EF%BD%9C%E5%85%A9%E4%BA%BA%E6%88%90%E8%A1%8C&productid=26TSO20SLA-T&traveltype=2",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "false"
+ },
+ {
+  "url": "https://travel.liontravel.com/_webassets/customsearchpaneldata/trs1newtravelfit.js",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "var vCity ={\"\":\"不限\",\"KLU\":\"基隆\",\"TPE\":\"台北(松山/桃園機場)\",\"PAN\":\"新北市\",\"TAO\":\"桃園\",\"HCU\":\"新竹\",\"MLI\":\"苗栗\",\"TCH\":\"台中\",\"CHA\":\"彰化\",\"YLI\":\"雲林\",\"CYI\":\"嘉義\",\"TNN\":\"台南\",\"KHH\":\"高雄\",\"PIN\":\"屏東\",\"YLN\":\"宜蘭\",\"HLN\":\"花蓮\",\"TTT\":\"台東\"};\r\nvar vLine ={\"_1\":\"美洲\",\"_2\":\"大洋洲\",\"_3\":\"歐洲\",\"_4\":\"亞非\",\"_5\":\"大陸港澳\",\"_6\":\"東北亞\",\"_7\":\"東南亞\",\"_9\":\"台灣\"};\r\nvar vLinetravel ={\"_1\":{\"_\":\"不限\",\"_A_1\":\"美國\",\"_C_1\":\"美東\",\"_D_1\":\"美洲遊輪\",\"_F_1\":\"太平洋小島\"},\"_2\":{\"_\":\"不限\",\"_D_2\":\"紐澳遊輪\"},\"_3\":{\"_\":\"不限\",\"_B_3\":\"東歐\",\"_C_3\":\"南歐\",\"_E_3\":\"歐洲遊輪\"},\"_4\":{\"_\":\"不限\",\"_A_4\":\"非洲\",\"_E_4\":\"中東遊輪\"},\"_5\":{\"_\":\"不限\",\"_A_5\":\"大陸\",\"_B_5\":\"港澳珠圳\"},\"_6\":{\"_\":\"不限\",\"_A_6\":\"日本\",\"_C_6\":\"韓國\",\"_D_6\":\"東北亞遊輪\"},\"_7\":{\"_\":\"不限\",\"_A_7\":\"泰國\",\"_B_7\":\"馬新\",\"_C_7\":\"印尼\",\"_D_7\":\"越南\",\"_E_7\":\"菲柬緬甸\",\"_F_7\":\"東南亞遊輪\"},\"_9\":{\"_\":\"不限\",\"_51_9\":\"北基宜\",\"_53_9\":\"中彰投\",\"_55_9\":\"高屏\",\"_56_9\":\"花東\",\"_57_9\":\"離島\",\"_5Q_9\":\"環島\"}};\r\nvar vLinewebarea ={\"_A_1\":{\"_\":\"不限\",\"_01\":\"洛杉磯\"},\"_C_1\":{\"_\":\"不限\",\"_04\":\"紐約\"},\"_D_1\":{\"_\":\"不限\",\"_C1\":\"阿拉斯加郵輪\",\"_C2\":\"加勒比海郵輪\",\"_CJ\":\"公主遊輪\"},\"_F_1\":{\"_\":\"不限\",\"_91\":\"帛琉\",\"_92\":\"關島\",\"_70\":\"馬爾地夫\"},\"_D_2\":{\"_\":\"不限\",\"_CG\":\"紐澳郵輪\"},\"_B_3\":{\"_\":\"不限\",\"_30\":\"捷克\"},\"_C_3\":{\"_\":\"不限\",\"_3U\":\"南歐多國(法瑞義)\"},\"_E_3\":{\"_\":\"不限\",\"_C3\":\"地中海郵輪\",\"_C4\":\"北歐郵輪\",\"_CJ\":\"公主遊輪\"},\"_A_4\":{\"_\":\"不限\",\"_3I\":\"塞席爾\"},\"_E_4\":{\"_\":\"不限\",\"_4I\":\"沙烏地阿拉伯\"},\"_A_5\":{\"_\":\"不限\",\"_50\":\"北京、天津\",\"_52\":\"江南\",\"_51\":\"上海\",\"_54\":\"山東\",\"_62\":\"重慶、長江三峽\",\"_53\":\"福建、武夷山\",\"_56\":\"四川、九寨溝\",\"_59\":\"絲路、甘肅\"},\"_B_5\":{\"_\":\"不限\",\"_48\":\"香港\",\"_49\":\"澳門、深圳珠海\",\"_FB\":\"澳門\",\"_FC\":\"香港、澳門\"},\"_A_6\":{\"_\":\"不限\",\"_A7\":\"北海道\",\"_A1\":\"東京\",\"_A3\":\"北陸名古屋\",\"_A2\":\"大阪\",\"_A5\":\"九州\",\"_A4\":\"沖繩\"},\"_C_6\":{\"_\":\"不限\",\"_93\":\"首爾\",\"_94\":\"釜山慶州\",\"_95\":\"濟州島\"},\"_D_6\":{\"_\":\"不限\",\"_C8\":\"亞洲郵輪\",\"_CJ\":\"公主遊輪\",\"_CE\":\"麗星郵輪\"},\"_A_7\":{\"_\":\"不限\",\"_71\":\"曼谷、芭達雅、華欣、桂河\",\"_73\":\"清邁\",\"_72\":\"普吉島\",\"_7E\":\"蘇梅島\"},\"_B_7\":{\"_\":\"不限\",\"_74\":\"吉隆坡\",\"_76\":\"沙巴\",\"_77\":\"新加坡\",\"_7H\":\"新加坡+民丹島\",\"_M1\":\"珍拉汀灣\"},\"_C_7\":{\"_\":\"不限\",\"_79\":\"峇里島\",\"_7C\":\"雅加達、日惹\"},\"_D_7\":{\"_\":\"不限\",\"_8K\":\"富國島\",\"_8N\":\"芽莊\",\"_83\":\"越南\"},\"_E_7\":{\"_\":\"不限\",\"_81\":\"菲律賓\"},\"_F_7\":{\"_\":\"不限\",\"_77\":\"新加坡\",\"_C8\":\"亞洲郵輪\",\"_CD\":\"迪士尼郵輪\"},\"_51_9\":{\"_\":\"不限\",\"_AA\":\"台北\",\"_AC\":\"宜蘭\"},\"_53_9\":{\"_\":\"不限\",\"_AG\":\"台中\"},\"_55_9\":{\"_\":\"不限\",\"_AN\":\"屏東\"},\"_56_9\":{\"_\":\"不限\",\"_AO\":\"花蓮\",\"_AP\":\"台東\"},\"_57_9\":{\"_\":\"不限\",\"_AS\":\"澎湖\",\"_AT\":\"金門\"},\"_5Q_9\":{\"_\":\"不限\",\"_AZ\":\"台灣環島\"}};\r\n"
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/destinationsimple",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\r\\n  \\\"Line\\\": [\\r\\n    {\\r\\n      \\\"Line\\\": \\\"4\\\",\\r\\n      \\\"LineName\\\": \\\"亞非\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"3\\\",\\r\\n      \\\"LineName\\\": \\\"歐洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"2\\\",\\r\\n      \\\"LineName\\\": \\\"大洋洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"1\\\",\\r\\n      \\\"LineName\\\": \\\"美洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"5\\\",\\r\\n      \\\"LineName\\\": \\\"大陸港澳\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"7\\\",\\r\\n      \\\"LineName\\\": \\\"東南亞\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"6\\\",\\r\\n      \\\"LineName\\\": \\\"東北亞\\\"\\r\\n    }\\r\\n  ],\\r\\n  \\\"Country\\\": [\\r\\n    {\\r\\n      \\\"Line\\\": \\\"4\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AE\\\",\\r\\n          \\\"CountryName\\\": \\\"阿拉伯聯合大公國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"GR\\\",\\r\\n          \\\"CountryName\\\": \\\"希臘\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IN\\\",\\r\\n          \\\"CountryName\\\": \\\"印度\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"TR\\\",\\r\\n          \\\"CountryName\\\": \\\"土耳其\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"ZA\\\",\\r\\n          \\\"CountryName\\\": \\\"南非\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"3\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AT\\\",\\r\\n          \\\"CountryName\\\": \\\"奧地利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"BE\\\",\\r\\n          \\\"CountryName\\\": \\\"比利時\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CH\\\",\\r\\n          \\\"CountryName\\\": \\\"瑞士\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CZ\\\",\\r\\n          \\\"CountryName\\\": \\\"捷克\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"DE\\\",\\r\\n          \\\"CountryName\\\": \\\"德國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"DK\\\",\\r\\n          \\\"CountryName\\\": \\\"丹麥\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"ES\\\",\\r\\n          \\\"CountryName\\\": \\\"西班牙\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FI\\\",\\r\\n          \\\"CountryName\\\": \\\"芬蘭\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FR\\\",\\r\\n          \\\"CountryName\\\": \\\"法國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"HR\\\",\\r\\n          \\\"CountryName\\\": \\\"克羅埃西亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"HU\\\",\\r\\n          \\\"CountryName\\\": \\\"匈牙利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IS\\\",\\r\\n          \\\"CountryName\\\": \\\"冰島\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IT\\\",\\r\\n          \\\"CountryName\\\": \\\"義大利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NL\\\",\\r\\n          \\\"CountryName\\\": \\\"荷蘭\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NO\\\",\\r\\n          \\\"CountryName\\\": \\\"挪威\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PT\\\",\\r\\n          \\\"CountryName\\\": \\\"葡萄牙\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"SE\\\",\\r\\n          \\\"CountryName\\\": \\\"瑞典\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"UK\\\",\\r\\n          \\\"CountryName\\\": \\\"英國\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"2\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AU\\\",\\r\\n          \\\"CountryName\\\": \\\"澳大利亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NZ\\\",\\r\\n          \\\"CountryName\\\": \\\"紐西蘭\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"1\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CA\\\",\\r\\n          \\\"CountryName\\\": \\\"加拿大\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FJ\\\",\\r\\n          \\\"CountryName\\\": \\\"斐濟\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"MV\\\",\\r\\n          \\\"CountryName\\\": \\\"馬爾地夫共和國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PF\\\",\\r\\n          \\\"CountryName\\\": \\\"法屬波里尼西亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PW\\\",\\r\\n          \\\"CountryName\\\": \\\"帛琉共和國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"US\\\",\\r\\n          \\\"CountryName\\\": \\\"美國\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\""
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-STJZ24MX3P&gtm=45je6ag1v883622605z8811724420za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&_prs=ok&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=16&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=4&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=view_item_list&_c=1&ep.item_category=B2CWebtwpd&epn.index=1&_et=361&tfd=12171",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://www.google.com/measurement/conversion?random=1792482174592&cv=11&tid=G-STJZ24MX3P&fst=1792482174592&fmt=8&en=view_item_list&gtm=45je6ag1v883622605z8811724420za20gzb811724420zd811724420xecxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&u_w=1366&u_h=900&url=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&gacid=1269394405.1792482171&hn=www.googleadservices.com&frm=0&tiba=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&npa=0&pscdl=noapi&auid=882385974.1792482172&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=16",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/airlinejsdata?jsname=lightspeed-airline-menu",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"var line = {\\r\\n    \\u0027_1\\u0027: \\u0027航空公司\\u0027\\r\\n};\\r\\n\\r\\nvar airline = {\\r\\n    \\u0027_1\\u0027: {\\r\\n        \\u0027BR\\u0027: \\u0027長榮航空(BR)\\u0027,\\r\\n        \\u0027CI\\u0027: \\u0027中華航空(CI)\\u0027,\\r\\n        \\u0027JX\\u0027: \\u0027星宇航空(JX)\\u0027,\\r\\n        \\u0027CX\\u0027: \\u0027國泰航空(CX)\\u0027,\\r\\n        \\u0027JL\\u0027: \\u0027日本航空(JL)\\u0027,\\r\\n        \\u0027NH\\u0027: \\u0027全日空(NH)\\u0027,\\r\\n        \\u0027OZ\\u0027: \\u0027韓亞航空(OZ)\\u0027,\\r\\n        \\u0027KE\\u0027: \\u0027大韓航空(KE)\\u0027\\r\\n    }\\r\\n}\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/departuretw",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\\"\\\":\\\"不限\\\",\\\"TW_TPE_TPE\\\":\\\"台北(桃園機場)\\\",\\\"TW_TPE_TSA\\\":\\\"台北(台北松山機場)\\\",\\\"TW_TCH_RMQ\\\":\\\"台中\\\",\\\"TW_KHH_KHH\\\":\\\"高雄\\\"}\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata?json=lightspeed-airline",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\r\\n  \\\"AirlineList\\\": [\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BR\\\",\\r\\n      \\\"AirlineName\\\": \\\"長榮航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"EVA Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"CI\\\",\\r\\n      \\\"AirlineName\\\": \\\"中華航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"China Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"JX\\\",\\r\\n      \\\"AirlineName\\\": \\\"星宇航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Starlux Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"CX\\\",\\r\\n      \\\"AirlineName\\\": \\\"國泰航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Cathay Pacific\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"JL\\\",\\r\\n      \\\"AirlineName\\\": \\\"日本航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Japan Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"NH\\\",\\r\\n      \\\"AirlineName\\\": \\\"全日空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"All Nippon Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"OZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"韓亞航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Asiana Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"KE\\\",\\r\\n      \\\"AirlineName\\\": \\\"大韓航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Korean Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"Z2\\\",\\r\\n      \\\"AirlineName\\\": \\\"菲律賓亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Philippines AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"NS\\\",\\r\\n      \\\"AirlineName\\\": \\\"河北航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"HEBEI AIRLINES\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BI\\\",\\r\\n      \\\"AirlineName\\\": \\\"汶萊航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Royal Brunei Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"SC\\\",\\r\\n      \\\"AirlineName\\\": \\\"山東航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Shandong Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"9C\\\",\\r\\n      \\\"AirlineName\\\": \\\"春秋航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Spring Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"KQ\\\",\\r\\n      \\\"AirlineName\\\": \\\"肯亞航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Kenya Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"GK\\\",\\r\\n      \\\"AirlineName\\\": \\\"捷星日本航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Jetstar Japan\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"3K\\\",\\r\\n      \\\"AirlineName\\\": \\\"捷星亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Jetstar Asia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"FD\\\",\\r\\n      \\\"AirlineName\\\": \\\"泰國亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Thai AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BX\\\",\\r\\n      \\\"AirlineName\\\": \\\"釜山航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Air Busan\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"DL\\\",\\r\\n      \\\"AirlineName\\\": \\\"達美航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Delta Air Lines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"VZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"泰國越捷航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Thai VietJet Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"QZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"印尼亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Indonesia AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"FJ\\\",\\r\\n      \\\"AirlineName\\\": \\\"斐濟航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Fiji Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"TW\\\",\\r\\n      \\\"AirlineName\\\": \\\"德威航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Tway Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"K6\\\",\\r\\n      \\\"AirlineName\\\": \\\"柬埔寨吳哥航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Cambodia Angkor Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"HX\\\",\\r\\n      \\\"AirlineName\\\": \\\"香港航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Hong Kong Airline\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"UL\\\",\\r\\n      \\\"AirlineName\\\": \\\"斯里蘭卡航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Srilankan Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"AF\\\",\\r\\n      \\\"AirlineName\\\": \\\"法國航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Air France\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"LQ\\\",\\r\\n      \\\"AirlineName\\\": \\\"瀾湄航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Lanmei Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"IE\\\",\\r\\n      \\\"AirlineName\\\": \\\"索羅門航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Solomon Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Airli"
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/destination",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\\"Line\\\":[{\\\"Line\\\":\\\"6\\\",\\\"LineName\\\":\\\"東北亞\\\"},{\\\"Line\\\":\\\"5\\\",\\\"LineName\\\":\\\"大陸港澳\\\"},{\\\"Line\\\":\\\"1\\\",\\\"LineName\\\":\\\"美洲\\\"},{\\\"Line\\\":\\\"7\\\",\\\"LineName\\\":\\\"東南亞\\\"},{\\\"Line\\\":\\\"3\\\",\\\"LineName\\\":\\\"歐洲\\\"},{\\\"Line\\\":\\\"2\\\",\\\"LineName\\\":\\\"大洋洲\\\"},{\\\"Line\\\":\\\"4\\\",\\\"LineName\\\":\\\"亞非\\\"}],\\\"Country\\\":[{\\\"Line\\\":\\\"6\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"JP\\\",\\\"CountryName\\\":\\\"日本\\\"},{\\\"Country\\\":\\\"KR\\\",\\\"CountryName\\\":\\\"韓國\\\"}]},{\\\"Line\\\":\\\"5\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"CN\\\",\\\"CountryName\\\":\\\"中國大陸\\\"}]},{\\\"Line\\\":\\\"1\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"US\\\",\\\"CountryName\\\":\\\"美國\\\"},{\\\"Country\\\":\\\"CA\\\",\\\"CountryName\\\":\\\"加拿大\\\"},{\\\"Country\\\":\\\"PW\\\",\\\"CountryName\\\":\\\"帛琉共和國\\\"},{\\\"Country\\\":\\\"MV\\\",\\\"CountryName\\\":\\\"馬爾地夫共和國\\\"}]},{\\\"Line\\\":\\\"7\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"TH\\\",\\\"CountryName\\\":\\\"泰國\\\"},{\\\"Country\\\":\\\"SG\\\",\\\"CountryName\\\":\\\"新加坡\\\"},{\\\"Country\\\":\\\"VN\\\",\\\"CountryName\\\":\\\"越南\\\"},{\\\"Country\\\":\\\"MY\\\",\\\"CountryName\\\":\\\"馬來西亞\\\"},{\\\"Country\\\":\\\"PH\\\",\\\"CountryName\\\":\\\"菲律賓\\\"},{\\\"Country\\\":\\\"ID\\\",\\\"CountryName\\\":\\\"印尼\\\"}]},{\\\"Line\\\":\\\"3\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"DE\\\",\\\"CountryName\\\":\\\"德國\\\"},{\\\"Country\\\":\\\"FR\\\",\\\"CountryName\\\":\\\"法國\\\"},{\\\"Country\\\":\\\"IT\\\",\\\"CountryName\\\":\\\"義大利\\\"},{\\\"Country\\\":\\\"NL\\\",\\\"CountryName\\\":\\\"荷蘭\\\"},{\\\"Country\\\":\\\"UK\\\",\\\"CountryName\\\":\\\"英國\\\"},{\\\"Country\\\":\\\"ES\\\",\\\"CountryName\\\":\\\"西班牙\\\"},{\\\"Country\\\":\\\"AT\\\",\\\"CountryName\\\":\\\"奧地利\\\"},{\\\"Country\\\":\\\"CZ\\\",\\\"CountryName\\\":\\\"捷克\\\"},{\\\"Country\\\":\\\"CH\\\",\\\"CountryName\\\":\\\"瑞士\\\"},{\\\"Country\\\":\\\"BE\\\",\\\"CountryName\\\":\\\"比利時\\\"},{\\\"Country\\\":\\\"FI\\\",\\\"CountryName\\\":\\\"芬蘭\\\"}]},{\\\"Line\\\":\\\"2\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"AU\\\",\\\"CountryName\\\":\\\"澳大利亞\\\"},{\\\"Country\\\":\\\"NZ\\\",\\\"CountryName\\\":\\\"紐西蘭\\\"}]},{\\\"Line\\\":\\\"4\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"IN\\\",\\\"CountryName\\\":\\\"印度\\\"},{\\\"Country\\\":\\\"AE\\\",\\\"CountryName\\\":\\\"阿拉伯聯合大公國\\\"},{\\\"Country\\\":\\\"TR\\\",\\\"CountryName\\\":\\\"土耳其\\\"}]}],\\\"City\\\":[{\\\"Country\\\":\\\"JP\\\",\\\"CityList\\\":[{\\\"City\\\":\\\"TYO\\\",\\\"CityName\\\":\\\"東京\\\",\\\"CityEName\\\":\\\"TOKYO\\\"},{\\\"City\\\":\\\"OSA\\\",\\\"CityName\\\":\\\"大阪\\\",\\\"CityEName\\\":\\\"OSAKA\\\"},{\\\"City\\\":\\\"OKA\\\",\\\"CityName\\\":\\\"沖繩\\\",\\\"CityEName\\\":\\\"OKINAWA\\\"},{\\\"City\\\":\\\"FUK\\\",\\\"CityName\\\":\\\"福岡市-福岡縣\\\",\\\"CityEName\\\":\\\"FUKUOKA\\\"},{\\\"City\\\":\\\"KYO\\\",\\\"CityName\\\":\\\"京都\\\",\\\"CityEName\\\":\\\"KYOTO\\\"},{\\\"City\\\":\\\"NGO\\\",\\\"CityName\\\":\\\"名古屋-愛知縣\\\",\\\"CityEName\\\":\\\"NAGOYA\\\"},{\\\"City\\\":\\\"SPK\\\",\\\"CityName\\\":\\\"札幌-北海道\\\",\\\"CityEName\\\":\\\"SAPPORO\\\"},{\\\"City\\\":\\\"KMJ\\\",\\\"CityName\\\":\\\"熊本市-熊本縣\\\",\\\"CityEName\\\":\\\"KUMAMOTO SHI\\\"},{\\\"City\\\":\\\"KOB\\\",\\\"CityName\\\":\\\"神戶市-兵庫縣\\\",\\\"CityEName\\\":\\\"KOBE\\\"},{\\\"City\\\":\\\"SDJ\\\",\\\"CityName\\\":\\\"仙台市-宮城縣\\\",\\\"CityEName\\\":\\\"SENDAI SHI\\\"},{\\\"City\\\":\\\"URA\\\",\\\"CityName\\\":\\\"浦安市-千葉縣\\\",\\\"CityEName\\\":\\\"URAYASU SHI\\\"},{\\\"City\\\":\\\"YOK\\\",\\\"CityName\\\":\\\"橫濱-神奈川縣\\\",\\\"CityEName\\\":\\\"YOKOHAMA\\\"},{\\\"City\\\":\\\"TAK\\\",\\\"CityName\\\":\\\"高松市-香川縣\\\",\\\"CityEName\\\":\\\"TAKAMATSU SHI\\\"},{\\\"City\\\":\\\"HIJ\\\",\\\"CityName\\\":\\\"廣島市-廣島縣\\\",\\\"CityEName\\\":\\\"HIROSHIMA SHI\\\"},{\\\"City\\\":\\\"HKD\\\",\\\"CityName\\\":\\\"函館-北海道\\\",\\\"CityEName\\\":\\\"HAKODATE\\\"},{\\\"City\\\":\\\"OKJ\\\",\\\"CityName\\\":\\\"岡山市-岡山縣\\\",\\\"CityEName\\\":\\\"OKAYAMA SHI\\\"},{\\\"City\\\":\\\"MMY\\\",\\\"CityName\\\":\\\"宮古島-沖繩縣\\\",\\\"CityEName\\\":\\\"MIYAKOJIMA\\\"},{\\\"City\\\":\\\"FUC\\\",\\\"CityName\\\":\\\"河口湖-山梨縣\\\",\\\"CityEName\\\":\\\"KAWAGUCHIKO\\\"},{\\\"City\\\":\\\"KZA\\\",\\\"CityName\\\":\\\"金澤市-石川縣\\\",\\\"CityEName\\\":\\\"KANAZAWA\\\"},{\\\"City\\\":\\\"AOJ\\\",\\\"CityName\\\":\\\"青森市-青森縣\\\",\\\"CityEName\\\":\\\"AOMORI SHI\\\"},{\\\"City\\\":\\\"KAL\\\",\\\"CityName\\\":\\\"輕井澤-長野縣\\\",\\\"CityEName\\\":\\\"KARUIZAWA\\\"},{\\\"City\\\":\\\"KOJ\\\",\\\"CityName\\\":\\\"鹿兒島市-鹿兒島縣\\\",\\\"CityEName\\\":\\\"KAGOSHIMA SHI\\\"},{\\\"City\\\":\\\"YFI\\\",\\\"CityName\\\":\\\"湯布院-大分縣\\\",\\\"CityEName\\\":\\\"YUFUIN\\\"},{\\\"City\\\":\\\"CBA\\\",\\\"CityName\\\":\\\"千葉市(幕張)-千葉縣\\\",\\\"CityEName\\\":\\\"CHIBA\\\"},{\\\"City\\\":\\\"BPU\\\",\\\"CityName\\\":\\\"別府市-大分縣\\\",\\\"CityEName\\\":\\\"BEPPU SHI\\\"},{\\\"City\\\":\\\"TJH\\\",\\\"CityName\\\":\\\"洞爺湖-北海道\\\",\\\"CityEName\\\":\\\"TOYAKO\\\"},{\\\"City\\\":\\\"MYJ\\\",\\\"CityName\\\":\\\"松山市-愛媛縣\\\",\\\"CityEName\\\":\\\"MATSUYAMA SHI\\\"},{\\\"City\\\":\\\"JHA\\\",\\\"CityName\\\":\\\"箱根-神奈川縣\\\",\\\"CityEName\\\":\\\"HAKONE\\\"},{\\\"City\\\":\\\"TKY\\\",\\\"CityName\\\":\\\"高山市-岐阜縣\\\",\\\"CityEName\\\":\\\"TAKAYAMA SHI\\\"},{\\\"City\\\":\\\"AKJ\\\",\\\"CityName\\\":\\\"旭川-北海道\\\",\\\"CityEName\\"
+ },
+ {
+  "url": "https://travel.liontravel.com/_webassets/customsearchpaneldata/trs1newtravelfit.js",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "var vCity ={\"\":\"不限\",\"KLU\":\"基隆\",\"TPE\":\"台北(松山/桃園機場)\",\"PAN\":\"新北市\",\"TAO\":\"桃園\",\"HCU\":\"新竹\",\"MLI\":\"苗栗\",\"TCH\":\"台中\",\"CHA\":\"彰化\",\"YLI\":\"雲林\",\"CYI\":\"嘉義\",\"TNN\":\"台南\",\"KHH\":\"高雄\",\"PIN\":\"屏東\",\"YLN\":\"宜蘭\",\"HLN\":\"花蓮\",\"TTT\":\"台東\"};\r\nvar vLine ={\"_1\":\"美洲\",\"_2\":\"大洋洲\",\"_3\":\"歐洲\",\"_4\":\"亞非\",\"_5\":\"大陸港澳\",\"_6\":\"東北亞\",\"_7\":\"東南亞\",\"_9\":\"台灣\"};\r\nvar vLinetravel ={\"_1\":{\"_\":\"不限\",\"_A_1\":\"美國\",\"_C_1\":\"美東\",\"_D_1\":\"美洲遊輪\",\"_F_1\":\"太平洋小島\"},\"_2\":{\"_\":\"不限\",\"_D_2\":\"紐澳遊輪\"},\"_3\":{\"_\":\"不限\",\"_B_3\":\"東歐\",\"_C_3\":\"南歐\",\"_E_3\":\"歐洲遊輪\"},\"_4\":{\"_\":\"不限\",\"_A_4\":\"非洲\",\"_E_4\":\"中東遊輪\"},\"_5\":{\"_\":\"不限\",\"_A_5\":\"大陸\",\"_B_5\":\"港澳珠圳\"},\"_6\":{\"_\":\"不限\",\"_A_6\":\"日本\",\"_C_6\":\"韓國\",\"_D_6\":\"東北亞遊輪\"},\"_7\":{\"_\":\"不限\",\"_A_7\":\"泰國\",\"_B_7\":\"馬新\",\"_C_7\":\"印尼\",\"_D_7\":\"越南\",\"_E_7\":\"菲柬緬甸\",\"_F_7\":\"東南亞遊輪\"},\"_9\":{\"_\":\"不限\",\"_51_9\":\"北基宜\",\"_53_9\":\"中彰投\",\"_55_9\":\"高屏\",\"_56_9\":\"花東\",\"_57_9\":\"離島\",\"_5Q_9\":\"環島\"}};\r\nvar vLinewebarea ={\"_A_1\":{\"_\":\"不限\",\"_01\":\"洛杉磯\"},\"_C_1\":{\"_\":\"不限\",\"_04\":\"紐約\"},\"_D_1\":{\"_\":\"不限\",\"_C1\":\"阿拉斯加郵輪\",\"_C2\":\"加勒比海郵輪\",\"_CJ\":\"公主遊輪\"},\"_F_1\":{\"_\":\"不限\",\"_91\":\"帛琉\",\"_92\":\"關島\",\"_70\":\"馬爾地夫\"},\"_D_2\":{\"_\":\"不限\",\"_CG\":\"紐澳郵輪\"},\"_B_3\":{\"_\":\"不限\",\"_30\":\"捷克\"},\"_C_3\":{\"_\":\"不限\",\"_3U\":\"南歐多國(法瑞義)\"},\"_E_3\":{\"_\":\"不限\",\"_C3\":\"地中海郵輪\",\"_C4\":\"北歐郵輪\",\"_CJ\":\"公主遊輪\"},\"_A_4\":{\"_\":\"不限\",\"_3I\":\"塞席爾\"},\"_E_4\":{\"_\":\"不限\",\"_4I\":\"沙烏地阿拉伯\"},\"_A_5\":{\"_\":\"不限\",\"_50\":\"北京、天津\",\"_52\":\"江南\",\"_51\":\"上海\",\"_54\":\"山東\",\"_62\":\"重慶、長江三峽\",\"_53\":\"福建、武夷山\",\"_56\":\"四川、九寨溝\",\"_59\":\"絲路、甘肅\"},\"_B_5\":{\"_\":\"不限\",\"_48\":\"香港\",\"_49\":\"澳門、深圳珠海\",\"_FB\":\"澳門\",\"_FC\":\"香港、澳門\"},\"_A_6\":{\"_\":\"不限\",\"_A7\":\"北海道\",\"_A1\":\"東京\",\"_A3\":\"北陸名古屋\",\"_A2\":\"大阪\",\"_A5\":\"九州\",\"_A4\":\"沖繩\"},\"_C_6\":{\"_\":\"不限\",\"_93\":\"首爾\",\"_94\":\"釜山慶州\",\"_95\":\"濟州島\"},\"_D_6\":{\"_\":\"不限\",\"_C8\":\"亞洲郵輪\",\"_CJ\":\"公主遊輪\",\"_CE\":\"麗星郵輪\"},\"_A_7\":{\"_\":\"不限\",\"_71\":\"曼谷、芭達雅、華欣、桂河\",\"_73\":\"清邁\",\"_72\":\"普吉島\",\"_7E\":\"蘇梅島\"},\"_B_7\":{\"_\":\"不限\",\"_74\":\"吉隆坡\",\"_76\":\"沙巴\",\"_77\":\"新加坡\",\"_7H\":\"新加坡+民丹島\",\"_M1\":\"珍拉汀灣\"},\"_C_7\":{\"_\":\"不限\",\"_79\":\"峇里島\",\"_7C\":\"雅加達、日惹\"},\"_D_7\":{\"_\":\"不限\",\"_8K\":\"富國島\",\"_8N\":\"芽莊\",\"_83\":\"越南\"},\"_E_7\":{\"_\":\"不限\",\"_81\":\"菲律賓\"},\"_F_7\":{\"_\":\"不限\",\"_77\":\"新加坡\",\"_C8\":\"亞洲郵輪\",\"_CD\":\"迪士尼郵輪\"},\"_51_9\":{\"_\":\"不限\",\"_AA\":\"台北\",\"_AC\":\"宜蘭\"},\"_53_9\":{\"_\":\"不限\",\"_AG\":\"台中\"},\"_55_9\":{\"_\":\"不限\",\"_AN\":\"屏東\"},\"_56_9\":{\"_\":\"不限\",\"_AO\":\"花蓮\",\"_AP\":\"台東\"},\"_57_9\":{\"_\":\"不限\",\"_AS\":\"澎湖\",\"_AT\":\"金門\"},\"_5Q_9\":{\"_\":\"不限\",\"_AZ\":\"台灣環島\"}};\r\n"
+ },
+ {
+  "url": "https://travel.liontravel.com/cdn-cgi/rum?",
+  "m": "POST",
+  "s": 204,
+  "post": "{\"startTime\":1792482162432,\"pageloadId\":\"27e440df-c952-4cde-9e9c-5a4de7c89197\",\"eventType\":1,\"nt\":\"navigate\",\"location\":\"https://travel.liontravel.com/search\",\"versions\":{\"fl\":\"2024.11.0\",\"js\":\"2026.10.1\",\"timings\":2},\"bi\":{\"be\":\"Blink\",\"bev\":\"129\",\"bv\":\"129\",\"ov\":\"10\"},\"memory\":{\"totalJSHeapSize\":103000000,\"usedJSHeapSize\":81400000,\"jsHeapSizeLimit\":3760000000},\"firstPaint\":10420,\"firstContentfulPaint\":10420,\"timingsV2\":{\"nextHopProtocol\":\"h2\",\"domainLookupStart\":7257,\"domainLookupEnd\":7257,\"connectStart\":7257,\"connectEnd\":7257,\"secureConnectionStart\":7257,\"redirectStart\":1,\"redirectEnd\":7257,\"requestStart\":7258,\"responseStart\":7522,\"responseEnd\":7523,\"domInteractive\":10427,\"domComplete\":12430,\"loadEventStart\":12431,\"loadEventEnd\":12443,\"finalResponseHeadersStart\":7522,\"firstInterimResponseStart\":0,\"transferSize\":16449,\"decodedBodySize\":53693},\"siteToken\":\"f6e7875136a44e44bdf1e873e57016c1\",\"st\":2}",
+  "body": ""
+ },
+ {
+  "url": "https://travel.liontravel.com/search/depthinfojson",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"DepartureID\":\"\",\"ArriveID\":\"\",\"GoDateStart\":\"2026-10-20\",\"GoDateEnd\":\"2027-01-18\",\"GroupID\":\"\",\"Keywords\":\"\",\"IsEnsureGroup\":null,\"IsSold\":null,\"TravelType\":\"2\",\"ThemeID\":null,\"TravelPavilionGroupID\":null}",
+  "body": "{\"DepartureID\":null,\"ArriveID\":null,\"GoDateStart\":\"2026/10/20\",\"GoDateEnd\":\"2027/01/18\",\"GroupID\":null,\"Keywords\":null,\"KeywordsCity\":null,\"IsEnsureGroup\":null,\"IsSold\":null,\"TravelType\":0,\"ThemeID\":null,\"TravelPavilionGroupID\":null,\"IsNewVersion\":false,\"WeekDays\":[{\"Value\":0,\"Text\":\"日\"},{\"Value\":1,\"Text\":\"一\"},{\"Value\":2,\"Text\":\"二\"},{\"Value\":3,\"Text\":\"三\"},{\"Value\":4,\"Text\":\"四\"},{\"Value\":5,\"Text\":\"五\"},{\"Value\":6,\"Text\":\"六\"}],\"DayList\":[{\"Value\":1,\"Text\":\"1天\"},{\"Value\":2,\"Text\":\"2天\"},{\"Value\":3,\"Text\":\"3天\"},{\"Value\":4,\"Text\":\"4天\"},{\"Value\":5,\"Text\":\"5天\"},{\"Value\":6,\"Text\":\"6天\"},{\"Value\":7,\"Text\":\"7天\"},{\"Value\":8,\"Text\":\"8天\"},{\"Value\":10,\"Text\":\"10天及以上\"}],\"PriceRange\":{\"PriceStart\":0,\"PriceEnd\":458800},\"AirlineList\":[{\"AirlineName\":\"濟州航空\",\"AirlineID\":\"7C\"},{\"AirlineName\":\"星悅航空\",\"AirlineID\":\"7G\"},{\"AirlineName\":\"太陽富國航空\",\"AirlineID\":\"9G\"},{\"AirlineName\":\"華信航空\",\"AirlineID\":\"AE\"},{\"AirlineName\":\"亞洲航空\",\"AirlineID\":\"AK\"},{\"AirlineName\":\"立榮航空\",\"AirlineID\":\"B7\"},{\"AirlineName\":\"汶萊航空\",\"AirlineID\":\"BI\"},{\"AirlineName\":\"長榮航空\",\"AirlineID\":\"BR\"},{\"AirlineName\":\"釜山航空\",\"AirlineID\":\"BX\"},{\"AirlineName\":\"中國國際航空\",\"AirlineID\":\"CA\"},{\"AirlineName\":\"中華航空\",\"AirlineID\":\"CI\"},{\"AirlineName\":\"國泰航空\",\"AirlineID\":\"CX\"},{\"AirlineName\":\"中國南方航空\",\"AirlineID\":\"CZ\"},{\"AirlineName\":\"全亞洲航空\",\"AirlineID\":\"D7\"},{\"AirlineName\":\"阿聯酋航空\",\"AirlineID\":\"EK\"},{\"AirlineName\":\"泰國亞洲航空\",\"AirlineID\":\"FD\"},{\"AirlineName\":\"上海航空\",\"AirlineID\":\"FM\"},{\"AirlineName\":\"海南航空\",\"AirlineID\":\"HU\"},{\"AirlineName\":\"台灣虎航\",\"AirlineID\":\"IT\"},{\"AirlineName\":\"星宇航空\",\"AirlineID\":\"JX\"},{\"AirlineName\":\"樂桃航空\",\"AirlineID\":\"MM\"},{\"AirlineName\":\"中國東方航空\",\"AirlineID\":\"MU\"},{\"AirlineName\":\"澳門航空\",\"AirlineID\":\"NX\"},{\"AirlineName\":\"菲律賓航空\",\"AirlineID\":\"PR\"},{\"AirlineName\":\"山東航空\",\"AirlineID\":\"SC\"},{\"AirlineName\":\"新加坡航空\",\"AirlineID\":\"SQ\"},{\"AirlineName\":\"泰國國際航空\",\"AirlineID\":\"TG\"},{\"AirlineName\":\"酷航\",\"AirlineID\":\"TR\"},{\"AirlineName\":\"泰瑞航空\",\"AirlineID\":\"TW\"},{\"AirlineName\":\"聯合航空\",\"AirlineID\":\"UA\"},{\"AirlineName\":\"香港快運航空\",\"AirlineID\":\"UO\"}],\"LevelList\":[{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null},{\"LevelID\":null,\"LevelName\":null}],\"TripTypeList\":[{\"TypeName\":\"郵輪\",\"TypeCode\":\"01\"},{\"TypeName\":\"巴士\",\"TypeCode\":\"02\"},{\"TypeName\":\"鐵路\",\"TypeCode\":\"03\"},{\"TypeName\":\"航空\",\"TypeCode\":\"04\"}],\"CategoryList\":[{\"CategoryName\":\"元件\",\"CategoryCode\":\"01\",\"CategorySort\":1,\"TypeList\":[{\"TypeName\":\"系列\",\"TypeCode\":\"09\",\"TypeSort\":2,\"TripTypeName\":null,\"TripTypeCode\":null,\"TripTypeSort\":0,\"GroupList\":[{\"GroupName\":\"產品系列\",\"GroupNo\":\"11\",\"GroupSort\":1,\"TagList\":[{\"TagName\":\"天天出發\",\"TagNo\":\"101\",\"TagSort\":2,\"IsDelete\":false},{\"TagName\":\"原住民部落\",\"TagNo\":\"103\",\"TagSort\":4,\"IsDelete\":false},{\"TagName\":\"smart tour\",\"TagNo\":\"170\",\"TagSort\":5,\"IsDelete\":false},{\"TagName\":\"全球慶典\",\"TagNo\":\"172\",\"TagSort\":6,\"IsDelete\":false},{\"TagName\":\"世界美食\",\"TagNo\":\"173\",\"TagSort\":7,\"IsDelete\":false},{\"TagName\":\"尊爵\",\"TagNo\":\"174\",\"TagSort\":8,\"IsDelete\":false},{\"TagName\":\"經典\",\"TagNo\":\"175\",\"TagSort\":9,\"IsDelete\":false},{\"TagName\":\"特選\",\"TagNo\":\"176\",\"TagSort\":10,\"IsDelete\":false},{\"TagName\":\"旗艦\",\"TagNo\":\"187\",\"TagSort\":11,\"IsDelete\":false},{\"TagName\":\"Mini tour\",\"TagNo\":\"195\",\"TagSort\":13,\"IsDelete\":false}]}]},{\"TypeName\":\"食\",\"TypeCode\":\"02\",\"TypeSort\":3,\"TripTypeName\":null,\"TripTypeCode\":null,\"TripTypeSort\":0,\"GroupList\":[{\"GroupName\":\"美食\",\"GroupNo\":\"12\",\"GroupSort\":1,\"TagList\":[{\"TagName\":\"特色料理\",\"TagNo\":\"104\",\"TagSort\":1,\"IsDelete\":false},{\"TagName\":\"景觀餐廳\",\"TagNo\":\"105\",\"TagSort\":2,\"IsDelete\":false},{\"TagName\":\"咖啡名店\",\"TagNo\":\"107\",\"TagSort\":4,\"IsDelete\":false},{\"TagName\":\"品酒\",\"TagNo\":\"109\",\"TagSort\":6,\"IsDelete\":false},{\"TagName\":\"名廚/摘星\",\"TagNo\":\"110\",\"TagSort\":7,\"IsDelete\":false}]}]},{\"TypeName\":\"宿\",\"TypeCode\":\"03\",\"TypeSort\":4,\"TripTypeName\":null,\"TripTypeCode\":null,\"TripTypeSort\":0,\"GroupList\":[{\"GroupName\":\"住宿\",\"GroupNo\":\"13\",\"GroupSort\":1,\"TagList\":[{\"TagName\":\"五星飯店\",\"TagNo\":\"112\",\"TagSort\":1,\"IsDelete\":false},"
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/destinationsimple",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\r\\n  \\\"Line\\\": [\\r\\n    {\\r\\n      \\\"Line\\\": \\\"4\\\",\\r\\n      \\\"LineName\\\": \\\"亞非\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"3\\\",\\r\\n      \\\"LineName\\\": \\\"歐洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"2\\\",\\r\\n      \\\"LineName\\\": \\\"大洋洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"1\\\",\\r\\n      \\\"LineName\\\": \\\"美洲\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"5\\\",\\r\\n      \\\"LineName\\\": \\\"大陸港澳\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"7\\\",\\r\\n      \\\"LineName\\\": \\\"東南亞\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"6\\\",\\r\\n      \\\"LineName\\\": \\\"東北亞\\\"\\r\\n    }\\r\\n  ],\\r\\n  \\\"Country\\\": [\\r\\n    {\\r\\n      \\\"Line\\\": \\\"4\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AE\\\",\\r\\n          \\\"CountryName\\\": \\\"阿拉伯聯合大公國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"GR\\\",\\r\\n          \\\"CountryName\\\": \\\"希臘\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IN\\\",\\r\\n          \\\"CountryName\\\": \\\"印度\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"TR\\\",\\r\\n          \\\"CountryName\\\": \\\"土耳其\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"ZA\\\",\\r\\n          \\\"CountryName\\\": \\\"南非\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"3\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AT\\\",\\r\\n          \\\"CountryName\\\": \\\"奧地利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"BE\\\",\\r\\n          \\\"CountryName\\\": \\\"比利時\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CH\\\",\\r\\n          \\\"CountryName\\\": \\\"瑞士\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CZ\\\",\\r\\n          \\\"CountryName\\\": \\\"捷克\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"DE\\\",\\r\\n          \\\"CountryName\\\": \\\"德國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"DK\\\",\\r\\n          \\\"CountryName\\\": \\\"丹麥\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"ES\\\",\\r\\n          \\\"CountryName\\\": \\\"西班牙\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FI\\\",\\r\\n          \\\"CountryName\\\": \\\"芬蘭\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FR\\\",\\r\\n          \\\"CountryName\\\": \\\"法國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"HR\\\",\\r\\n          \\\"CountryName\\\": \\\"克羅埃西亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"HU\\\",\\r\\n          \\\"CountryName\\\": \\\"匈牙利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IS\\\",\\r\\n          \\\"CountryName\\\": \\\"冰島\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"IT\\\",\\r\\n          \\\"CountryName\\\": \\\"義大利\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NL\\\",\\r\\n          \\\"CountryName\\\": \\\"荷蘭\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NO\\\",\\r\\n          \\\"CountryName\\\": \\\"挪威\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PT\\\",\\r\\n          \\\"CountryName\\\": \\\"葡萄牙\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"SE\\\",\\r\\n          \\\"CountryName\\\": \\\"瑞典\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"UK\\\",\\r\\n          \\\"CountryName\\\": \\\"英國\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"2\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"AU\\\",\\r\\n          \\\"CountryName\\\": \\\"澳大利亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"NZ\\\",\\r\\n          \\\"CountryName\\\": \\\"紐西蘭\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\"Line\\\": \\\"1\\\",\\r\\n      \\\"CountryList\\\": [\\r\\n        {\\r\\n          \\\"Country\\\": \\\"CA\\\",\\r\\n          \\\"CountryName\\\": \\\"加拿大\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"FJ\\\",\\r\\n          \\\"CountryName\\\": \\\"斐濟\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"MV\\\",\\r\\n          \\\"CountryName\\\": \\\"馬爾地夫共和國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PF\\\",\\r\\n          \\\"CountryName\\\": \\\"法屬波里尼西亞\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"PW\\\",\\r\\n          \\\"CountryName\\\": \\\"帛琉共和國\\\"\\r\\n        },\\r\\n        {\\r\\n          \\\"Country\\\": \\\"US\\\",\\r\\n          \\\"CountryName\\\": \\\"美國\\\"\\r\\n        }\\r\\n      ]\\r\\n    },\\r\\n    {\\r\\n      \\\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/airlinejsdata?jsname=lightspeed-airline-menu",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"var line = {\\r\\n    \\u0027_1\\u0027: \\u0027航空公司\\u0027\\r\\n};\\r\\n\\r\\nvar airline = {\\r\\n    \\u0027_1\\u0027: {\\r\\n        \\u0027BR\\u0027: \\u0027長榮航空(BR)\\u0027,\\r\\n        \\u0027CI\\u0027: \\u0027中華航空(CI)\\u0027,\\r\\n        \\u0027JX\\u0027: \\u0027星宇航空(JX)\\u0027,\\r\\n        \\u0027CX\\u0027: \\u0027國泰航空(CX)\\u0027,\\r\\n        \\u0027JL\\u0027: \\u0027日本航空(JL)\\u0027,\\r\\n        \\u0027NH\\u0027: \\u0027全日空(NH)\\u0027,\\r\\n        \\u0027OZ\\u0027: \\u0027韓亞航空(OZ)\\u0027,\\r\\n        \\u0027KE\\u0027: \\u0027大韓航空(KE)\\u0027\\r\\n    }\\r\\n}\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/departuretw",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\\"\\\":\\\"不限\\\",\\\"TW_TPE_TPE\\\":\\\"台北(桃園機場)\\\",\\\"TW_TPE_TSA\\\":\\\"台北(台北松山機場)\\\",\\\"TW_TCH_RMQ\\\":\\\"台中\\\",\\\"TW_KHH_KHH\\\":\\\"高雄\\\"}\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata?json=lightspeed-airline",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\r\\n  \\\"AirlineList\\\": [\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BR\\\",\\r\\n      \\\"AirlineName\\\": \\\"長榮航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"EVA Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"CI\\\",\\r\\n      \\\"AirlineName\\\": \\\"中華航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"China Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"JX\\\",\\r\\n      \\\"AirlineName\\\": \\\"星宇航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Starlux Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"CX\\\",\\r\\n      \\\"AirlineName\\\": \\\"國泰航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Cathay Pacific\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"JL\\\",\\r\\n      \\\"AirlineName\\\": \\\"日本航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Japan Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"NH\\\",\\r\\n      \\\"AirlineName\\\": \\\"全日空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"All Nippon Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"OZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"韓亞航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Asiana Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"KE\\\",\\r\\n      \\\"AirlineName\\\": \\\"大韓航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Korean Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"Z2\\\",\\r\\n      \\\"AirlineName\\\": \\\"菲律賓亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Philippines AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"NS\\\",\\r\\n      \\\"AirlineName\\\": \\\"河北航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"HEBEI AIRLINES\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BI\\\",\\r\\n      \\\"AirlineName\\\": \\\"汶萊航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Royal Brunei Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"SC\\\",\\r\\n      \\\"AirlineName\\\": \\\"山東航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Shandong Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"9C\\\",\\r\\n      \\\"AirlineName\\\": \\\"春秋航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Spring Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"KQ\\\",\\r\\n      \\\"AirlineName\\\": \\\"肯亞航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Kenya Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"GK\\\",\\r\\n      \\\"AirlineName\\\": \\\"捷星日本航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Jetstar Japan\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"3K\\\",\\r\\n      \\\"AirlineName\\\": \\\"捷星亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Jetstar Asia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"FD\\\",\\r\\n      \\\"AirlineName\\\": \\\"泰國亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Thai AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"BX\\\",\\r\\n      \\\"AirlineName\\\": \\\"釜山航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Air Busan\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"DL\\\",\\r\\n      \\\"AirlineName\\\": \\\"達美航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Delta Air Lines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"VZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"泰國越捷航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Thai VietJet Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"QZ\\\",\\r\\n      \\\"AirlineName\\\": \\\"印尼亞洲航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Indonesia AirAsia\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"FJ\\\",\\r\\n      \\\"AirlineName\\\": \\\"斐濟航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Fiji Airways\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"TW\\\",\\r\\n      \\\"AirlineName\\\": \\\"德威航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Tway Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"K6\\\",\\r\\n      \\\"AirlineName\\\": \\\"柬埔寨吳哥航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Cambodia Angkor Air\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"HX\\\",\\r\\n      \\\"AirlineName\\\": \\\"香港航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Hong Kong Airline\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"UL\\\",\\r\\n      \\\"AirlineName\\\": \\\"斯里蘭卡航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Srilankan Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"AF\\\",\\r\\n      \\\"AirlineName\\\": \\\"法國航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Air France\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"LQ\\\",\\r\\n      \\\"AirlineName\\\": \\\"瀾湄航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Lanmei Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"AirlineCode\\\": \\\"IE\\\",\\r\\n      \\\"AirlineName\\\": \\\"索羅門航空\\\",\\r\\n      \\\"AirlineEname\\\": \\\"Solomon Airlines\\\"\\r\\n    },\\r\\n    {\\r\\n      \\\"Airli"
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/jsondata/destination",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"{\\\"Line\\\":[{\\\"Line\\\":\\\"6\\\",\\\"LineName\\\":\\\"東北亞\\\"},{\\\"Line\\\":\\\"5\\\",\\\"LineName\\\":\\\"大陸港澳\\\"},{\\\"Line\\\":\\\"1\\\",\\\"LineName\\\":\\\"美洲\\\"},{\\\"Line\\\":\\\"7\\\",\\\"LineName\\\":\\\"東南亞\\\"},{\\\"Line\\\":\\\"3\\\",\\\"LineName\\\":\\\"歐洲\\\"},{\\\"Line\\\":\\\"2\\\",\\\"LineName\\\":\\\"大洋洲\\\"},{\\\"Line\\\":\\\"4\\\",\\\"LineName\\\":\\\"亞非\\\"}],\\\"Country\\\":[{\\\"Line\\\":\\\"6\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"JP\\\",\\\"CountryName\\\":\\\"日本\\\"},{\\\"Country\\\":\\\"KR\\\",\\\"CountryName\\\":\\\"韓國\\\"}]},{\\\"Line\\\":\\\"5\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"CN\\\",\\\"CountryName\\\":\\\"中國大陸\\\"}]},{\\\"Line\\\":\\\"1\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"US\\\",\\\"CountryName\\\":\\\"美國\\\"},{\\\"Country\\\":\\\"CA\\\",\\\"CountryName\\\":\\\"加拿大\\\"},{\\\"Country\\\":\\\"PW\\\",\\\"CountryName\\\":\\\"帛琉共和國\\\"},{\\\"Country\\\":\\\"MV\\\",\\\"CountryName\\\":\\\"馬爾地夫共和國\\\"}]},{\\\"Line\\\":\\\"7\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"TH\\\",\\\"CountryName\\\":\\\"泰國\\\"},{\\\"Country\\\":\\\"SG\\\",\\\"CountryName\\\":\\\"新加坡\\\"},{\\\"Country\\\":\\\"VN\\\",\\\"CountryName\\\":\\\"越南\\\"},{\\\"Country\\\":\\\"MY\\\",\\\"CountryName\\\":\\\"馬來西亞\\\"},{\\\"Country\\\":\\\"PH\\\",\\\"CountryName\\\":\\\"菲律賓\\\"},{\\\"Country\\\":\\\"ID\\\",\\\"CountryName\\\":\\\"印尼\\\"}]},{\\\"Line\\\":\\\"3\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"DE\\\",\\\"CountryName\\\":\\\"德國\\\"},{\\\"Country\\\":\\\"FR\\\",\\\"CountryName\\\":\\\"法國\\\"},{\\\"Country\\\":\\\"IT\\\",\\\"CountryName\\\":\\\"義大利\\\"},{\\\"Country\\\":\\\"NL\\\",\\\"CountryName\\\":\\\"荷蘭\\\"},{\\\"Country\\\":\\\"UK\\\",\\\"CountryName\\\":\\\"英國\\\"},{\\\"Country\\\":\\\"ES\\\",\\\"CountryName\\\":\\\"西班牙\\\"},{\\\"Country\\\":\\\"AT\\\",\\\"CountryName\\\":\\\"奧地利\\\"},{\\\"Country\\\":\\\"CZ\\\",\\\"CountryName\\\":\\\"捷克\\\"},{\\\"Country\\\":\\\"CH\\\",\\\"CountryName\\\":\\\"瑞士\\\"},{\\\"Country\\\":\\\"BE\\\",\\\"CountryName\\\":\\\"比利時\\\"},{\\\"Country\\\":\\\"FI\\\",\\\"CountryName\\\":\\\"芬蘭\\\"}]},{\\\"Line\\\":\\\"2\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"AU\\\",\\\"CountryName\\\":\\\"澳大利亞\\\"},{\\\"Country\\\":\\\"NZ\\\",\\\"CountryName\\\":\\\"紐西蘭\\\"}]},{\\\"Line\\\":\\\"4\\\",\\\"CountryList\\\":[{\\\"Country\\\":\\\"IN\\\",\\\"CountryName\\\":\\\"印度\\\"},{\\\"Country\\\":\\\"AE\\\",\\\"CountryName\\\":\\\"阿拉伯聯合大公國\\\"},{\\\"Country\\\":\\\"TR\\\",\\\"CountryName\\\":\\\"土耳其\\\"}]}],\\\"City\\\":[{\\\"Country\\\":\\\"JP\\\",\\\"CityList\\\":[{\\\"City\\\":\\\"TYO\\\",\\\"CityName\\\":\\\"東京\\\",\\\"CityEName\\\":\\\"TOKYO\\\"},{\\\"City\\\":\\\"OSA\\\",\\\"CityName\\\":\\\"大阪\\\",\\\"CityEName\\\":\\\"OSAKA\\\"},{\\\"City\\\":\\\"OKA\\\",\\\"CityName\\\":\\\"沖繩\\\",\\\"CityEName\\\":\\\"OKINAWA\\\"},{\\\"City\\\":\\\"FUK\\\",\\\"CityName\\\":\\\"福岡市-福岡縣\\\",\\\"CityEName\\\":\\\"FUKUOKA\\\"},{\\\"City\\\":\\\"KYO\\\",\\\"CityName\\\":\\\"京都\\\",\\\"CityEName\\\":\\\"KYOTO\\\"},{\\\"City\\\":\\\"NGO\\\",\\\"CityName\\\":\\\"名古屋-愛知縣\\\",\\\"CityEName\\\":\\\"NAGOYA\\\"},{\\\"City\\\":\\\"SPK\\\",\\\"CityName\\\":\\\"札幌-北海道\\\",\\\"CityEName\\\":\\\"SAPPORO\\\"},{\\\"City\\\":\\\"KMJ\\\",\\\"CityName\\\":\\\"熊本市-熊本縣\\\",\\\"CityEName\\\":\\\"KUMAMOTO SHI\\\"},{\\\"City\\\":\\\"KOB\\\",\\\"CityName\\\":\\\"神戶市-兵庫縣\\\",\\\"CityEName\\\":\\\"KOBE\\\"},{\\\"City\\\":\\\"SDJ\\\",\\\"CityName\\\":\\\"仙台市-宮城縣\\\",\\\"CityEName\\\":\\\"SENDAI SHI\\\"},{\\\"City\\\":\\\"URA\\\",\\\"CityName\\\":\\\"浦安市-千葉縣\\\",\\\"CityEName\\\":\\\"URAYASU SHI\\\"},{\\\"City\\\":\\\"YOK\\\",\\\"CityName\\\":\\\"橫濱-神奈川縣\\\",\\\"CityEName\\\":\\\"YOKOHAMA\\\"},{\\\"City\\\":\\\"TAK\\\",\\\"CityName\\\":\\\"高松市-香川縣\\\",\\\"CityEName\\\":\\\"TAKAMATSU SHI\\\"},{\\\"City\\\":\\\"HIJ\\\",\\\"CityName\\\":\\\"廣島市-廣島縣\\\",\\\"CityEName\\\":\\\"HIROSHIMA SHI\\\"},{\\\"City\\\":\\\"HKD\\\",\\\"CityName\\\":\\\"函館-北海道\\\",\\\"CityEName\\\":\\\"HAKODATE\\\"},{\\\"City\\\":\\\"OKJ\\\",\\\"CityName\\\":\\\"岡山市-岡山縣\\\",\\\"CityEName\\\":\\\"OKAYAMA SHI\\\"},{\\\"City\\\":\\\"MMY\\\",\\\"CityName\\\":\\\"宮古島-沖繩縣\\\",\\\"CityEName\\\":\\\"MIYAKOJIMA\\\"},{\\\"City\\\":\\\"FUC\\\",\\\"CityName\\\":\\\"河口湖-山梨縣\\\",\\\"CityEName\\\":\\\"KAWAGUCHIKO\\\"},{\\\"City\\\":\\\"KZA\\\",\\\"CityName\\\":\\\"金澤市-石川縣\\\",\\\"CityEName\\\":\\\"KANAZAWA\\\"},{\\\"City\\\":\\\"AOJ\\\",\\\"CityName\\\":\\\"青森市-青森縣\\\",\\\"CityEName\\\":\\\"AOMORI SHI\\\"},{\\\"City\\\":\\\"KAL\\\",\\\"CityName\\\":\\\"輕井澤-長野縣\\\",\\\"CityEName\\\":\\\"KARUIZAWA\\\"},{\\\"City\\\":\\\"KOJ\\\",\\\"CityName\\\":\\\"鹿兒島市-鹿兒島縣\\\",\\\"CityEName\\\":\\\"KAGOSHIMA SHI\\\"},{\\\"City\\\":\\\"YFI\\\",\\\"CityName\\\":\\\"湯布院-大分縣\\\",\\\"CityEName\\\":\\\"YUFUIN\\\"},{\\\"City\\\":\\\"CBA\\\",\\\"CityName\\\":\\\"千葉市(幕張)-千葉縣\\\",\\\"CityEName\\\":\\\"CHIBA\\\"},{\\\"City\\\":\\\"BPU\\\",\\\"CityName\\\":\\\"別府市-大分縣\\\",\\\"CityEName\\\":\\\"BEPPU SHI\\\"},{\\\"City\\\":\\\"TJH\\\",\\\"CityName\\\":\\\"洞爺湖-北海道\\\",\\\"CityEName\\\":\\\"TOYAKO\\\"},{\\\"City\\\":\\\"MYJ\\\",\\\"CityName\\\":\\\"松山市-愛媛縣\\\",\\\"CityEName\\\":\\\"MATSUYAMA SHI\\\"},{\\\"City\\\":\\\"JHA\\\",\\\"CityName\\\":\\\"箱根-神奈川縣\\\",\\\"CityEName\\\":\\\"HAKONE\\\"},{\\\"City\\\":\\\"TKY\\\",\\\"CityName\\\":\\\"高山市-岐阜縣\\\",\\\"CityEName\\\":\\\"TAKAYAMA SHI\\\"},{\\\"City\\\":\\\"AKJ\\\",\\\"CityName\\\":\\\"旭川-北海道\\\",\\\"CityEName\\"
+ },
+ {
+  "url": "https://travel.liontravel.com/common/getlanguage",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"currentLanguage\":\"\",\"currentCurrency\":\"\",\"wmg2025lang\":\"\"}"
+ },
+ {
+  "url": "https://t.ssp.hinet.net/cm?c=e56f4b&cid=6ad71b7c50f347b1&mp=50d8403f-8391-47e5-a941-35ff8c3d4fe4",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/airlinejsdata?jsname=lightspeed-airline-menu",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"var line = {\\r\\n    \\u0027_1\\u0027: \\u0027航空公司\\u0027\\r\\n};\\r\\n\\r\\nvar airline = {\\r\\n    \\u0027_1\\u0027: {\\r\\n        \\u0027BR\\u0027: \\u0027長榮航空(BR)\\u0027,\\r\\n        \\u0027CI\\u0027: \\u0027中華航空(CI)\\u0027,\\r\\n        \\u0027JX\\u0027: \\u0027星宇航空(JX)\\u0027,\\r\\n        \\u0027CX\\u0027: \\u0027國泰航空(CX)\\u0027,\\r\\n        \\u0027JL\\u0027: \\u0027日本航空(JL)\\u0027,\\r\\n        \\u0027NH\\u0027: \\u0027全日空(NH)\\u0027,\\r\\n        \\u0027OZ\\u0027: \\u0027韓亞航空(OZ)\\u0027,\\r\\n        \\u0027KE\\u0027: \\u0027大韓航空(KE)\\u0027\\r\\n    }\\r\\n}\""
+ },
+ {
+  "url": "https://vacation.liontravel.com/gendata/airlinejsdata?jsname=lightspeed-airline-menu",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "\"var line = {\\r\\n    \\u0027_1\\u0027: \\u0027航空公司\\u0027\\r\\n};\\r\\n\\r\\nvar airline = {\\r\\n    \\u0027_1\\u0027: {\\r\\n        \\u0027BR\\u0027: \\u0027長榮航空(BR)\\u0027,\\r\\n        \\u0027CI\\u0027: \\u0027中華航空(CI)\\u0027,\\r\\n        \\u0027JX\\u0027: \\u0027星宇航空(JX)\\u0027,\\r\\n        \\u0027CX\\u0027: \\u0027國泰航空(CX)\\u0027,\\r\\n        \\u0027JL\\u0027: \\u0027日本航空(JL)\\u0027,\\r\\n        \\u0027NH\\u0027: \\u0027全日空(NH)\\u0027,\\r\\n        \\u0027OZ\\u0027: \\u0027韓亞航空(OZ)\\u0027,\\r\\n        \\u0027KE\\u0027: \\u0027大韓航空(KE)\\u0027\\r\\n    }\\r\\n}\""
+ },
+ {
+  "url": "https://api2.amplitude.com/2/httpapi",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"api_key\":\"f32f829d3547107268890cdee54e0e1a\",\"events\":[{\"device_id\":\"053f2ad8-9108-41b3-9871-e1a7cf419c36\",\"session_id\":1792482172597,\"time\":1792482174364,\"platform\":\"Web\",\"language\":\"zh-TW\",\"ip\":\"$remote\",\"insert_id\":\"6777b6e1-cd87-43a1-b2b0-400cfc18dc76\",\"event_type\":\"view_item_list\",\"groups\":{},\"event_properties\":{\"items\":[{\"item_id\":\"26TSO20SL38-T\",\"item_list_id\":\"A15C5C18-A39F-4925-9ED7-A90D02DA45AD\",\"item_name\":\"旅展一口價｜小琉球｜高鐵｜浮潛.珊湖環島.夜遊觀星.豐富2日｜兩人成行\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":1,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":6038,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26CSN03MU2-T\",\"item_list_id\":\"746F5095-04C3-48DA-9DEE-6FA5847CE35A\",\"item_name\":\"玩樂山東|五嶽泰山、曲阜孔廟、明水古城、青島自由行8日|2人成行、送eSIM上網\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":2,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":39900,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"27PH102BRX-T\",\"item_list_id\":\"E56BC529-DC1F-4A03-A769-1EE8C6BBFF70\",\"item_name\":\"宿霧水之旅～海洋公園,鯨鯊共舞,JPRAK水樂園渡假村5日(兩人成行)\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":3,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":37500,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26TSO20SLB-T\",\"item_list_id\":\"BBB390DB-FA1E-4D37-AB6A-1FAC24ABA49B\",\"item_name\":\"旅展優惠｜小琉球｜高鐵｜奇幻珊瑚島環島.浪漫觀星.超值3日｜兩人成行\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":4,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":5599,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26TIO20WED-T\",\"item_list_id\":\"A9FF7CF2-5B73-4D15-A48D-48A6A2AB8997\",\"item_name\":\"澎湖旅遊【限時瘋搶$2,999起】小資精選．佳期大飯店自由行３日｜台北出發\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":5,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":2999,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26SID02CIG-T\",\"item_list_id\":\"55C75D80-459C-434F-91E3-33DA06A12F15\",\"item_name\":\"峇里島｜仙女峇里、貝尼達島出海遊、火山絕景網紅餐廳、女神泳池俱樂部、天空步道、跟著IG走６日(兩人成行)\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":6,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":41500,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26TSO20SLA-T\",\"item_list_id\":\"111C73A7-FA34-45E2-AFB8-5EE558DF6758\",\"item_name\":\"小琉球｜高鐵｜奇幻珊瑚島環島.浪漫觀星.超值2日｜兩人成行\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":7,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":5399,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26TSD01SL1-T\",\"item_list_id\":\"84E6C322-7539-4B8B-8705-066105625BFD\",\"item_name\":\"小琉球｜高鐵｜浮潛.珊湖環島.夜遊觀星.豐富3日｜兩人成行\",\"affiliation\":\"Lion Travel\",\"currency\":\"TWD\",\"discount\":0,\"index\":8,\"item_brand\":\"Lion Travel\",\"item_category\":\"B2CWebtwpd\",\"price\":7899,\"promo_type\":\"\",\"promo_name\":\"\",\"promo_value\":0},{\"item_id\":\"26TIN03HF99-K\",\"item_list_id\":\"99994053-6B2B-402B-A272-23B0D3917B1F\",\"item_name\":\"澎湖旅遊｜99購物節買一送一｜國際五星品牌．福朋喜來登酒店自由行三日",
+  "body": "{\"code\":200,\"server_upload_time\":1792482175403,\"payload_size_bytes\":9519,\"events_ingested\":2}"
+ },
+ {
+  "url": "https://member.liontravel.com/account/checkmemberlogin",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "{\"IsLogin\":false,\"cName\":\"\",\"LionUID\":\"\",\"agnt_agent\":\"\",\"TaskID\":\"\"}"
+ },
+ {
+  "url": "https://member.liontravel.com/account/checkmemberlogin",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "{\"IsLogin\":false,\"cName\":\"\",\"LionUID\":\"\",\"agnt_agent\":\"\",\"TaskID\":\"\"}"
+ },
+ {
+  "url": "https://member.liontravel.com/account/checkmemberlogin",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "{\"IsLogin\":false,\"cName\":\"\",\"LionUID\":\"\",\"agnt_agent\":\"\",\"TaskID\":\"\"}"
+ },
+ {
+  "url": "https://member.liontravel.com/account/checkmemberlogin",
+  "m": "POST",
+  "s": 200,
+  "post": "",
+  "body": "{\"IsLogin\":false,\"cName\":\"\",\"LionUID\":\"\",\"agnt_agent\":\"\",\"TaskID\":\"\"}"
+ },
+ {
+  "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-9P3K9WQH8J&gtm=45je6ag1v9187593471z8811724420za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1269394405.1792482171&frm=0&ngs=1&pscdl=noapi&rcb=18&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&tag_exp=115616985~115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&_s=3&tfd=16813",
+  "m": "POST",
+  "s": 204,
+  "post": "en=view_item_list&ep.item_category=B2CWebtwpd&epn.index=1&_et=2278\r\nen=view_item_list&ep.item_category=B2CWebtwpd&epn.index=1&_et=364",
+  "body": ""
+ },
+ {
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-STJZ24MX3P&gtm=45je6ag1v883622605z8811724420za20gzb811724420zd811724420xf1&_p=1792482170645&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&cid=1269394405.1792482171&frm=0&pscdl=noapi&rcb=16&sr=1366x900&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B8.0.0.0%7CChromium%3B156.0.8078.4%7CHeadlessChrome%3B156.0.8078.4&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=zh-tw&gaf=2&_s=5&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120420414~120469145~120469153~121246026~121246034&sid=1792482171&sct=1&seg=0&dl=https%3A%2F%2Ftravel.liontravel.com%2Fsearch%3FTravelType%3D2%26Platform%3DAPP&dt=%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E%E8%A1%8C%E7%A8%8B%E6%8E%A8%E8%96%A6%7C%20%E9%9B%84%E7%8D%85%E6%97%85%E9%81%8A&en=page_load_time&epn.loading_time_sec=12.4&_et=284&tfd=17459",
+  "m": "POST",
+  "s": 204,
+  "post": "",
+  "body": ""
+ }
+]

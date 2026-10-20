@@ -1,0 +1,2631 @@
+{
+ "DepartureID": null,
+ "ArriveID": null,
+ "GoDateStart": null,
+ "GoDateEnd": null,
+ "GroupID": null,
+ "Keywords": null,
+ "KeywordsCity": null,
+ "IsEnsureGroup": null,
+ "IsSold": null,
+ "TravelType": 0,
+ "ThemeID": null,
+ "WeekDay": null,
+ "Days": null,
+ "PriceList": null,
+ "AirlineIDs": null,
+ "Level": null,
+ "TripTypes": null,
+ "Tags": null,
+ "MarketingProjects": null,
+ "SortType": null,
+ "PageSize": 0,
+ "Page": 0,
+ "TravelPavilionGroupID": null,
+ "IsNewVersion": false,
+ "BuIDs": null,
+ "TotalCount": 646,
+ "TotalPage": 33,
+ "CurrentPage": 1,
+ "Count": 20,
+ "NormGroupList": [
+  {
+   "Index": 1,
+   "NormGroupID": "55c75d80-459c-434f-91e3-33da06a12f15",
+   "TourName": "峇里島｜仙女峇里、貝尼達島出海遊、火山絕景網紅餐廳、女神泳池俱樂部、天空步道、跟著IG走６日(兩人成行)",
+   "TourDays": 6,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2107-000162/M_PIC2107-000162.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "41,500",
+   "GroupIndustryPrice": "39,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SIO20CIG-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "42,500",
+     "IndustryLowestPrice": "40,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO20CIG-T",
+      "Price": "42,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO25CIG-T",
+     "GoDate": "2026/10/25",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "42,500",
+     "IndustryLowestPrice": "40,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO25CIG-T",
+      "Price": "42,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO28CIG-T",
+     "GoDate": "2026/10/28",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "42,500",
+     "IndustryLowestPrice": "40,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO28CIG-T",
+      "Price": "42,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIN01CIG-T",
+     "GoDate": "2026/11/01",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "42,500",
+     "IndustryLowestPrice": "40,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIN01CIG-T",
+      "Price": "42,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2107-000162",
+   "TagList": [
+    {
+     "TagName": "經典",
+     "TagSort": 1
+    },
+    {
+     "TagName": "景觀餐廳",
+     "TagSort": 2
+    },
+    {
+     "TagName": "五星飯店",
+     "TagSort": 3
+    },
+    {
+     "TagName": "攝影",
+     "TagSort": 4
+    },
+    {
+     "TagName": "包車",
+     "TagSort": 5
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26SID02CIG-T",
+    "Price": "41,500",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 2,
+   "NormGroupID": "84e6c322-7539-4b8b-8705-066105625bfd",
+   "TourName": "小琉球｜高鐵｜浮潛.珊湖環島.夜遊觀星.豐富3日｜兩人成行",
+   "TourDays": 3,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1711-011677/M_PIC1711-011677.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "7,899",
+   "GroupIndustryPrice": "7,199",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TSO20SL1-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "7,999",
+     "IndustryLowestPrice": "7,199",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO20SL1-T",
+      "Price": "7,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO21SL1-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "7,999",
+     "IndustryLowestPrice": "7,199",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO21SL1-T",
+      "Price": "7,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO22SL1-T",
+     "GoDate": "2026/10/22",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "7,999",
+     "IndustryLowestPrice": "7,199",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO22SL1-T",
+      "Price": "7,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO23SL1-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "8,499",
+     "IndustryLowestPrice": "7,699",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO23SL1-T",
+      "Price": "8,499",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1711-011677",
+   "TagList": [
+    {
+     "TagName": "親水",
+     "TagSort": 1
+    },
+    {
+     "TagName": "自然生態",
+     "TagSort": 2
+    },
+    {
+     "TagName": "離島優惠",
+     "TagSort": 3
+    },
+    {
+     "TagName": "高鐵",
+     "TagSort": 4
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "鐵路",
+     "TypeCode": "03"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TSD01SL1-T",
+    "Price": "7,899",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 3,
+   "NormGroupID": "99994053-6b2b-402b-a272-23b0d3917b1f",
+   "TourName": "澎湖旅遊｜99購物節買一送一｜國際五星品牌．福朋喜來登酒店自由行三日｜高雄出發",
+   "TourDays": 3,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2011-002732/M_PIC2011-002732.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "9,998",
+   "GroupIndustryPrice": "9,998",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TIO20HF99-K",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "10,998",
+     "IndustryLowestPrice": "10,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIO20HF99-K",
+      "Price": "10,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN03HF99-K",
+     "GoDate": "2026/11/03",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "9,998",
+     "IndustryLowestPrice": "9,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN03HF99-K",
+      "Price": "9,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN08HF99-K",
+     "GoDate": "2026/11/08",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "10,998",
+     "IndustryLowestPrice": "10,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN08HF99-K",
+      "Price": "10,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN13HF99-K",
+     "GoDate": "2026/11/13",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "11,998",
+     "IndustryLowestPrice": "11,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN13HF99-K",
+      "Price": "11,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2011-002732",
+   "TagList": [
+    {
+     "TagName": "五星飯店",
+     "TagSort": 1
+    },
+    {
+     "TagName": "離島優惠",
+     "TagSort": 2
+    },
+    {
+     "TagName": "限時優惠",
+     "TagSort": 3
+    },
+    {
+     "TagName": "搶購",
+     "TagSort": 4
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "高雄",
+     "CityCode": "KHH"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TIN03HF99-K",
+    "Price": "9,998",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 4,
+   "NormGroupID": "3745f44d-be6d-4072-9dc1-bb2667473ae8",
+   "TourName": "贈送旅行充電組｜紐約曼哈頓打卡景點半日遊、風味餐、時尚自由行8日｜兩人成行",
+   "TourDays": 8,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2408-001325/M_PIC2408-001325.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "94,800",
+   "GroupIndustryPrice": "89,800",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [
+    "9",
+    "71"
+   ],
+   "GroupList": [
+    {
+     "GroupID": "26ARO20BR1-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "99,800",
+     "IndustryLowestPrice": "94,800",
+     "DisplayPrice": {
+      "SourceGroupID": "26ARO20BR1-T",
+      "Price": "99,800",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26ARO23BR1-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "99,800",
+     "IndustryLowestPrice": "94,800",
+     "DisplayPrice": {
+      "SourceGroupID": "26ARO23BR1-T",
+      "Price": "99,800",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26ARO25BR1-T",
+     "GoDate": "2026/10/25",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "99,800",
+     "IndustryLowestPrice": "94,800",
+     "DisplayPrice": {
+      "SourceGroupID": "26ARO25BR1-T",
+      "Price": "99,800",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26ARO27BR1-T",
+     "GoDate": "2026/10/27",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "99,800",
+     "IndustryLowestPrice": "94,800",
+     "DisplayPrice": {
+      "SourceGroupID": "26ARO27BR1-T",
+      "Price": "99,800",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2408-001325",
+   "TagList": [
+    {
+     "TagName": "天天出發",
+     "TagSort": 1
+    },
+    {
+     "TagName": "蜜月",
+     "TagSort": 2
+    },
+    {
+     "TagName": "親子",
+     "TagSort": 3
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26ARN03BR1-T",
+    "Price": "94,800",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 5,
+   "NormGroupID": "a9ff7cf2-5b73-4d15-a48d-48a6a2ab8997",
+   "TourName": "澎湖旅遊【限時瘋搶$2,999起】小資精選．佳期大飯店自由行３日｜台北出發",
+   "TourDays": 3,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2203-005569/M_PIC2203-005569.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "2,999",
+   "GroupIndustryPrice": "2,999",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TIO20WED-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "2,999",
+     "IndustryLowestPrice": "2,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIO20WED-T",
+      "Price": "2,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN01WED-T",
+     "GoDate": "2026/11/01",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "2,999",
+     "IndustryLowestPrice": "2,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN01WED-T",
+      "Price": "2,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN02WED-T",
+     "GoDate": "2026/11/02",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "2,999",
+     "IndustryLowestPrice": "2,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN02WED-T",
+      "Price": "2,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN03WED-T",
+     "GoDate": "2026/11/03",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "2,999",
+     "IndustryLowestPrice": "2,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN03WED-T",
+      "Price": "2,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2203-005569",
+   "TagList": [
+    {
+     "TagName": "限時優惠",
+     "TagSort": 1
+    },
+    {
+     "TagName": "離島優惠",
+     "TagSort": 2
+    },
+    {
+     "TagName": "獨家企劃",
+     "TagSort": 3
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TIO20WED-T",
+    "Price": "2,999",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 6,
+   "NormGroupID": "111c73a7-fa34-45e2-afb8-5ee558df6758",
+   "TourName": "小琉球｜高鐵｜奇幻珊瑚島環島.浪漫觀星.超值2日｜兩人成行",
+   "TourDays": 2,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1711-011679/M_PIC1711-011679.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "5,399",
+   "GroupIndustryPrice": "4,899",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TSO20SLA-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,399",
+     "IndustryLowestPrice": "4,899",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO20SLA-T",
+      "Price": "5,399",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO21SLA-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,399",
+     "IndustryLowestPrice": "4,899",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO21SLA-T",
+      "Price": "5,399",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO22SLA-T",
+     "GoDate": "2026/10/22",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,399",
+     "IndustryLowestPrice": "4,899",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO22SLA-T",
+      "Price": "5,399",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO23SLA-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,399",
+     "IndustryLowestPrice": "4,899",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO23SLA-T",
+      "Price": "5,399",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1711-011679",
+   "TagList": [
+    {
+     "TagName": "天天出發",
+     "TagSort": 1
+    },
+    {
+     "TagName": "親水",
+     "TagSort": 2
+    },
+    {
+     "TagName": "自然生態",
+     "TagSort": 3
+    },
+    {
+     "TagName": "親子",
+     "TagSort": 4
+    },
+    {
+     "TagName": "高鐵",
+     "TagSort": 5
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "鐵路",
+     "TypeCode": "03"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "新竹",
+     "CityCode": "HCU"
+    },
+    {
+     "CityName": "台中",
+     "CityCode": "TCH"
+    },
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    },
+    {
+     "CityName": "桃園",
+     "CityCode": "TAO"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TSO20SLA-T",
+    "Price": "5,399",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 7,
+   "NormGroupID": "bbb390db-fa1e-4d37-ab6a-1fac24aba49b",
+   "TourName": "旅展優惠｜小琉球｜高鐵｜奇幻珊瑚島環島.浪漫觀星.超值3日｜兩人成行",
+   "TourDays": 3,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1706-004066/M_PIC1706-004066.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "5,599",
+   "GroupIndustryPrice": "5,599",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TSO20SLB-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,599",
+     "IndustryLowestPrice": "5,599",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO20SLB-T",
+      "Price": "5,599",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO21SLB-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,599",
+     "IndustryLowestPrice": "5,599",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO21SLB-T",
+      "Price": "5,599",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO22SLB-T",
+     "GoDate": "2026/10/22",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,599",
+     "IndustryLowestPrice": "5,599",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO22SLB-T",
+      "Price": "5,599",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO23SLB-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "5,999",
+     "IndustryLowestPrice": "5,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO23SLB-T",
+      "Price": "5,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1706-004066",
+   "TagList": [
+    {
+     "TagName": "天天出發",
+     "TagSort": 1
+    },
+    {
+     "TagName": "親水",
+     "TagSort": 2
+    },
+    {
+     "TagName": "自然生態",
+     "TagSort": 3
+    },
+    {
+     "TagName": "親子",
+     "TagSort": 4
+    },
+    {
+     "TagName": "高鐵",
+     "TagSort": 5
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "鐵路",
+     "TypeCode": "03"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "新竹",
+     "CityCode": "HCU"
+    },
+    {
+     "CityName": "台中",
+     "CityCode": "TCH"
+    },
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    },
+    {
+     "CityName": "桃園",
+     "CityCode": "TAO"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TSO20SLB-T",
+    "Price": "5,599",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 8,
+   "NormGroupID": "a15c5c18-a39f-4925-9ed7-a90d02da45ad",
+   "TourName": "旅展一口價｜小琉球｜高鐵｜浮潛.珊湖環島.夜遊觀星.豐富2日｜兩人成行",
+   "TourDays": 2,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1706-004069/M_PIC1706-004069.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "6,038",
+   "GroupIndustryPrice": "6,038",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TSO20SL38-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "6,038",
+     "IndustryLowestPrice": "6,038",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO20SL38-T",
+      "Price": "6,038",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO21SL38-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "6,038",
+     "IndustryLowestPrice": "6,038",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO21SL38-T",
+      "Price": "6,038",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO22SL38-T",
+     "GoDate": "2026/10/22",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "6,038",
+     "IndustryLowestPrice": "6,038",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO22SL38-T",
+      "Price": "6,038",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TSO23SL38-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "6,038",
+     "IndustryLowestPrice": "6,038",
+     "DisplayPrice": {
+      "SourceGroupID": "26TSO23SL38-T",
+      "Price": "6,038",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1706-004069",
+   "TagList": [
+    {
+     "TagName": "自然生態",
+     "TagSort": 1
+    },
+    {
+     "TagName": "親水",
+     "TagSort": 2
+    },
+    {
+     "TagName": "天天出發",
+     "TagSort": 3
+    },
+    {
+     "TagName": "限時優惠",
+     "TagSort": 4
+    },
+    {
+     "TagName": "一口價優惠",
+     "TagSort": 5
+    },
+    {
+     "TagName": "高鐵",
+     "TagSort": 6
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "鐵路",
+     "TypeCode": "03"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "新竹",
+     "CityCode": "HCU"
+    },
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    },
+    {
+     "CityName": "桃園",
+     "CityCode": "TAO"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TSO20SL38-T",
+    "Price": "6,038",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 9,
+   "NormGroupID": "e56bc529-dc1f-4a03-a769-1ee8c6bbff70",
+   "TourName": "宿霧水之旅～海洋公園,鯨鯊共舞,JPRAK水樂園渡假村5日(兩人成行)",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2302-002036/M_PIC2302-002036.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "37,500",
+   "GroupIndustryPrice": "35,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26PHO20BRX-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "38,500",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26PHO20BRX-T",
+      "Price": "38,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26PHO22BRX-T",
+     "GoDate": "2026/10/22",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "38,500",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26PHO22BRX-T",
+      "Price": "38,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26PHO24BRX-T",
+     "GoDate": "2026/10/24",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "38,500",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26PHO24BRX-T",
+      "Price": "38,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26PHO26BRX-T",
+     "GoDate": "2026/10/26",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "38,500",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26PHO26BRX-T",
+      "Price": "38,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2302-002036",
+   "TagList": [
+    {
+     "TagName": "特色住宿",
+     "TagSort": 1
+    },
+    {
+     "TagName": "無購物店",
+     "TagSort": 2
+    },
+    {
+     "TagName": "Mini tour",
+     "TagSort": 3
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "27PH102BRX-T",
+    "Price": "37,500",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 10,
+   "NormGroupID": "9e0abdc8-2b64-4120-9016-c9d897fe501b",
+   "TourName": "澎湖旅遊｜𝟵𝟵購物節買一送一｜限定加購✦宜客樂自助晚餐雙人只要𝟵𝟵𝟵｜自由行【國際五星】福朋喜來登酒店三日｜台中出發",
+   "TourDays": 3,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1601-007540/M_PIC1601-007540.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "9,998",
+   "GroupIndustryPrice": "9,998",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26TIO20M99-X",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "9,998",
+     "IndustryLowestPrice": "9,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIO20M99-X",
+      "Price": "9,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIO27M99-X",
+     "GoDate": "2026/10/27",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "9,998",
+     "IndustryLowestPrice": "9,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIO27M99-X",
+      "Price": "9,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN03M99-X",
+     "GoDate": "2026/11/03",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "9,998",
+     "IndustryLowestPrice": "9,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN03M99-X",
+      "Price": "9,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26TIN10M99-X",
+     "GoDate": "2026/11/10",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "9,998",
+     "IndustryLowestPrice": "9,998",
+     "DisplayPrice": {
+      "SourceGroupID": "26TIN10M99-X",
+      "Price": "9,998",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1601-007540",
+   "TagList": [],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台中",
+     "CityCode": "TCH"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26TIO20M99-X",
+    "Price": "9,998",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 11,
+   "NormGroupID": "746f5095-04c3-48da-9dee-6fa5847ce35a",
+   "TourName": "玩樂山東|五嶽泰山、曲阜孔廟、明水古城、青島自由行8日|2人成行、送eSIM上網",
+   "TourDays": 8,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1701-004120/M_PIC1701-004120.JPG",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "39,900",
+   "GroupIndustryPrice": "36,900",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26CSO20SC2-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "46,900",
+     "IndustryLowestPrice": "42,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26CSO20SC2-T",
+      "Price": "46,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CSO27SC2-T",
+     "GoDate": "2026/10/27",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "46,900",
+     "IndustryLowestPrice": "42,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26CSO27SC2-T",
+      "Price": "46,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CSN03SC2-T",
+     "GoDate": "2026/11/03",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "46,900",
+     "IndustryLowestPrice": "42,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26CSN03SC2-T",
+      "Price": "46,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CSN03MU2-T",
+     "GoDate": "2026/11/03",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "39,900",
+     "IndustryLowestPrice": "36,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26CSN03MU2-T",
+      "Price": "39,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1701-004120",
+   "TagList": [
+    {
+     "TagName": "包車",
+     "TagSort": 1
+    },
+    {
+     "TagName": "世界遺產",
+     "TagSort": 2
+    },
+    {
+     "TagName": "獨家企劃",
+     "TagSort": 3
+    },
+    {
+     "TagName": "湊票享優惠",
+     "TagSort": 4
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26CSN03MU2-T",
+    "Price": "39,900",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 12,
+   "NormGroupID": "bc3d125a-fc42-4d5f-a8df-84c06c538566",
+   "TourName": "越南｜悠遊富國島、獨立包團、全程五星飯店、野生動物園遊獵車x雙樂園x快艇出海巡遊五日(兩人成行)",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2405-001838/M_PIC2405-001838.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "37,500",
+   "GroupIndustryPrice": "35,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SVO209GP-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "37,500",
+     "IndustryLowestPrice": "35,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SVO209GP-T",
+      "Price": "37,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SVO279GP-T",
+     "GoDate": "2026/10/27",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "37,500",
+     "IndustryLowestPrice": "35,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SVO279GP-T",
+      "Price": "37,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2405-001838",
+   "TagList": [],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26SVO209GP-T",
+    "Price": "37,500",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 13,
+   "NormGroupID": "cba90ff4-09db-463a-9702-6217b1bc6796",
+   "TourName": "《旅展優惠》峇里島｜愛侶峇里、五星凱賓斯基飯店、海底餐廳、皇家貴族SPA前身資生堂、雙下午茶、河谷泳池俱樂部五日(兩人成行)",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1905-005925/M_PIC1905-005925.JPG",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "50,900",
+   "GroupIndustryPrice": "48,900",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SIO20CIU-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "52,500",
+     "IndustryLowestPrice": "49,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO20CIU-T",
+      "Price": "52,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO27CIU-T",
+     "GoDate": "2026/10/27",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "52,500",
+     "IndustryLowestPrice": "49,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO27CIU-T",
+      "Price": "52,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO29BRU-T",
+     "GoDate": "2026/10/29",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "52,500",
+     "IndustryLowestPrice": "49,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO29BRU-T",
+      "Price": "52,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO31BRU-T",
+     "GoDate": "2026/10/31",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "52,500",
+     "IndustryLowestPrice": "49,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO31BRU-T",
+      "Price": "52,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1905-005925",
+   "TagList": [
+    {
+     "TagName": "旗艦",
+     "TagSort": 1
+    },
+    {
+     "TagName": "景觀餐廳",
+     "TagSort": 2
+    },
+    {
+     "TagName": "五星飯店",
+     "TagSort": 3
+    },
+    {
+     "TagName": "無購物店",
+     "TagSort": 4
+    },
+    {
+     "TagName": "Mini tour",
+     "TagSort": 5
+    },
+    {
+     "TagName": "蜜月",
+     "TagSort": 6
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26SID01CIU-T",
+    "Price": "50,900",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 14,
+   "NormGroupID": "b62fb0e9-76e2-4460-869b-75923727fb97",
+   "TourName": "地鐵1分鐘｜樂桃東京上野自由行5日｜含稅含行李/2人成行",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2411-000240/M_PIC2411-000240.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "18,299",
+   "GroupIndustryPrice": "17,299",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26JTO20MML-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "19,299",
+     "IndustryLowestPrice": "18,299",
+     "DisplayPrice": {
+      "SourceGroupID": "26JTO20MML-T",
+      "Price": "19,299",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26JTO28MMT-T",
+     "GoDate": "2026/10/28",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "19,499",
+     "IndustryLowestPrice": "18,499",
+     "DisplayPrice": {
+      "SourceGroupID": "26JTO28MMT-T",
+      "Price": "19,499",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26JTO29MMT-T",
+     "GoDate": "2026/10/29",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "19,499",
+     "IndustryLowestPrice": "18,499",
+     "DisplayPrice": {
+      "SourceGroupID": "26JTO29MMT-T",
+      "Price": "19,499",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26JTO30MMT-T",
+     "GoDate": "2026/10/30",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "19,999",
+     "IndustryLowestPrice": "18,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26JTO30MMT-T",
+      "Price": "19,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2411-000240",
+   "TagList": [
+    {
+     "TagName": "湊票享優惠",
+     "TagSort": 1
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "27JT112MMT-T",
+    "Price": "18,299",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 15,
+   "NormGroupID": "d592322f-500f-41a0-b11d-2a17e6da691a",
+   "TourName": "峇里島｜科莫多島｜全程五星AYANA飯店、Padar_Island日出、粉紅沙灘、世界上最大魟魚共遊6日(兩人成行)",
+   "TourDays": 6,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2410-000373/M_PIC2410-000373.JPG",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "68,800",
+   "GroupIndustryPrice": "65,800",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SIO20CIH-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "68,800",
+     "IndustryLowestPrice": "65,800",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO20CIH-T",
+      "Price": "68,800",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO27BRG-T",
+     "GoDate": "2026/10/27",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "69,900",
+     "IndustryLowestPrice": "66,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO27BRG-T",
+      "Price": "69,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO31BRG-T",
+     "GoDate": "2026/10/31",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "69,900",
+     "IndustryLowestPrice": "66,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO31BRG-T",
+      "Price": "69,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO31CIG-T",
+     "GoDate": "2026/10/31",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "69,900",
+     "IndustryLowestPrice": "66,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO31CIG-T",
+      "Price": "69,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2410-000373",
+   "TagList": [
+    {
+     "TagName": "自然生態",
+     "TagSort": 1
+    },
+    {
+     "TagName": "旗艦",
+     "TagSort": 2
+    },
+    {
+     "TagName": "Mini tour",
+     "TagSort": 3
+    },
+    {
+     "TagName": "頂級住宿",
+     "TagSort": 4
+    },
+    {
+     "TagName": "包車",
+     "TagSort": 5
+    },
+    {
+     "TagName": "蜜月",
+     "TagSort": 6
+    },
+    {
+     "TagName": "獨家企劃",
+     "TagSort": 7
+    },
+    {
+     "TagName": "早鳥",
+     "TagSort": 8
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26SIO20CIH-T",
+    "Price": "68,800",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 16,
+   "NormGroupID": "70c90ff2-1b8f-4635-b041-6487539c2b9a",
+   "TourName": "峇里島｜大人味峇里、奢靜叢林派對下午茶、時空膠囊酒館、秘境瀑布、五星飯店、網紅巡禮拍照點五日(兩人成行)",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1707-000237/M_PIC1707-000237.JPG",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "36,900",
+   "GroupIndustryPrice": "34,900",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SIO20BRJ-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "39,900",
+     "IndustryLowestPrice": "37,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO20BRJ-T",
+      "Price": "39,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO23BRJ-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "39,900",
+     "IndustryLowestPrice": "37,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO23BRJ-T",
+      "Price": "39,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO27CIJ-T",
+     "GoDate": "2026/10/27",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "39,900",
+     "IndustryLowestPrice": "37,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO27CIJ-T",
+      "Price": "39,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SIO30BRJ-T",
+     "GoDate": "2026/10/30",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "39,900",
+     "IndustryLowestPrice": "37,900",
+     "DisplayPrice": {
+      "SourceGroupID": "26SIO30BRJ-T",
+      "Price": "39,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1707-000237",
+   "TagList": [
+    {
+     "TagName": "五星飯店",
+     "TagSort": 1
+    },
+    {
+     "TagName": "經典",
+     "TagSort": 2
+    },
+    {
+     "TagName": "景觀餐廳",
+     "TagSort": 3
+    },
+    {
+     "TagName": "特產",
+     "TagSort": 4
+    },
+    {
+     "TagName": "Mini tour",
+     "TagSort": 5
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26SIN02BRJ-T",
+    "Price": "36,900",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 17,
+   "NormGroupID": "89fee229-8a27-4307-b5b1-ae28d4c26bb3",
+   "TourName": "《贈半日遊》泰優惠｜芭達雅＋曼谷雙城精選酒店自由行5日｜贈機場至雙城酒店來回接駁及5日上網卡",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2304-000693/M_PIC2304-000693.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "23,500",
+   "GroupIndustryPrice": "22,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26STO20BR92-T",
+     "GoDate": "2026/10/20",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "23,500",
+     "IndustryLowestPrice": "22,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26STO20BR92-T",
+      "Price": "23,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26STO26BR92-T",
+     "GoDate": "2026/10/26",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "23,500",
+     "IndustryLowestPrice": "22,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26STO26BR92-T",
+      "Price": "23,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26STO27BR92-T",
+     "GoDate": "2026/10/27",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "23,500",
+     "IndustryLowestPrice": "22,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26STO27BR92-T",
+      "Price": "23,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26STO28BR92-T",
+     "GoDate": "2026/10/28",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "23,500",
+     "IndustryLowestPrice": "22,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26STO28BR92-T",
+      "Price": "23,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2304-000693",
+   "TagList": [
+    {
+     "TagName": "天天出發",
+     "TagSort": 1
+    },
+    {
+     "TagName": "特選",
+     "TagSort": 2
+    },
+    {
+     "TagName": "特色住宿",
+     "TagSort": 3
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26STO20BR92-T",
+    "Price": "23,500",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 18,
+   "NormGroupID": "4db755d0-55af-4b83-9101-901949182007",
+   "TourName": "《聯合航空》直飛關島│自主遊趴趴走4天",
+   "TourDays": 4,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC1605-004482/M_PIC1605-004482.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "26,500",
+   "GroupIndustryPrice": "24,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26SGO21UA-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "30,500",
+     "IndustryLowestPrice": "28,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SGO21UA-T",
+      "Price": "30,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SGO28UA-T",
+     "GoDate": "2026/10/28",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "30,500",
+     "IndustryLowestPrice": "28,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SGO28UA-T",
+      "Price": "30,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SGN04UA-T",
+     "GoDate": "2026/11/04",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "30,500",
+     "IndustryLowestPrice": "28,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SGN04UA-T",
+      "Price": "30,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26SGN11UA-T",
+     "GoDate": "2026/11/11",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "30,500",
+     "IndustryLowestPrice": "28,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26SGN11UA-T",
+      "Price": "30,500",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC1605-004482",
+   "TagList": [
+    {
+     "TagName": "Mini tour",
+     "TagSort": 1
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "27SG317UA-T",
+    "Price": "26,500",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 19,
+   "NormGroupID": "212893f7-d173-409f-89a8-29fdf85a9db0",
+   "TourName": "2人成行│北京自由行—故宮頤和園專人導覽‧慕田峪長城5日●包車遊‧御仙都皇家宮宴‧贈下午茶",
+   "TourDays": 5,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2011-010449/M_PIC2011-010449.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "37,900",
+   "GroupIndustryPrice": "36,500",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 1,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26CAO21CIA-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "38,900",
+     "IndustryLowestPrice": "37,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26CAO21CIA-T",
+      "Price": "38,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CAO31BRA-T",
+     "GoDate": "2026/10/31",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "38,900",
+     "IndustryLowestPrice": "37,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26CAO31BRA-T",
+      "Price": "38,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CAN04CIA-T",
+     "GoDate": "2026/11/04",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "37,900",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26CAN04CIA-T",
+      "Price": "37,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CAN07BRA-T",
+     "GoDate": "2026/11/07",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "37,900",
+     "IndustryLowestPrice": "36,500",
+     "DisplayPrice": {
+      "SourceGroupID": "26CAN07BRA-T",
+      "Price": "37,900",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2011-010449",
+   "TagList": [
+    {
+     "TagName": "特選",
+     "TagSort": 1
+    },
+    {
+     "TagName": "包車",
+     "TagSort": 2
+    },
+    {
+     "TagName": "特色料理",
+     "TagSort": 3
+    }
+   ],
+   "TripTypeList": [],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26CAN04CIA-T",
+    "Price": "37,900",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  },
+  {
+   "Index": 20,
+   "NormGroupID": "820e631f-aeae-4687-aaf7-cdfb0aaf3a4c",
+   "TourName": "獨家新品特惠|上海武寧筑格酒店_洲際旗下酒店(IHG)|上海自由行6日｜二人成行(未稅)",
+   "TourDays": 6,
+   "Img": null,
+   "ImgM": "https://static.liontech.com.tw/cmspic/PIC2011-010447/M_PIC2011-010447.jpg",
+   "TravelType": 2,
+   "TourSource": "Lion",
+   "GroupStraightPrice": "13,999",
+   "GroupIndustryPrice": "12,999",
+   "GroupIsVip": false,
+   "GroupVipOrigPrice": "0",
+   "Status": 3,
+   "ThemeID": [],
+   "GroupList": [
+    {
+     "GroupID": "26CIO21MUW-T",
+     "GoDate": "2026/10/21",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "13,999",
+     "IndustryLowestPrice": "12,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26CIO21MUW-T",
+      "Price": "13,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CIO23CZW-T",
+     "GoDate": "2026/10/23",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "13,999",
+     "IndustryLowestPrice": "12,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26CIO23CZW-T",
+      "Price": "13,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CIO24MUW-T",
+     "GoDate": "2026/10/24",
+     "Status": "full",
+     "StatusText": "暫時額滿",
+     "StraightLowestPrice": "13,999",
+     "IndustryLowestPrice": "12,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26CIO24MUW-T",
+      "Price": "13,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    },
+    {
+     "GroupID": "26CIO28CZW-T",
+     "GoDate": "2026/10/28",
+     "Status": "selling",
+     "StatusText": "熱銷中",
+     "StraightLowestPrice": "13,999",
+     "IndustryLowestPrice": "12,999",
+     "DisplayPrice": {
+      "SourceGroupID": "26CIO28CZW-T",
+      "Price": "13,999",
+      "OrigPrice": null,
+      "PriceType": "Normal",
+      "MarketingProjectTag": null,
+      "CurrencyCode": null
+     },
+     "IsVip": false,
+     "VipOrigPrice": "0"
+    }
+   ],
+   "IsCruise": false,
+   "TourBu": null,
+   "ImgNo": "PIC2011-010447",
+   "TagList": [
+    {
+     "TagName": "湊票享優惠",
+     "TagSort": 1
+    },
+    {
+     "TagName": "獨家企劃",
+     "TagSort": 2
+    },
+    {
+     "TagName": "旅展",
+     "TagSort": 3
+    },
+    {
+     "TagName": "限時優惠",
+     "TagSort": 4
+    }
+   ],
+   "TripTypeList": [
+    {
+     "TypeName": "航空",
+     "TypeCode": "04"
+    }
+   ],
+   "StartFromCityList": [
+    {
+     "CityName": "台北",
+     "CityCode": "TPE"
+    }
+   ],
+   "DisplayPrice": {
+    "SourceGroupID": "26CIO21MUW-T",
+    "Price": "13,999",
+    "OrigPrice": null,
+    "PriceType": "Normal",
+    "MarketingProjectTag": null,
+    "CurrencyCode": null
+   },
+   "MarketingProjectList": [],
+   "StationAddress": []
+  }
+ ],
+ "PopularNormGroupIDList": "",
+ "TraceId": "373f78279f9f0db0",
+ "TourBu": null,
+ "TourSource": null
+}

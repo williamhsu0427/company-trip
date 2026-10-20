@@ -1,0 +1,121 @@
+[
+ {
+  "url": "https://member.eztravel.com.tw/auth/loginRoleCheck?secure=true&_=1792482163478",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://connect.facebook.net/app_config/json/1019260294858916/",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"fedcm\":{\"default\":false}}"
+ },
+ {
+  "url": "https://vacation.eztravel.com.tw/By-that-I-hat-the-giuell-somethis-stant-a-poore-?d=vacation.eztravel.com.tw",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"solution\":{\"interrogation\":{\"p\":\"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",
+  "body": "{\"token\":\"3:Wh/dxMNe6UAZOOwM6c0Klw==:NT6Z7ygKtbH1iZvoQrt/USr+5vQYoJJV2nKR5n7DuVDZMpkspbeHw2pv/Dj8KRMh/Hp3g0SybudPmTUDG08CXnOIzMdE5+1q6Cur920OKzwGFvhCBq+prRFn2fG5ILfv3SmfNVuCVckXRUHSqgmcEw==:hfIr10OIJaVI/8jEbjsQLb0/nvykQN0bKu4MgfYgn8U=:WbOg4gKLirSs4NYsLGKTNLXheAepIngRinwGcCKy8zdu1sBE0rWsWPKP9WK4kG/gL1OM/qjIduY1p62fogu2iQQESMq/Mq4ePC+d0XP/mZbM/4ilQRka6gikdIlSOA5Qjxv7Pb4D4KX84lGOX/ne4y9cK5Z1vsl45AWJiEA/43O04c8n1X0YDBbnYlwH5cvgotpgZA3IO7xoUf5DjhrZqQwNyMpyFzW35cf7c7B0wAvAyssccZNp8XB5XVloRXU9PesUCyjn8406i647hz4YU1ffPHDGyb28ag1d9tKG8Av9fgXaBwuL1nHNsZOwGctQbCbFGcGgWhU/mrXMbITfX6RyzSeI0DkEWaNPrB+sFAVcKMceVdYhLw==:\",\"renewInSec\":888,\"cookieDomain\":\"eztravel.com.tw\"}\n"
+ },
+ {
+  "url": "https://api.rudderstack.com/sourceConfig/?p=cdn&v=3.11.17&build=modern&writeKey=2rjhKRxk8FTPfv5T0FbgEW00WLT&lockIntegrationsVersion=false&lockPluginsVersion=false",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"source\":{\"id\":\"2rjhKVoAmltrb4RcBLkbsdfR0WM\",\"name\":\"JavaScript Production\",\"writeKey\":\"2rjhKRxk8FTPfv5T0FbgEW00WLT\",\"config\":{\"statsCollection\":{\"errors\":{\"enabled\":true},\"metrics\":{\"enabled\":false}}},\"enabled\":true,\"workspaceId\":\"2GOFrtuKfOxGDeLa3NMH2nZVkh3\",\"destinations\":[],\"updatedAt\":\"2025-01-17T01:45:27.654Z\",\"dataplanes\":{}},\"updatedAt\":\"2025-01-17T02:05:24.117Z\",\"consentManagementMetadata\":{\"providers\":[{\"provider\":\"oneTrust\",\"resolutionStrategy\":\"and\"},{\"provider\":\"ketch\",\"resolutionStrategy\":\"or\"},{\"provider\":\"iubenda\",\"resolutionStrategy\":\"or\"}]}}"
+ },
+ {
+  "url": "https://trc.taboola.com/1748352/log/3/unip?ce=ecomm&en=SEARCH&ref=null&item-url=https%253A%252F%252Fvacation.eztravel.com.tw%252Fpkgfrn%252Fkeywords%252F%253Fq%253D%2525E6%252597%2525A5%2525E6%25259C%2525AC%2526tt%253D1%2526avbl%253D1&data=%257B%2522productIds%2522%253A%255B%2522VDR0000001897%252FNRTBR261206PA%2522%252C%2522VDR0000000522%252FNGO06261121A%2522%252C%2522VDR0000001897%252FNRTBR261114PA%2522%252C%2522VDR0000006753%252FTOY04270104W%2522%252C%2522VDR0000006753%252FAXT04261217W%2522%255D%252C%2522searchTerm%2522%253A%2522%25E6%2597%25A5%25E6%259C%25AC%2522%252C%2522timestamp%2522%253A%25222026%252F10%252F20%2522%252C%2522eventType%2522%253A%2522SEARCH%2522%257D&tim=1792482164556&vi=1792482164522&ri=2a57432931ed5e5a096efa1b7bbf03e7&sd=v2_5708bdb30aa41b746fc43889dd253e52_54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4_1792482164_1792482164_CNawjgYQgNtqGKr-jMKVNCABKAEw4QE4kaQOQLDlD0iw89sDULAEWABgAGivnPfFnITq58UBcAGAAQCIAQCQAQA&ui=54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4&cv=20261018-21-RELEASE&tos=142&ssd=1&scd=0&it=JS_PIXEL&psb=true",
+  "m": "GET",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://pips.taboola.com/",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "NULL"
+ },
+ {
+  "url": "https://cds.taboola.com/?uid=54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4&ptf=V2luZG93cw==&ptfv=MTAuMA==&ufv=MTU2LjAuODA3OC40&bnd=Tm90OkEtQnJhbmQ=&bndv=OA==&bnd=Q2hyb21pdW0=&bndv=MTU2&bnd=SGVhZGxlc3NDaHJvbWU=&bndv=MTU2&mbl=ZmFsc2U=&dc=ch",
+  "m": "GET",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://aiqua-user.c.appier.net/web-inapp/?appId=8bef3e3e0190f65726e7&firstTime=1&wUserId=8034493086344298&versionNo=0",
+  "m": "GET",
+  "s": 200,
+  "post": "",
+  "body": "{\"inapp\":{\"campaigns\":[{\"maxLeadSubmitCount\":1,\"blockConds\":[{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"https://hotel.eztravel.com.tw/booking\"}],\"operator\":\"AND\"},{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"luxurioushotel\"}],\"operator\":\"AND\"},{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"weekendsale\"}],\"operator\":\"AND\"},{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"detail\"}],\"operator\":\"AND\"},{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"weeklystar1\"}],\"operator\":\"AND\"},{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"https://www.eztravel.com.tw/announcement/\"}],\"operator\":\"AND\"}],\"runType\":\"ON\",\"whenCond\":{\"eventName\":\"page_viewed\",\"conditions\":[{\"op\":\"contains\",\"param\":\"url\",\"value\":\"https://hotel.eztravel.com.tw/\"},{\"op\":\"contains\",\"param\":\"url\",\"value\":\"https://hotel.eztravel.com.tw/activity/domestic/hotelflash/\"}],\"operator\":\"OR\"},\"maxNumTimesToShow\":100,\"source\":\"QG\",\"num_runs\":4,\"type\":\"inweb\",\"ttl\":172800,\"audiencePlatform\":{\"android\":false,\"ios\":false,\"others\":true},\"creativeType\":\"html\",\"allow_coexisted\":false,\"isAB\":false,\"notificationId\":35430040000,\"startTime\":1792382400,\"html\":{\"htmlBody\":\"<link href=\\\"https://fonts.googleapis.com/css?family=Open+Sans&display=swap\\\" rel=\\\"stylesheet\\\">\\n<style>\\n.aiqua html,.aiqua body,.aiqua div,.aiqua span,.aiqua applet,.aiqua object,.aiqua iframe,.aiqua\\nh1,.aiqua h2,.aiqua h3,.aiqua h4,.aiqua h5,.aiqua h6,.aiqua p,.aiqua blockquote,.aiqua pre,.aiqua\\na,.aiqua abbr,.aiqua acronym,.aiqua address,.aiqua big,.aiqua cite,.aiqua code,.aiqua\\ndel,.aiqua dfn,.aiqua em,.aiqua img,.aiqua ins,.aiqua kbd,.aiqua q,.aiqua s,.aiqua samp,.aiqua\\nsmall,.aiqua strike,.aiqua strong,.aiqua sub,.aiqua sup,.aiqua tt,.aiqua var,.aiqua\\nb,.aiqua u,.aiqua i,.aiqua center,.aiqua\\ndl,.aiqua dt,.aiqua dd,.aiqua ol,.aiqua ul,.aiqua li,.aiqua\\nfieldset,.aiqua form,.aiqua label,.aiqua legend,.aiqua\\ntable,.aiqua caption,.aiqua tbody,.aiqua tfoot,.aiqua thead,.aiqua tr,.aiqua th,.aiqua td,.aiqua\\narticle,.aiqua aside,.aiqua canvas,.aiqua details,.aiqua embed,.aiqua \\nfigure,.aiqua figcaption,.aiqua footer,.aiqua header,.aiqua hgroup,.aiqua \\nmenu,.aiqua nav,.aiqua output,.aiqua ruby,.aiqua section,.aiqua summary,.aiqua\\ntime,.aiqua mark,.aiqua audio,.aiqua video {\\n\\tmargin: 0;\\n\\tpadding: 0;\\n\\tborder: 0;\\n\\tfont-size: 100%;\\n\\tfont: inherit;\\n\\tvertical-align: baseline;\\n}\\n/* HTML5 display-role reset for older browsers */\\n.aiqua article,.aiqua aside,.aiqua details,.aiqua figcaption,.aiqua figure,.aiqua \\nfooter,.aiqua header,.aiqua hgroup,.aiqua menu,.aiqua nav,.aiqua section {\\n\\tdisplay: block;\\n}\\n.aiqua body {\\n\\tline-height: 1;\\n}\\n.aiqua ol,.aiqua ul {\\n\\tlist-style: none;\\n}\\n.aiqua blockquote,.aiqua q {\\n\\tquotes: none;\\n}\\n.aiqua blockquote:before,.aiqua blockquote:after,.aiqua\\n.aiqua q:before,.aiqua q:after {\\n\\tcontent: '';\\n\\tcontent: none;\\n}\\n.aiqua table {\\n\\tborder-collapse: collapse;\\n\\tborder-spacing: 0;\\n\\tborder-style:none;\\n}\\n  .aiqua,\\n  .aiqua *,\\n  .aiqua *:before,\\n  .aiqua *:after,\\n  .qg-inweb-container {\\n    box-sizing: border-box;\\n    word-break: break-all;\\n  }\\n\\n  .qg-inweb-container {\\n    display: flex;\\n    flex-direction: row-reverse;\\n    align-items: center;\\n    position: fixed;\\n    left: 10px;\\n    bottom: 20px;\\n    width: 200px;\\n    height:175px;\\n    padding: 10px 10px 10px 10px;\\n    /* MAY CHANGE COLOR HERE! */\\n    background-color:  #6E3FBA;\\n    color: #000;\\n    border-bottom: 1px solid #ccc;\\n    padding: 0px;\\n    overflow: hidden;\\n  }\\n\\n  .qg-inweb-close {\\n    position: flex;\\n    top: 0px;\\n    right: 0px;\\n    margin-right: 0px;\\n    background-color:;\\n  }\\n\\n  .aiqua {\\n    display: flex;\\n    align-items: center;\\n    flex: 1;\\n    font-family: 'Open Sans', 'sans-serif', 'Microsoft JhengHei';\\n    font-size: 12x;\\n    \\n  }\\n\\n  ."
+ },
+ {
+  "url": "https://rud.eztravel.dev/v1/track",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"properties\":{\"ltype\":\"vacation/frn\",\"ectype\":\"search\",\"prodList\":[{\"prodNo\":\"VDR0000001897/NRTBR261206PA\",\"prodId\":\"VDR0000001897/NRTBR261206PA\",\"prodGpNo\":\"VDR0000001897/NRTBR3P-03\",\"prodName\":\"【長榮元氣日本東京】 極致閃耀雙星野｜日本阿爾卑斯美景六日\",\"prodPrice\":106900},{\"prodNo\":\"VDR0000000522/NGO06261121A\",\"prodId\":\"VDR0000000522/NGO06261121A\",\"prodGpNo\":\"VDR0000000522/NGO06-JL123\",\"prodName\":\"【限時限量】北陸高山溫泉6日.新穗高纜車.燒肉敘敘苑.米其林推薦景點.最美合掌村.日本兼六園.國寶犬山城(日本航空)\",\"prodPrice\":29700},{\"prodNo\":\"VDR0000001897/NRTBR261114PA\",\"prodId\":\"VDR0000001897/NRTBR261114PA\",\"prodGpNo\":\"VDR0000001897/NRTBR3P-04\",\"prodName\":\"【長榮元氣日本東京】 極致閃耀雙星野｜日本阿爾卑斯美景六日\",\"prodPrice\":109900},{\"prodNo\":\"VDR0000006753/TOY04270104W\",\"prodId\":\"VDR0000006753/TOY04270104W\",\"prodGpNo\":\"VDR0000006753/TOY04CI03S\",\"prodName\":\"【日本瘋滑雪】群馬萬座王子滑雪團 4天\",\"prodPrice\":46100},{\"prodNo\":\"VDR0000006753/AXT04261217W\",\"prodId\":\"VDR0000006753/AXT04261217W\",\"prodGpNo\":\"VDR0000006753/AXT04IT02S\",\"prodName\":\"【日本瘋滑雪】東北安比高原滑雪團 4天\",\"prodPrice\":59300}],\"origin\":\"\",\"originName\":\"\",\"destList\":[\"日本\"],\"destListName\":[\"日本\"],\"startdate\":\"2026-10-22\",\"enddate\":\"2027-01-18\",\"availability\":\"只查可報名\",\"url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"cookie_union_tag\":\"\",\"cookie_union\":\"\",\"device\":\"Desktop\"},\"event\":\"search\",\"type\":\"track\",\"channel\":\"web\",\"context\":{\"traits\":{},\"sessionId\":1792482164945,\"sessionStart\":true,\"app\":{\"name\":\"RudderLabs JavaScript SDK\",\"namespace\":\"com.rudderlabs.javascript\",\"version\":\"3.11.17\",\"installType\":\"cdn\"},\"library\":{\"name\":\"RudderLabs JavaScript SDK\",\"version\":\"3.11.17\",\"snippetVersion\":\"3.0.32\"},\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"os\":{\"name\":\"\",\"version\":\"\"},\"locale\":\"zh-TW\",\"screen\":{\"width\":1366,\"height\":900,\"density\":1,\"innerWidth\":1366,\"innerHeight\":900},\"campaign\":{},\"page\":{\"path\":\"/pkgfrn/keywords\",\"referrer\":\"$direct\",\"referring_domain\":\"\",\"search\":\"?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"title\":\"日本 | 主題旅遊、特色行程 | ezTravel易遊網\",\"url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords?q=%25E6%2597%25A5%25E6%259C%25AC&tt=1\",\"tab_url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"initial_referrer\":\"$direct\",\"initial_referring_domain\":\"\"},\"timezone\":\"GMT+0000\"},\"originalTimestamp\":\"2026-10-20T07:42:44.957Z\",\"messageId\":\"da004a4a-3680-4e7f-b531-2fb9ed3e0b56\",\"userId\":\"\",\"anonymousId\":\"a7d19a27-6802-427d-a459-a7df7753a7b7\",\"integrations\":{\"All\":true},\"sentAt\":\"2026-10-20T07:42:44.958Z\"}",
+  "body": "OK"
+ },
+ {
+  "url": "https://rud.eztravel.dev/v1/page",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"properties\":{\"cookie_union_tag\":\"\",\"cookie_union\":\"\",\"device\":\"Desktop\",\"path\":\"/pkgfrn/keywords\",\"referrer\":\"$direct\",\"referring_domain\":\"\",\"search\":\"?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"title\":\"日本 | 主題旅遊、特色行程 | ezTravel易遊網\",\"url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords?q=%25E6%2597%25A5%25E6%259C%25AC&tt=1\",\"tab_url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"initial_referrer\":\"$direct\",\"initial_referring_domain\":\"\"},\"type\":\"page\",\"channel\":\"web\",\"context\":{\"traits\":{},\"sessionId\":1792482164945,\"app\":{\"name\":\"RudderLabs JavaScript SDK\",\"namespace\":\"com.rudderlabs.javascript\",\"version\":\"3.11.17\",\"installType\":\"cdn\"},\"library\":{\"name\":\"RudderLabs JavaScript SDK\",\"version\":\"3.11.17\",\"snippetVersion\":\"3.0.32\"},\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"os\":{\"name\":\"\",\"version\":\"\"},\"locale\":\"zh-TW\",\"screen\":{\"width\":1366,\"height\":900,\"density\":1,\"innerWidth\":1366,\"innerHeight\":900},\"campaign\":{},\"page\":{\"path\":\"/pkgfrn/keywords\",\"referrer\":\"$direct\",\"referring_domain\":\"\",\"search\":\"?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"title\":\"日本 | 主題旅遊、特色行程 | ezTravel易遊網\",\"url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords?q=%25E6%2597%25A5%25E6%259C%25AC&tt=1\",\"tab_url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"initial_referrer\":\"$direct\",\"initial_referring_domain\":\"\"},\"timezone\":\"GMT+0000\"},\"originalTimestamp\":\"2026-10-20T07:42:44.963Z\",\"messageId\":\"af5bbecc-e1ba-4361-92ba-60db4770e02f\",\"userId\":\"\",\"anonymousId\":\"a7d19a27-6802-427d-a459-a7df7753a7b7\",\"integrations\":{\"All\":true},\"sentAt\":\"2026-10-20T07:42:44.964Z\"}",
+  "body": "OK"
+ },
+ {
+  "url": "https://api.quantumgraph.com/web/cm/",
+  "m": "GET",
+  "s": 302,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://gocm.c.appier.net/qg?a_i=/web/cm/?from=dback",
+  "m": "GET",
+  "s": 302,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://api.quantumgraph.com/web/cm/?from=dback&qaid=b1uD7SnWXTpEc8jBb0bN2Q&noredir=1",
+  "m": "GET",
+  "s": 201,
+  "post": "",
+  "body": "{\"qaid\":\"b1uD7SnWXTpEc8jBb0bN2Q\" }\r\n"
+ },
+ {
+  "url": "https://aiqua-sdk.c.appier.net/aiqua/web/8bef3e3e0190f65726e7/data/",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"profiles\":{\"qg_qaid\":\"b1uD7SnWXTpEc8jBb0bN2Q\"},\"wUserId\":\"8034493086344298\",\"device\":\"web\",\"cv\":\"4.28.1-459edf5-514-production_gcp_jp0\",\"sdkPresence\":11,\"device_info\":{\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"sec_ch_ua\":\"\\\"Not:A-Brand\\\";v=\\\"8\\\", \\\"Chromium\\\";v=\\\"156\\\", \\\"HeadlessChrome\\\";v=\\\"156\\\"\",\"language\":\"zh-TW\",\"screen\":\"1366x900\",\"page_url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"referrer_url\":\"\"}}",
+  "body": "{\"qgUserId\":\"8034493086344298\",\"version\":\"v1\"}\n"
+ },
+ {
+  "url": "https://aiqua-sdk.c.appier.net/aiqua/web/8bef3e3e0190f65726e7/data/",
+  "m": "POST",
+  "s": 200,
+  "post": "{\"profiles\":{\"isIncognito\":true,\"qgUserAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"qgDevice\":{},\"qgBrsr\":{\"name\":\"Chrome\",\"version\":\"129.0\",\"major\":\"129\"},\"qgOS\":{\"name\":\"Windows\",\"version\":\"10\"},\"aiq_userAgentData\":{\"brands\":[{\"brand\":\"Not:A-Brand\",\"version\":\"8\"},{\"brand\":\"Chromium\",\"version\":\"156\"},{\"brand\":\"HeadlessChrome\",\"version\":\"156\"}],\"mobile\":false,\"platform\":\"Windows\"},\"aiq_uaDataFullVersionList\":[{\"brand\":\"Not:A-Brand\",\"version\":\"8.0.0.0\"},{\"brand\":\"Chromium\",\"version\":\"156.0.8078.4\"},{\"brand\":\"HeadlessChrome\",\"version\":\"156.0.8078.4\"}],\"aiq_uaDataPlatform\":{\"name\":\"Windows\",\"version\":\"10.0\"}},\"wUserId\":\"8034493086344298\",\"device\":\"web\",\"cv\":\"4.28.1-459edf5-514-production_gcp_jp0\",\"sdkPresence\":11,\"device_info\":{\"user_agent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36\",\"sec_ch_ua\":\"\\\"Not:A-Brand\\\";v=\\\"8\\\", \\\"Chromium\\\";v=\\\"156\\\", \\\"HeadlessChrome\\\";v=\\\"156\\\"\",\"language\":\"zh-TW\",\"screen\":\"1366x900\",\"page_url\":\"https://vacation.eztravel.com.tw/pkgfrn/keywords/?q=%E6%97%A5%E6%9C%AC&tt=1&avbl=1\",\"referrer_url\":\"\"},\"version\":\"v2\"}",
+  "body": "{\"qgUserId\":\"8034493086344298\",\"version\":\"v2\"}\n"
+ },
+ {
+  "url": "https://trc-events.taboola.com/1748352/log/3/unip?en=pre_d_eng_tb&tos=4639&scd=0&ssd=1&est=1792482164531&ver=36&isls=true&src=i&invt=4500&msa=2801&rv=1&tim=1792482169172&vi=1792482164522&ri=2a57432931ed5e5a096efa1b7bbf03e7&sd=v2_5708bdb30aa41b746fc43889dd253e52_54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4_1792482164_1792482164_CNawjgYQgNtqGKr-jMKVNCABKAEw4QE4kaQOQLDlD0iw89sDULAEWABgAGivnPfFnITq58UBcAGAAQCIAQCQAQA&ui=54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4&ref=null&cv=20261018-21-RELEASE&item-url=https%3A%2F%2Fvacation.eztravel.com.tw%2Fpkgfrn%2Fkeywords%2F%3Fq%3D%25E6%2597%25A5%25E6%259C%25AC%26tt%3D1%26avbl%3D1&it=JS_PIXEL",
+  "m": "GET",
+  "s": 204,
+  "post": "",
+  "body": ""
+ },
+ {
+  "url": "https://trc-events.taboola.com/1748352/log/3/unip?en=pre_d_eng_tb&tos=10140&scd=100&ssd=1&est=1792482164531&ver=36&isls=true&src=i&invt=5500&msa=2801&rv=1&tim=1792482174673&vi=1792482164522&ri=2a57432931ed5e5a096efa1b7bbf03e7&sd=v2_5708bdb30aa41b746fc43889dd253e52_54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4_1792482164_1792482164_CNawjgYQgNtqGKr-jMKVNCABKAEw4QE4kaQOQLDlD0iw89sDULAEWABgAGivnPfFnITq58UBcAGAAQCIAQCQAQA&ui=54cb1085-28b8-4206-830d-0b02f8a13154-tuct11d0a0f4&ref=null&cv=20261018-21-RELEASE&item-url=https%3A%2F%2Fvacation.eztravel.com.tw%2Fpkgfrn%2Fkeywords%2F%3Fq%3D%25E6%2597%25A5%25E6%259C%25AC%26tt%3D1%26avbl%3D1&it=JS_PIXEL",
+  "m": "GET",
+  "s": 204,
+  "post": "",
+  "body": ""
+ }
+]
