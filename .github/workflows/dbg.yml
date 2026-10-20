@@ -1,0 +1,25 @@
+name: dbg
+on:
+  push:
+    branches: [dbg]
+permissions:
+  contents: write
+concurrency: dbg
+jobs:
+  dbg:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -q playwright beautifulsoup4 lxml curl_cffi && python -m playwright install --with-deps chromium >/dev/null
+      - run: mkdir -p dbg && timeout 900 python tools/dbg.py 2>&1 | tee dbg/log.txt || true
+      - name: push results
+        run: |
+          git config user.name github-actions; git config user.email github-actions@users.noreply.github.com
+          git checkout --orphan dbg-out
+          git rm -rfq --cached .
+          git add -f dbg
+          git commit -qm "dbg $(date -u +%T)"
+          git push -f origin dbg-out
