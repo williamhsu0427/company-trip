@@ -34,7 +34,7 @@ const AGENCIES = [
     corp: { url: 'https://www.besttour.com.tw/custom-itinerary/', tel: '02-2511-8855',
             note: '客製化旅遊行程規劃，可做公司包團。台北總公司電話。' } },
   { name: '新魅力旅遊',
-    search: q => `https://www.newamazing.com.tw/EW/GO/GroupList.asp${q ? '?keyword=' + e(q) : ''}`,
+    search: q => 'https://www.newamazing.com.tw/EW/GO/GroupList.asp',  // 這家網站不吃網址裡的關鍵字
     corp: { url: 'https://www.newamazing.com.tw/eweb_newamazing/ContactUS/N_contact.asp', tel: '02-2504-5111',
             note: '可透過聯絡我們或門市洽詢團體包團。台北門市電話。' } },
 ];

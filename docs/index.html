@@ -90,7 +90,12 @@ section{display:none}section.on{display:block}
   </section>
 
   <section id="byag">
-    <div id="byag-out"></div>
+    <div class="filters">
+      <label class="full">要去哪裡<input id="s-q" type="search" placeholder="例如：日本、北海道、峇里島"></label>
+    </div>
+    <button class="big" id="s-all">在所有旅行社搜尋</button>
+    <p class="note">手機瀏覽器可能會擋住一次開很多分頁，如果只開了一個，請用下面的按鈕逐家開啟。</p>
+    <div id="s-list"></div>
   </section>
 
   <section id="corp">
@@ -103,8 +108,7 @@ section{display:none}section.on{display:block}
 <script>
 const $=s=>document.querySelector(s);
 const fmt=n=>n?'$'+n.toLocaleString('zh-TW'):'洽詢';
-const PER_AG=5;
-let TOURS=[],shown=40,offAg=new Set(),type='',tab='list',openAg=new Set();
+let TOURS=[],shown=40,offAg=new Set(),type='',tab='list';
 
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 
@@ -112,7 +116,7 @@ document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
   tab=t.dataset.s;
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===t));
   document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===tab));
-  $('#filterbox').hidden=tab==='corp';
+  $('#filterbox').hidden=tab!=='list';
   render();
 });
 document.querySelectorAll('#f-type button').forEach(b=>b.onclick=()=>{
@@ -170,28 +174,14 @@ function card(t,inM){
 }
 
 function render(){
-  if(tab==='corp')return;
+  if(tab!=='list')return;
   const {L,inM,q}=filtered();
   $('#count').textContent=TOURS.length?`找到 ${L.length} 個行程`:'';
-  if(!TOURS.length){$('#list-out').innerHTML=$('#byag-out').innerHTML='<div class="empty">還沒有行程資料，請稍後再來看看。</div>';$('#more').hidden=true;return}
-  if(tab==='list'){
-    $('#list-out').innerHTML=L.length?L.slice(0,shown).map(t=>card(t,inM)).join(''):'<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';
-    $('#more').hidden=L.length<=shown;
-  }else{
-    const by={};L.forEach(t=>(by[t.agency]=by[t.agency]||[]).push(t));
-    const names=AGENCIES.map(a=>a.name).filter(n=>!offAg.has(n));
-    $('#byag-out').innerHTML=names.map(n=>{
-      const a=AGENCIES.find(x=>x.name===n),list=by[n]||[],all=openAg.has(n);
-      return `<div class="agh"><h3>${esc(n)}</h3><span class="n">${list.length} 個</span><a target="_blank" rel="noopener" href="${esc(a.search(q))}">到官網搜尋 ↗</a></div>`+
-        (list.length?list.slice(0,all?list.length:PER_AG).map(t=>card(t,inM)).join('')+
-          (list.length>PER_AG&&!all?`<button class="more" data-ag="${esc(n)}">顯示 ${esc(n)} 全部 ${list.length} 個</button>`:'')
-        :`<div class="empty" style="padding:14px">${by[n]===undefined&&!TOURS.some(t=>t.agency===n)?'這家目前沒抓到資料，可以點「到官網搜尋」':'沒有符合條件的行程'}</div>`);
-    }).join('');
-    document.querySelectorAll('#byag-out .more').forEach(b=>b.onclick=()=>{openAg.add(b.dataset.ag);render()});
-    $('#more').hidden=true;
-  }
+  if(!TOURS.length){$('#list-out').innerHTML='<div class="empty">還沒有行程資料，請稍後再來看看。</div>';$('#more').hidden=true;return}
+  $('#list-out').innerHTML=L.length?L.slice(0,shown).map(t=>card(t,inM)).join(''):'<div class="empty">沒有符合條件的行程，試著放寬條件看看。</div>';
+  $('#more').hidden=L.length<=shown;
 }
-['#f-q','#f-country','#f-d1','#f-d2','#f-days','#f-p1','#f-p2','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
+['#f-q','#f-country','#f-d1','#f-d2','#f-days','#f-p1','#f-p2','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;render()}));
 $('#more').onclick=()=>{shown+=40;render()};
 
 $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
@@ -202,6 +192,14 @@ $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>
 
 {const o=[];for(let v=5000;v<=200000;v+=5000)o.push(`<option value="${v}">${v.toLocaleString('zh-TW')} 元</option>`);
  $('#f-p1').innerHTML+=o.join('');$('#f-p2').innerHTML+=o.join('');}
+function renderSearch(){
+  const q=$('#s-q').value.trim();
+  $('#s-list').innerHTML=AGENCIES.map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
+    <div class="row"><a class="btn main" target="_blank" rel="noopener" href="${esc(a.search(q))}">搜尋${q?'「'+esc(q)+'」':'國外團體行程'}</a></div></div>`).join('');
+}
+$('#s-q').addEventListener('input',renderSearch);
+$('#s-all').onclick=()=>{const q=$('#s-q').value.trim();AGENCIES.forEach(a=>window.open(a.search(q),'_blank'))};
+renderSearch();
 load();
 </script>
 </body>
