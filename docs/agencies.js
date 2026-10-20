@@ -2,7 +2,7 @@
 const e = encodeURIComponent;
 const AGENCIES = [
   { name: '雄獅旅遊',
-    search: q => `https://travel.liontravel.com/search?TravelType=2${q ? '&Keywords=' + e(q) : ''}`,
+    search: q => `https://travel.liontravel.com/search?TravelType=1${q ? '&Keywords=' + e(q) : ''}`,
     corp: { url: 'https://b2e-info.liontravel.com/zh-tw/index', tel: '02-8793-9633',
             email: 'customerservice@liontravel.com',
             note: '企業旅遊 B2E 平台：獎勵旅遊、職工福委、會議參展。台北總部專線，週一至週五 09:00–18:00，也可線上填需求單。' } },

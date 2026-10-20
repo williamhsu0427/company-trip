@@ -9,6 +9,12 @@ from urllib.parse import quote, urljoin
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 from countries import guess_country
+from curl_cffi import requests as curl
+
+
+def http():
+    """A Chrome-like HTTP client; plain clients get bot-checked on some sites."""
+    return curl.Session(impersonate='chrome')
 
 TODAY = dt.date.today()
 UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36'
@@ -107,39 +113,40 @@ async def wait_for(page, check, seconds=20):
 
 
 # ---------------- 雄獅 ----------------
-async def lion(ctx):
-    page = await ctx.new_page()
-    await goto(page, 'https://travel.liontravel.com/search?TravelType=2')
-    out, pg = [], 1
+# TravelType 1 = 團體旅遊, 2 = 自由行／小包團 (both include domestic trips, filtered out later).
+def lion_sync():
+    out = []
     end = (TODAY + dt.timedelta(days=365)).isoformat()
-    while pg <= 60:
-        body = {"ArriveID": None, "GoDatestart": TODAY.isoformat(), "GroupID": None, "Keywords": None,
-                "IsEnsureGroup": None, "IsSold": None, "ThemeID": None, "TravelPavilionGroupID": None,
-                "KeywordsCity": None, "TravelType": 2, "BuIDs": "", "PreferAirlines": None, "GoDateEnd": end,
-                "DepartureID": "", "WeekDay": "", "PriceList": None, "AirlineIDs": "", "TripTypes": "", "Tags": "",
-                "SortType": 3, "Days": "", "MarketingProjects": "", "Page": pg, "PageSize": 50}
-        r = await page.request.post('https://travel.liontravel.com/search/grouplistinfojson', data=body,
-                                    headers={'content-type': 'application/json'})
-        d = await r.json()
-        items = d.get('NormGroupList') or []
-        if pg == 1:
-            print('lion page1:', {k: v for k, v in d.items() if not isinstance(v, (list, dict))}, len(items), flush=True)
-        for it in items:
-            if it.get('TravelType') not in (2, None):
-                continue
-            gl = it.get('GroupList') or []
-            gid = gl[0]['GroupID'] if gl else ''
-            url = (f"https://travel.liontravel.com/detail?NormGroupID={it['NormGroupID']}"
-                   f"&GroupID={gid}&TourSource={it.get('TourSource') or 'Lion'}")
-            price = num((it.get('DisplayPrice') or {}).get('Price')) or num(it.get('GroupStraightPrice'))
-            out.append(tour('雄獅旅遊', it.get('TourName'), url, price, it.get('TourDays'),
-                            [ymd(g.get('GoDate')) for g in gl if g.get('Status') != 'full'] or [ymd(g.get('GoDate')) for g in gl],
-                            it.get('ImgM') or it.get('Img')))
-        if pg >= (d.get('TotalPage') or 1) or not items:
-            break
-        pg += 1
-    await page.close()
+    for tt in (1, 2):
+        pg = 1
+        while True:
+            body = {"ArriveID": None, "GoDatestart": TODAY.isoformat(), "GroupID": None, "Keywords": None,
+                    "IsEnsureGroup": None, "IsSold": None, "ThemeID": None, "TravelPavilionGroupID": None,
+                    "KeywordsCity": None, "TravelType": tt, "BuIDs": "", "PreferAirlines": None, "GoDateEnd": end,
+                    "DepartureID": "", "WeekDay": "", "PriceList": None, "AirlineIDs": "", "TripTypes": "", "Tags": "",
+                    "SortType": 3, "Days": "", "MarketingProjects": "", "Page": pg, "PageSize": 200}
+            d = http().post('https://travel.liontravel.com/search/grouplistinfojson', json=body, timeout=60).json()
+            items = d.get('NormGroupList') or []
+            for it in items:
+                gl = it.get('GroupList') or []
+                gid = gl[0]['GroupID'] if gl else ''
+                url = (f"https://travel.liontravel.com/detail?NormGroupID={it['NormGroupID']}"
+                       f"&GroupID={gid}&TourSource={it.get('TourSource') or 'Lion'}")
+                price = num((it.get('DisplayPrice') or {}).get('Price')) or num(it.get('GroupStraightPrice'))
+                t = tour('雄獅旅遊', it.get('TourName'), url, price, it.get('TourDays'),
+                         [ymd(g.get('GoDate')) for g in gl], it.get('ImgM') or it.get('Img'))
+                if tt == 2:
+                    t['type'] = 'fit'
+                out.append(t)
+            if pg >= (d.get('TotalPage') or 1) or not items:
+                break
+            pg += 1
+        print(f'  lion TravelType {tt}: {len(out)} so far', flush=True)
     return out
+
+
+async def lion(ctx):
+    return await asyncio.to_thread(lion_sync)
 
 
 # ---------------- 可樂 ----------------
@@ -165,63 +172,110 @@ async def cola(ctx):
 
 
 # ---------------- 東南 ----------------
-SETTOUR_PAGES = ['japan', 'korea', 'southeast_asia', 'china', 'europe', 'america', 'oceania', 'africa_middle_east']
+# The search page's GraphQL API lists one row per departure, 10 per page; a blank keyword returns everything.
+SETTOUR_Q = """query q($begDt: String!, $endDt: String!, $keyWord: String, $pageNo: Int!) {
+  getGfgSearchGrup(depCityCd: "", travelCd: "", begDt: $begDt, endDt: $endDt, keyWord: $keyWord, isOrder: true,
+    isMiniTour: true, portTp: "B2C", pageNo: $pageNo, sort: "BA", companyNo: "", minPrice: -1, maxPrice: -1,
+    isOffer: false, isMkt: false, isPakFly: false, isChaFly: false, isNoShopping: false, isNoPay: false,
+    isGoEarly: false, isLateReturn: false, isOnlyMiniTour: false, week: "") {
+    data { totalPage grup { prodNo grupNm begDt tourDays allowQtyRemark price { b2cPrice } } }
+  }
+}"""
+
+
+def settour_page(pg):
+    v = {'begDt': TODAY.strftime('%Y%m%d'), 'endDt': (TODAY + dt.timedelta(days=365)).strftime('%Y%m%d'),
+         'keyWord': ' ', 'pageNo': pg}
+    for attempt in range(3):
+        try:
+            d = http().post('https://gql.settour.com.tw/graphql', json={'query': SETTOUR_Q, 'variables': v},
+                            headers={'origin': 'https://tour.settour.com.tw'}, timeout=60).json()
+            return d['data']['getGfgSearchGrup']['data']
+        except Exception as e:
+            print('  settour retry', pg, type(e).__name__, flush=True)
+    return {'totalPage': 0, 'grup': []}
+
+
+def settour_sync():
+    from concurrent.futures import ThreadPoolExecutor
+    first = settour_page(1)
+    with ThreadPoolExecutor(10) as ex:
+        pages = [first] + list(ex.map(settour_page, range(2, (first['totalPage'] or 1) + 1)))
+    out = {}
+    for p in pages:
+        for g in p.get('grup') or []:
+            no = g['prodNo']
+            price = num((g.get('price') or {}).get('b2cPrice'))
+            t = out.get(no)
+            if not t:
+                img = f'https://photo.settour.com.tw/330x220/https://www.settour.com.tw/ss_img/GFG/{no[3:7]}/{no[7:11]}/{no[11:]}/{no}_m.jpg'
+                t = out[no] = tour('東南旅遊', g['grupNm'], f'https://tour.settour.com.tw/product/{no}', price,
+                                   g.get('tourDays'), [], img)
+            if price and (not t['price'] or price < t['price']):
+                t['price'] = price
+            if g.get('allowQtyRemark') != '額滿':
+                t['departures'] = sorted(set(t['departures']) | {ymd(g.get('begDt'))})
+    print(f'  settour: {len(pages)} pages, {len(out)} products', flush=True)
+    return [t for t in out.values() if t['country'] != '台灣']
 
 
 async def settour(ctx):
-    out = {}
-
-    async def one(p):
-        page = await ctx.new_page()
-        try:
-            await goto(page, f'https://tour.settour.com.tw/{p}.html', 5000, idle=False)
-            s = BeautifulSoup(await html_of(page), 'lxml')
-        finally:
-            await page.close()
-        for a in s.select('a[href*="/product/GFG"]'):
-            m = re.search(r'GFG\d{10}', a['href'])
-            h = a.find('h3')
-            if not m or not h or m.group(0) in out:
-                continue
-            txt = a.get_text(' ', strip=True)
-            img = a.find(attrs={'data-src': True})
-            im = re.search(r'url\((https?://[^)]+)\)', img['data-src']) if img else None
-            dd = re.search(r'(\d+)\s*天', txt)
-            pr = re.search(r'\$([\d,]+)', txt)
-            out[m.group(0)] = tour('東南旅遊', h.get_text(strip=True), f'https://tour.settour.com.tw/product/{m.group(0)}',
-                                   num(pr.group(1)) if pr else None, int(dd.group(1)) if dd else None, [],
-                                   im.group(1) if im else None)
-
-    for p in SETTOUR_PAGES:
-        try:
-            await asyncio.wait_for(one(p), timeout=120)
-            print(f'  settour {p}: {len(out)} so far', flush=True)
-        except Exception as e:
-            print(f'  settour {p} failed: {type(e).__name__} {str(e)[:80]}', flush=True)
-    return [t for t in out.values() if t['country'] != '台灣']
+    return await asyncio.to_thread(settour_sync)
 
 
 # ---------------- 易遊網 ----------------
-async def eztravel(ctx):
-    # The site blocks a browser session after its first page, so each keyword gets a fresh one.
+# ezTravel also resells other agencies' tours; the operator is kept in 'operator'.
+# Searching for 日／天 matches nearly every title ("五日", "5天"), the region words catch the rest.
+EZ_WORDS = ['日', '天', '郵輪'] + REGION_KEYWORDS
+
+
+def ez_page(q, tt, pg):
+    url = f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(q)}&tt={tt}&avbl=1&page={pg}&pageSize=100'
+    for attempt in range(3):
+        try:
+            h = http().get(url, timeout=90).text
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+            st = json.loads(m.group(1))['props']['pageProps']['initialState']['search']
+            return st['searchResults'] or [], int(st['searchInfo']['pageConfig']['total'] or 0)
+        except Exception as e:
+            print('  ezTravel retry', q, pg, type(e).__name__, flush=True)
+    return [], 0
+
+
+def eztravel_sync():
+    from concurrent.futures import ThreadPoolExecutor
     out = {}
-    for kw in REGION_KEYWORDS:
-        c = await ctx.browser.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
-        page = await c.new_page()
-        await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1', 1500)
-        h = await wait_for(page, lambda h: '__NEXT_DATA__' in h, 25)
-        await c.close()
-        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
-        if not m:
-            print('  ezTravel blocked at', kw, flush=True)
-            continue
-        st = json.loads(m.group(1))['props']['pageProps']['initialState']['search']
-        for r in st.get('searchResults') or []:
+
+    def add(rows, q):
+        for r in rows:
             key = r.get('pfGProdNo') or r.get('prodUrl')
-            deps = [ymd(x.get('saleDt')) for x in (r.get('otherSaleDts') or [])] or [ymd(r.get('saleDt'))]
-            out[key] = tour('易遊網', r.get('prodNm'), r.get('prodUrl'), r.get('minPrice1') or r.get('ezPrice1'),
-                            r.get('travelDay'), deps, r.get('imgUrl'), ' '.join(r.get('tourCitysNm') or []) + ' ' + kw)
+            op = (r.get('travelAgency') or '').replace('出團', '')
+            if '找到了' in op:
+                continue
+            deps = [ymd(x.get('saleDt')) for x in (r.get('otherSaleDts') or []) if x.get('fullStatus') != 'FULL'] or [ymd(r.get('saleDt'))]
+            if key in out:
+                out[key]['departures'] = sorted(set(out[key]['departures']) | {d for d in deps if d})
+                continue
+            t = tour('易遊網', r.get('prodNm'), r.get('prodUrl'), r.get('minPrice1') or r.get('ezPrice1'),
+                     r.get('travelDay'), deps, r.get('imgUrl'), ' '.join(r.get('tourCitysNm') or []))
+            t['operator'] = op
+            out[key] = t
+
+    jobs = []
+    for q in EZ_WORDS:
+        for tt in (1, 2):
+            rows, total = ez_page(q, tt, 1)
+            add(rows, q)
+            jobs += [(q, tt, pg) for pg in range(2, (total + 99) // 100 + 1)]
+    print(f'  ezTravel: {len(jobs)} more pages', flush=True)
+    with ThreadPoolExecutor(6) as ex:
+        for (q, tt, pg), (rows, _) in zip(jobs, ex.map(lambda j: ez_page(*j), jobs)):
+            add(rows, q)
     return [t for t in out.values() if t['country'] != '台灣']
+
+
+async def eztravel(ctx):
+    return await asyncio.to_thread(eztravel_sync)
 
 
 # ---------------- 山富 ----------------
@@ -325,44 +379,41 @@ async def newamazing(ctx):
 
 
 # ---------------- 燦星 ----------------
-async def startravel(ctx):
-    # Cloudflare lets the list request through only some of the time, so try a few fresh sessions.
-    got = []
-
-    async def on_resp(r):
-        if 'GetAllProductList?' in r.url and r.status == 200:
-            try:
-                got.append(await r.json())
-            except Exception:
-                pass
-    for attempt in range(4):
-        c = await ctx.browser.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
-        page = await c.new_page()
-        page.on('response', on_resp)
-        await goto(page, 'https://tour.startravel.com.tw/list/ALL/0?avl=1', 3000)
-        await wait_for(page, lambda h: '請稍候' not in h and 'Just a moment' not in h, 30)
-        for _ in range(20):
-            if got:
-                break
-            await page.wait_for_timeout(1000)
-        await c.close()
-        print('  startravel attempt', attempt + 1, 'lists:', len(got), flush=True)
-        if got:
-            break
+# Cloudflare blocks headless Chrome here but lets a Chrome-like TLS client through.
+def startravel_sync():
+    s = http()
+    areas = s.get('https://tour.startravel.com.tw/Ajax/GetDestinationList', timeout=60).json()
+    codes = [b['TravelCodeLv2'] for a in areas if a['TravelCodeLv1'] != '800' for b in a.get('TravelLv2') or []]
+    end = TODAY + dt.timedelta(days=365)
     out = {}
-    for d in got:
+    for code in codes:
+        try:
+            d = s.get(f'https://tour.startravel.com.tw/ajax/GetAllProductList?DeptArea=&TravelCode={code}'
+                      f'&SDate={TODAY}&EDate={end}&Keyword=&TripStatus=0&Avl=1&SortType=0', timeout=90).json()
+        except Exception as e:
+            print('  startravel failed', code, type(e).__name__, flush=True)
+            continue
         for it in d.get('ProductList') or []:
-            code = it.get('MGroupCode')
+            code_ = it.get('MGroupCode')
             name = it.get('ProductName')
-            if not code or not name or code in out:
+            if not code_ or not name:
+                continue
+            dep = it.get('NearDeptDate')
+            if code_ in out:
+                if dep:
+                    out[code_]['departures'] = sorted(set(out[code_]['departures']) | {dep})
                 continue
             img = it.get('ImgUrl') or ''
-            out[code] = tour('燦星旅遊', name, f'https://tour.startravel.com.tw/detail/00001-{code}',
-                             it.get('MinPrice'), it.get('TripDays'), [it.get('NearDeptDate')],
-                             urljoin('https://tour.startravel.com.tw', img) if img else None,
-                             it.get('TripNation') or '')
-    print('  startravel lists captured:', len(got), flush=True)
+            out[code_] = tour('燦星旅遊', name, f'https://tour.startravel.com.tw/detail/00001-{code_}',
+                              it.get('MinPrice'), it.get('TripDays'), [dep],
+                              urljoin('https://tour.startravel.com.tw', img) if img else None,
+                              (it.get('TripNation') or '') + (it.get('TripCity') or ''))
+    print('  startravel products:', len(out), flush=True)
     return list(out.values())
+
+
+async def startravel(ctx):
+    return await asyncio.to_thread(startravel_sync)
 
 
 # Plain air tickets / hotel rooms / attraction tickets are not trips: drop them unless they have a day count.
@@ -380,6 +431,23 @@ def dedupe(tours):
     return list(seen.values())
 
 
+def norm_title(s):
+    return re.sub(r'[^0-9A-Za-z\u4e00-\u9fff]', '', s or '')
+
+
+def drop_resold_duplicates(tours):
+    """ezTravel resells tours we also collect straight from the operator; keep the operator's copy."""
+    direct = {(t['agency'], norm_title(t['title'])): t for t in tours if t['agency'] != '易遊網'}
+    out = []
+    for t in tours:
+        d = direct.get((t.get('operator'), norm_title(t['title']))) if t['agency'] == '易遊網' else None
+        if d:
+            d['departures'] = sorted(set(d['departures']) | set(t['departures']))
+        else:
+            out.append(t)
+    return out
+
+
 SCRAPERS = {'雄獅旅遊': lion, '可樂旅遊': cola, '東南旅遊': settour, '易遊網': eztravel,
             '山富旅遊': travel4u, '喜鴻假期': besttour, '新魅力旅遊': newamazing,
             '燦星旅遊': startravel}
@@ -388,7 +456,7 @@ SCRAPERS = {'雄獅旅遊': lion, '可樂旅遊': cola, '東南旅遊': settour,
 async def main(only=None):
     tours, failed, stats = [], [], {}
     async with async_playwright() as p:
-        b = await p.chromium.launch()
+        b = await p.chromium.launch(**({'proxy': {'server': os.environ['HTTPS_PROXY']}} if os.environ.get('HTTPS_PROXY') else {}))
         async def run(name, fn):
             # Each agency gets its own browser session so they can run side by side.
             c = await b.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
@@ -413,6 +481,8 @@ async def main(only=None):
             tours += got or []
             stats[name] = len(got or [])
         await b.close()
+    tours = drop_resold_duplicates(tours)
+    stats['易遊網'] = sum(t['agency'] == '易遊網' for t in tours)
     # If an agency broke today (site change, bot check), keep yesterday's tours for it instead of dropping them.
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'docs', 'data', 'tours.json')
     try:

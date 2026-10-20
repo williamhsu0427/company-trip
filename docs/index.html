@@ -153,7 +153,7 @@ function filtered(){
   const [dmin,dmax]=dd?dd.split('-').map(Number):[0,999];
   const L=TOURS.filter(t=>!offAg.has(t.agency)
     &&(!type||t.type===type)
-    &&(!q||(t.title+t.country).toLowerCase().includes(q))
+    &&(!q||(t.title+t.country+(t.operator||'')).toLowerCase().includes(q))
     &&(!c||t.country===c)
     &&(!(m1||m2)||t.deps.some(inM))
     &&(!dd||(t.days>=dmin&&t.days<=dmax))
@@ -166,7 +166,7 @@ function filtered(){
 function card(t,inM){
   const ds=t.deps.filter(inM),deps=ds.slice(0,4).map(d=>d.slice(5).replace('-','/')).join('、');
   return `<div class="item">${t.image?`<img loading="lazy" referrerpolicy="no-referrer" src="${esc(t.image)}" alt="" onerror="this.remove()">`:''}<div class="body">
-    <div class="ag">${esc(t.agency)}${t.country?' · '+esc(t.country):''}<span class="tag">${t.type==='fit'?'自由行':'團體'}</span></div>
+    <div class="ag">${esc(t.agency)}${t.operator&&t.operator!==t.agency?'（'+esc(t.operator)+'出團）':''}${t.country?' · '+esc(t.country):''}<span class="tag">${t.type==='fit'?'自由行':'團體'}</span></div>
     <b>${esc(t.title)}</b>
     <div class="meta">${t.days?t.days+' 天':''}${deps?' · 出發 '+deps+(ds.length>4?' 等':''):''}</div>
     <div class="price">${fmt(t.price)}<span class="meta"> 起／人</span></div>
