@@ -76,9 +76,7 @@ section{display:none}section.on{display:block}
         <option value="">不限</option><option value="1-4">4 天以內</option><option value="5-6">5–6 天</option><option value="7-9">7–9 天</option><option value="10-99">10 天以上</option>
       </select></label>
       <label class="full wide">出發月份<div class="range"><select id="f-m1"><option value="">不限</option></select><span>到</span><select id="f-m2"><option value="">不限</option></select></div></label>
-      <label class="full wide">每人預算上限<select id="f-budget">
-        <option value="">不限</option><option>20000</option><option>30000</option><option>40000</option><option>50000</option><option>70000</option><option>100000</option><option>150000</option>
-      </select></label>
+      <label class="full wide">每人預算<div class="range"><select id="f-p1"><option value="">不限</option></select><span>到</span><select id="f-p2"><option value="">不限</option></select></div></label>
     </div>
     <div class="chips" id="agency-chips"></div>
     <div class="bar"><span id="count">載入中…</span>
@@ -142,7 +140,9 @@ async function load(){
 }
 
 function filtered(){
-  const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,dd=$('#f-days').value,b=+$('#f-budget').value||0;
+  const q=$('#f-q').value.trim().toLowerCase(),c=$('#f-country').value,dd=$('#f-days').value;
+  let p1=+$('#f-p1').value||0,p2=+$('#f-p2').value||0;
+  if(p1&&p2&&p1>p2)[p1,p2]=[p2,p1];
   let m1=$('#f-m1').value,m2=$('#f-m2').value;
   if(m1&&m2&&m1>m2)[m1,m2]=[m2,m1];
   const inM=d=>(!m1||d.slice(0,7)>=m1)&&(!m2||d.slice(0,7)<=m2);
@@ -153,7 +153,7 @@ function filtered(){
     &&(!c||t.country===c)
     &&(!(m1||m2)||t.deps.some(inM))
     &&(!dd||(t.days>=dmin&&t.days<=dmax))
-    &&(!b||(t.price&&t.price<=b)));
+    &&(!(p1||p2)||(t.price&&t.price>=p1&&(!p2||t.price<=p2))));
   const s=$('#sort').value,first=t=>t.deps.find(inM)||'9999';
   L.sort(s==='price'?(a,b)=>(a.price||1e9)-(b.price||1e9):s==='price-d'?(a,b)=>(b.price||0)-(a.price||0):s==='date'?(a,b)=>first(a).localeCompare(first(b)):(a,b)=>(a.days||99)-(b.days||99));
   return {L,inM,q};
@@ -191,7 +191,7 @@ function render(){
     $('#more').hidden=true;
   }
 }
-['#f-q','#f-country','#f-m1','#f-m2','#f-days','#f-budget','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
+['#f-q','#f-country','#f-m1','#f-m2','#f-days','#f-p1','#f-p2','#sort'].forEach(s=>$(s).addEventListener('input',()=>{shown=40;openAg.clear();render()}));
 $('#more').onclick=()=>{shown+=40;render()};
 
 $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>${esc(a.name)}</h3>
@@ -200,6 +200,8 @@ $('#c-list').innerHTML=AGENCIES.filter(a=>a.corp).map(a=>`<div class="card"><h3>
   ${a.corp.tel?`<a class="btn" href="tel:${esc(a.corp.tel.replace(/[^\d+#,]/g,''))}">📞 ${esc(a.corp.tel)}</a>`:''}
   ${a.corp.email?`<a class="btn" href="mailto:${esc(a.corp.email)}">✉️ ${esc(a.corp.email)}</a>`:''}</div></div>`).join('');
 
+{const o=[];for(let v=5000;v<=200000;v+=5000)o.push(`<option value="${v}">${v.toLocaleString('zh-TW')} 元</option>`);
+ $('#f-p1').innerHTML+=o.join('');$('#f-p2').innerHTML+=o.join('');}
 load();
 </script>
 </body>
