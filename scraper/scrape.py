@@ -82,6 +82,25 @@ async def goto(page, url, wait=2500):
     await page.wait_for_timeout(wait)
 
 
+async def html_of(page):
+    for _ in range(5):
+        try:
+            return await page.content()
+        except Exception:
+            await page.wait_for_timeout(2000)
+    return ''
+
+
+async def wait_for(page, check, seconds=20):
+    """Poll until check(html) is truthy (e.g. a bot-check page has finished redirecting)."""
+    for _ in range(seconds):
+        h = await html_of(page)
+        if check(h):
+            return h
+        await page.wait_for_timeout(1000)
+    return await html_of(page)
+
+
 # ---------------- 雄獅 ----------------
 async def lion(ctx):
     page = await ctx.new_page()
@@ -122,7 +141,7 @@ async def cola(ctx):
     out = {}
     for kw in REGION_KEYWORDS:
         await goto(page, f'https://tour.colatour.com.tw/search?KeyWord={quote(kw)}', 3000)
-        s = BeautifulSoup(await page.content(), 'lxml')
+        s = BeautifulSoup(await html_of(page), 'lxml')
         for a in s.select('a[href*="itinerary?PatternNo"]'):
             h3 = a.find(['h3', 'h2'])
             if not h3:
@@ -145,9 +164,11 @@ SETTOUR_PAGES = ['japan', 'korea', 'southeast_asia', 'china', 'europe', 'america
 async def settour(ctx):
     page = await ctx.new_page()
     out = {}
-    for p in SETTOUR_PAGES:
-        await goto(page, f'https://tour.settour.com.tw/{p}.html', 3000)
-        s = BeautifulSoup(await page.content(), 'lxml')
+    urls = [f'https://tour.settour.com.tw/{p}.html' for p in SETTOUR_PAGES]
+    urls += [f'https://tour.settour.com.tw/search?keyWords={quote(kw)}' for kw in REGION_KEYWORDS]
+    for u in urls:
+        await goto(page, u, 3000)
+        s = BeautifulSoup(await html_of(page), 'lxml')
         for a in s.select('a[href*="/product/GFG"]'):
             m = re.search(r'GFG\d{10}', a['href'])
             h = a.find('h3')
@@ -171,8 +192,9 @@ async def eztravel(ctx):
     out = {}
     for kw in REGION_KEYWORDS:
         for pg in range(1, 3):
-            await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1&page={pg}', 4000)
-            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', await page.content(), re.S)
+            await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1&page={pg}', 1500)
+            h = await wait_for(page, lambda h: '__NEXT_DATA__' in h, 25)
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
             if not m:
                 print('  ezTravel blocked at', kw, pg, flush=True)
                 break
@@ -193,11 +215,11 @@ async def eztravel(ctx):
 async def travel4u(ctx):
     page = await ctx.new_page()
     await goto(page, 'https://www.travel4u.com.tw/group/')
-    cats = sorted(set(re.findall(r'/group/category/\d+/[\w-]+/', await page.content())))
+    cats = sorted(set(re.findall(r'/group/category/\d+/[\w-]+/', await html_of(page))))
     out = {}
     for c in cats:
         await goto(page, urljoin('https://www.travel4u.com.tw', c), 2000)
-        s = BeautifulSoup(await page.content(), 'lxml')
+        s = BeautifulSoup(await html_of(page), 'lxml')
         for a in s.select('a.tourCard'):
             href = urljoin('https://www.travel4u.com.tw', a['href'])
             name = a.select_one('.name') or a.find(['h5', 'h6'])
@@ -250,10 +272,18 @@ async def besttour(ctx):
 # ---------------- 新魅力 ----------------
 async def newamazing(ctx):
     page = await ctx.new_page()
-    html = []
-    for kw in REGION_KEYWORDS:
-        await goto(page, f'https://www.newamazing.com.tw/EW/GO/GroupList.asp?keyword={quote(kw)}', 1500)
-        html.append(await page.content())
+    await goto(page, 'https://www.newamazing.com.tw/EW/GO/GroupList.asp')
+    html = [await html_of(page)]
+    end = (TODAY + dt.timedelta(days=365)).strftime('%Y/%m/%d')
+    for pg in range(2, 31):
+        r = await page.request.post('https://www.newamazing.com.tw/EW/GO/GroupList.asp?tabList=GO', form={
+            'displayType': 'G', 'orderCd': '1', 'pageALL': str(pg), 'pageGO': str(pg), 'pagePGO': str(pg),
+            'beginDt': TODAY.strftime('%Y/%m/%d'), 'endDt': end, 'allowJoin': '1', 'allowWait': '1'})
+        h = await r.text()
+        if 'product_name' not in h:
+            break
+        html.append(h)
+    print('  newamazing pages:', len(html), flush=True)
     s = BeautifulSoup(''.join(html), 'lxml')
     await page.close()
     groups = {}
@@ -293,18 +323,19 @@ async def startravel(ctx):
             except Exception:
                 pass
     page.on('response', on_resp)
-    await goto(page, 'https://tour.startravel.com.tw/list/ALL/10?avl=1', 3000)
-    codes = []
-    try:
-        r = await page.request.get('https://tour.startravel.com.tw/Ajax/GetDestinationList?ProdType=0&RegionType=O')
-        for lv1 in await r.json():
-            for lv2 in lv1.get('TravelLv2') or []:
-                codes.append(lv2['TravelCodeLv2'])
-    except Exception as e:
-        print('  startravel codes failed', e, flush=True)
-        codes = ['10', '11', '12', '13', '14', '15', '16', '17', '18']
-    for c in codes:
-        await goto(page, f'https://tour.startravel.com.tw/list/ALL/{c}?avl=1', 3000)
+    await goto(page, 'https://tour.startravel.com.tw/list/ALL/0?avl=1', 3000)
+    await wait_for(page, lambda h: '請稍候' not in h and 'Just a moment' not in h, 30)
+    end = (TODAY + dt.timedelta(days=365)).isoformat()
+    for kw in REGION_KEYWORDS:
+        try:
+            r = await page.request.get('https://tour.startravel.com.tw/ajax/GetAllProductList?DeptArea=ALL&TravelCode='
+                                       f'&SDate={TODAY}&EDate={end}&Keyword={quote(kw)}&TripStatus=0&Avl=1&SortType=0')
+            if r.status == 200:
+                got.append(await r.json())
+            else:
+                print('  startravel api', kw, r.status, flush=True)
+        except Exception as e:
+            print('  startravel api', kw, str(e)[:80], flush=True)
     await page.close()
     out = {}
     for d in got:
@@ -350,7 +381,7 @@ async def main(only=None):
             if only and name not in only:
                 continue
             try:
-                got = await asyncio.wait_for(fn(ctx), timeout=900)
+                got = await asyncio.wait_for(fn(ctx), timeout=1500)
                 got = dedupe(t for t in got if t['title'] and t['url'] and '找到了' not in t['title']
                              and t['country'] != '台灣' and not NOT_GROUP.search(t['title']))
                 print(f'{name}: {len(got)}', flush=True)
