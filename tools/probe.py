@@ -24,7 +24,7 @@ async def one(ctx, i, url):
     page.on('response', on_resp)
     info = {'url': url}
     try:
-        resp = await page.goto(url, wait_until='domcontentloaded', timeout=45000)
+        resp = await page.goto(url, wait_until='domcontentloaded', timeout=70000)
         info['status'] = resp.status if resp else None
         try:
             await page.wait_for_load_state('networkidle', timeout=20000)
