@@ -70,15 +70,16 @@ def tour(agency, title, url, price=None, days=None, deps=(), image=None, place='
     }
 
 
-async def goto(page, url, wait=2500):
+async def goto(page, url, wait=2500, idle=True):
     try:
         await page.goto(url, wait_until='domcontentloaded', timeout=60000)
     except Exception as e:
         print('  slow page:', url, str(e)[:80], flush=True)
-    try:
-        await page.wait_for_load_state('networkidle', timeout=15000)
-    except Exception:
-        pass
+    if idle:
+        try:
+            await page.wait_for_load_state('networkidle', timeout=15000)
+        except Exception:
+            pass
     await page.wait_for_timeout(wait)
 
 
@@ -164,10 +165,8 @@ SETTOUR_PAGES = ['japan', 'korea', 'southeast_asia', 'china', 'europe', 'america
 async def settour(ctx):
     page = await ctx.new_page()
     out = {}
-    urls = [f'https://tour.settour.com.tw/{p}.html' for p in SETTOUR_PAGES]
-    urls += [f'https://tour.settour.com.tw/search?keyWords={quote(kw)}' for kw in REGION_KEYWORDS]
-    for u in urls:
-        await goto(page, u, 3000)
+    for p in SETTOUR_PAGES:
+        await goto(page, f'https://tour.settour.com.tw/{p}.html', 5000, idle=False)
         s = BeautifulSoup(await html_of(page), 'lxml')
         for a in s.select('a[href*="/product/GFG"]'):
             m = re.search(r'GFG\d{10}', a['href'])
@@ -188,26 +187,24 @@ async def settour(ctx):
 
 # ---------------- 易遊網 ----------------
 async def eztravel(ctx):
-    page = await ctx.new_page()
+    # The site blocks a browser session after its first page, so each keyword gets a fresh one.
     out = {}
     for kw in REGION_KEYWORDS:
-        for pg in range(1, 3):
-            await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1&page={pg}', 1500)
-            h = await wait_for(page, lambda h: '__NEXT_DATA__' in h, 25)
-            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
-            if not m:
-                print('  ezTravel blocked at', kw, pg, flush=True)
-                break
-            st = json.loads(m.group(1))['props']['pageProps']['initialState']['search']
-            res = st.get('searchResults') or []
-            for r in res:
-                key = r.get('pfGProdNo') or r.get('prodUrl')
-                deps = [ymd(x.get('saleDt')) for x in (r.get('otherSaleDts') or [])] or [ymd(r.get('saleDt'))]
-                out[key] = tour('易遊網', r.get('prodNm'), r.get('prodUrl'), r.get('minPrice1') or r.get('ezPrice1'),
-                                r.get('travelDay'), deps, r.get('imgUrl'), ' '.join(r.get('tourCitysNm') or []) + ' ' + kw)
-            if len(res) < 10:
-                break
-    await page.close()
+        c = await ctx.browser.new_context(locale='zh-TW', user_agent=UA, viewport={'width': 1366, 'height': 900})
+        page = await c.new_page()
+        await goto(page, f'https://vacation.eztravel.com.tw/pkgfrn/keywords/?q={quote(kw)}&tt=1&avbl=1', 1500)
+        h = await wait_for(page, lambda h: '__NEXT_DATA__' in h, 25)
+        await c.close()
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', h, re.S)
+        if not m:
+            print('  ezTravel blocked at', kw, flush=True)
+            continue
+        st = json.loads(m.group(1))['props']['pageProps']['initialState']['search']
+        for r in st.get('searchResults') or []:
+            key = r.get('pfGProdNo') or r.get('prodUrl')
+            deps = [ymd(x.get('saleDt')) for x in (r.get('otherSaleDts') or [])] or [ymd(r.get('saleDt'))]
+            out[key] = tour('易遊網', r.get('prodNm'), r.get('prodUrl'), r.get('minPrice1') or r.get('ezPrice1'),
+                            r.get('travelDay'), deps, r.get('imgUrl'), ' '.join(r.get('tourCitysNm') or []) + ' ' + kw)
     return [t for t in out.values() if t['country'] != '台灣']
 
 
@@ -325,17 +322,10 @@ async def startravel(ctx):
     page.on('response', on_resp)
     await goto(page, 'https://tour.startravel.com.tw/list/ALL/0?avl=1', 3000)
     await wait_for(page, lambda h: '請稍候' not in h and 'Just a moment' not in h, 30)
-    end = (TODAY + dt.timedelta(days=365)).isoformat()
-    for kw in REGION_KEYWORDS:
-        try:
-            r = await page.request.get('https://tour.startravel.com.tw/ajax/GetAllProductList?DeptArea=ALL&TravelCode='
-                                       f'&SDate={TODAY}&EDate={end}&Keyword={quote(kw)}&TripStatus=0&Avl=1&SortType=0')
-            if r.status == 200:
-                got.append(await r.json())
-            else:
-                print('  startravel api', kw, r.status, flush=True)
-        except Exception as e:
-            print('  startravel api', kw, str(e)[:80], flush=True)
+    for _ in range(20):
+        if got:
+            break
+        await page.wait_for_timeout(1000)
     await page.close()
     out = {}
     for d in got:
