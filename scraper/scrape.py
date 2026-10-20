@@ -4,7 +4,7 @@ Each agency scraper is independent: if one breaks (site redesign, bot block),
 the others still run and the agency is listed under "failed" so the page can
 point people to the one-tap search instead.
 """
-import asyncio, datetime as dt, json, os, re, sys, traceback
+import asyncio, datetime as dt, json, os, re, sys, time, traceback
 from urllib.parse import quote, urljoin
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
@@ -125,7 +125,15 @@ def lion_sync():
                     "KeywordsCity": None, "TravelType": tt, "BuIDs": "", "PreferAirlines": None, "GoDateEnd": end,
                     "DepartureID": "", "WeekDay": "", "PriceList": None, "AirlineIDs": "", "TripTypes": "", "Tags": "",
                     "SortType": 3, "Days": "", "MarketingProjects": "", "Page": pg, "PageSize": 200}
-            d = http().post('https://travel.liontravel.com/search/grouplistinfojson', json=body, timeout=60).json()
+            for attempt in range(4):
+                try:
+                    d = http().post('https://travel.liontravel.com/search/grouplistinfojson', json=body, timeout=60).json()
+                    break
+                except Exception as e:
+                    print('  lion retry', tt, pg, type(e).__name__, flush=True)
+                    time.sleep(5)
+            else:
+                raise RuntimeError('lion API unreachable')
             items = d.get('NormGroupList') or []
             for it in items:
                 gl = it.get('GroupList') or []
@@ -279,40 +287,77 @@ async def eztravel(ctx):
 
 
 # ---------------- 山富 ----------------
-async def travel4u(ctx):
-    page = await ctx.new_page()
-    await goto(page, 'https://www.travel4u.com.tw/group/')
-    cats = sorted(set(re.findall(r'/group/category/\d+/[\w-]+/', await html_of(page))))
+# The keyword search lists every itinerary (10 per page); a blank keyword returns nothing, so search by region.
+T4U_WORDS = REGION_KEYWORDS + ['中國', '香港', '澳門', '郵輪', '中東', '非洲', '中亞', '南亞', '島嶼']
+
+
+def t4u_page(kw, pg):
+    url = (f'https://www.travel4u.com.tw/group/search/?keyword={quote(kw)}&date_start={TODAY}'
+           f'&date_end={TODAY + dt.timedelta(days=365)}&page={pg}')
+    for attempt in range(3):
+        try:
+            return http().get(url, timeout=60).text
+        except Exception as e:
+            print('  travel4u retry', kw, pg, type(e).__name__, flush=True)
+    return ''
+
+
+def travel4u_sync():
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(8) as ex:
+        firsts = list(ex.map(lambda k: t4u_page(k, 1), T4U_WORDS))
+        jobs = []
+        for kw, h in zip(T4U_WORDS, firsts):
+            last = max([int(x) for x in re.findall(r'[?&]page=(\d+)', h)] or [1])
+            jobs += [(kw, pg) for pg in range(2, last + 1)]
+        print(f'  travel4u: {len(jobs) + len(firsts)} pages', flush=True)
+        pages = firsts + list(ex.map(lambda j: t4u_page(*j), jobs))
     out = {}
-    for c in cats:
-        await goto(page, urljoin('https://www.travel4u.com.tw', c), 2000)
-        s = BeautifulSoup(await html_of(page), 'lxml')
-        for a in s.select('a.tourCard'):
-            href = urljoin('https://www.travel4u.com.tw', a['href'])
-            name = a.select_one('.name') or a.find(['h5', 'h6'])
-            pr = a.select_one('.price')
-            if not name or href in out or not pr or not num(pr.get_text()):
+    for h in pages:
+        for box in BeautifulSoup(h, 'lxml').select('div.product'):
+            name = box.select_one('h6.tourCard.name')
+            a = name.find_parent('a') if name else None
+            if not a:
                 continue
-            txt = a.get_text(' ', strip=True)
+            href = urljoin('https://www.travel4u.com.tw', a['href'])
+            if href in out:
+                continue
+            txt = box.get_text(' ', strip=True)
+            pr = re.search(r'\$([\d,]+)', txt)
             dd = re.search(r'(\d+)\s*天', txt)
-            dep = a.select_one('.tourDepartureDate')
-            img = a.find('img')
-            out[href] = tour('山富旅遊', name.get_text(strip=True), href, num(pr.get_text()) if pr else None,
+            img = box.find('img')
+            place = re.search(r'天\s*(.*?)\s*\S*出發', txt)
+            out[href] = tour('山富旅遊', name.get_text(strip=True), href, num(pr.group(1)) if pr else None,
                              int(dd.group(1)) if dd else None,
-                             [mmdd_to_date(x) for x in re.findall(r'\d{1,2}/\d{1,2}', dep.get_text() if dep else '')],
-                             img.get('src') if img else None, c)
-    await page.close()
+                             [mmdd_to_date(x) for x in re.findall(r'\b\d{1,2}/\d{1,2}\b', txt)],
+                             img.get('src') if img else None, place.group(1) if place else '')
     return [t for t in out.values() if t['country'] != '台灣']
 
 
+async def travel4u(ctx):
+    return await asyncio.to_thread(travel4u_sync)
+
+
 # ---------------- 喜鴻 ----------------
-async def besttour(ctx):
-    page = await ctx.new_page()
-    await goto(page, 'https://www.besttour.com.tw/search?type=2')
+# One row per departure, 100 per page.
+def besttour_page(pg):
+    for attempt in range(3):
+        try:
+            r = http().post(f'https://travelapi.besttour.com.tw/api/query_List_all.asp?pageid={pg}&pagesize=100', timeout=60)
+            return json.loads(r.text)
+        except Exception as e:
+            print('  besttour retry', pg, type(e).__name__, flush=True)
+    return {}
+
+
+def besttour_sync():
+    from concurrent.futures import ThreadPoolExecutor
+    first = besttour_page(1)
+    with ThreadPoolExecutor(8) as ex:
+        pages = [first] + list(ex.map(besttour_page, range(2, int(first.get('pagecount') or 1) + 1)))
+    print(f'  besttour: {len(pages)} pages', flush=True)
     groups = {}
-    for pg in range(1, 80):
-        r = await page.request.post(f'https://travelapi.besttour.com.tw/api/query_List_all.asp?pageid={pg}&pagesize=100')
-        d = json.loads(await r.text())
+    for d in pages:
         for it in d.get('data') or []:
             if (it.get('city') or '').startswith('台灣'):
                 continue
@@ -323,9 +368,6 @@ async def besttour(ctx):
             if p and (g['price'] is None or p < g['price']):
                 g['price'] = p
                 g['it'] = it
-        if pg >= int(d.get('pagecount') or 1):
-            break
-    await page.close()
     out = []
     for name, g in groups.items():
         it = g['it']
@@ -336,23 +378,46 @@ async def besttour(ctx):
     return out
 
 
+async def besttour(ctx):
+    return await asyncio.to_thread(besttour_sync)
+
+
 # ---------------- 新魅力 ----------------
-async def newamazing(ctx):
-    page = await ctx.new_page()
-    await goto(page, 'https://www.newamazing.com.tw/EW/GO/GroupList.asp')
-    html = [await html_of(page)]
+def newamazing_page(pg):
     end = (TODAY + dt.timedelta(days=365)).strftime('%Y/%m/%d')
-    for pg in range(2, 31):
-        r = await page.request.post('https://www.newamazing.com.tw/EW/GO/GroupList.asp?tabList=GO', form={
-            'displayType': 'G', 'orderCd': '1', 'pageALL': str(pg), 'pageGO': str(pg), 'pagePGO': str(pg),
-            'beginDt': TODAY.strftime('%Y/%m/%d'), 'endDt': end, 'allowJoin': '1', 'allowWait': '1'})
-        h = await r.text()
-        if 'product_name' not in h:
-            break
-        html.append(h)
+    for attempt in range(3):
+        try:
+            s = http()
+            s.get('https://www.newamazing.com.tw/EW/GO/GroupList.asp', timeout=60)
+            h = s.post('https://www.newamazing.com.tw/EW/GO/GroupList.asp?tabList=GO', data={
+                'displayType': 'G', 'orderCd': '1', 'pageALL': str(pg), 'pageGO': str(pg), 'pagePGO': str(pg),
+                'beginDt': TODAY.strftime('%Y/%m/%d'), 'endDt': end, 'allowJoin': '1', 'allowWait': '1'},
+                timeout=60).text
+            if '共' in h:
+                return h
+        except Exception as e:
+            print('  newamazing retry', pg, type(e).__name__, flush=True)
+    return ''
+
+
+def newamazing_pages():
+    # One row per departure, 20 per page, sorted by date; there is no page count, so fetch until pages come back empty.
+    from concurrent.futures import ThreadPoolExecutor
+    html, start = [], 1
+    with ThreadPoolExecutor(8) as ex:
+        while start < 1000:
+            batch = list(ex.map(newamazing_page, range(start, start + 40)))
+            html += [h for h in batch if 'product_num' in h]
+            if not any('product_num' in h for h in batch[-5:]):
+                break
+            start += 40
+    return html
+
+
+async def newamazing(ctx):
+    html = await asyncio.to_thread(newamazing_pages)
     print('  newamazing pages:', len(html), flush=True)
     s = BeautifulSoup(''.join(html), 'lxml')
-    await page.close()
     groups = {}
     for th in s.select('div.thumbnail'):
         a = th.select_one('.product_name a')
