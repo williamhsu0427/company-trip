@@ -307,26 +307,17 @@ async def startravel(ctx):
         await goto(page, f'https://tour.startravel.com.tw/list/ALL/{c}?avl=1', 3000)
     await page.close()
     out = {}
-    first = True
     for d in got:
-        lst = next((v for v in d.values() if isinstance(v, list) and v and isinstance(v[0], dict)), [])
-        if first and lst:
-            print('  startravel item keys:', list(lst[0].keys())[:40], flush=True)
-            print('  sample:', json.dumps(lst[0], ensure_ascii=False)[:800], flush=True)
-            first = False
-        for it in lst:
-            name = it.get('MGroupName') or it.get('ProdName') or it.get('Name') or it.get('GroupName')
-            code = it.get('MGroupCode') or it.get('ProdCode') or name
-            if not name or code in out:
+        for it in d.get('ProductList') or []:
+            code = it.get('MGroupCode')
+            name = it.get('ProductName')
+            if not code or not name or code in out:
                 continue
-            deps = [ymd(str(x.get('DeptDate') or x.get('GoDate') or '')) for x in (it.get('Products') or it.get('Groups') or []) if isinstance(x, dict)]
-            if it.get('DeptDate'):
-                deps.append(ymd(str(it['DeptDate'])))
-            out[code] = tour('燦星旅遊', name, f'https://tour.startravel.com.tw/mgroup/{code}',
-                             num(it.get('MinPrice') or it.get('Price') or it.get('SalePrice')),
-                             num(it.get('TravelDays') or it.get('Days')), deps,
-                             it.get('ImageUrl') or it.get('ImgUrl') or it.get('Image'),
-                             d.get('TravelCodeNameLv2') or '')
+            img = it.get('ImgUrl') or ''
+            out[code] = tour('燦星旅遊', name, f'https://tour.startravel.com.tw/detail/00001-{code}',
+                             it.get('MinPrice'), it.get('TripDays'), [it.get('NearDeptDate')],
+                             urljoin('https://tour.startravel.com.tw', img) if img else None,
+                             it.get('TripNation') or '')
     print('  startravel lists captured:', len(got), flush=True)
     return list(out.values())
 
